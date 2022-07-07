@@ -11,7 +11,7 @@ As I said on the GitHub Repository, I'm more that happy to hear any feedback and
 ## Showcase
 ### Ukiyo
 
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/Ukiyo-D.png)
+![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/wiki/docs/imgs/Ukiyo-D.png)
 ![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/Ukiyo-L.png)
 
 ### Golden Coffee
