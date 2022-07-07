@@ -1,0 +1,18 @@
+/* LATEX */
+
+.math * {
+  line-height: 0px !important;
+}
+
+.math-inline {
+  font-size: 1em;
+}
+
+.math-block {
+  font-size: 1.1em;
+}
+
+.cm-s-obsidian .HyperMD-table-row .cm-math {
+  font-size: initial;
+  font-size: 15px;
+}

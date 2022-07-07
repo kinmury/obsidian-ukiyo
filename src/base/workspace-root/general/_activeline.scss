@@ -1,0 +1,30 @@
+/* Active Line */
+
+.theme-dark,
+.theme-light {
+  .CodeMirror-activeline {
+    .CodeMirror-linebackground {
+      background-color: var(--activeline);
+    }
+  }
+  .CodeMirror-cursor {
+    border: none;
+    border-right: 0.2em solid var(--cursor);
+  }
+}
+
+.theme-dark {
+  .CodeMirror-activeline {
+    .CodeMirror-linenumber {
+      filter: brightness(300%) !important;
+    }
+  }
+}
+
+.theme-light {
+  .CodeMirror-activeline {
+    .CodeMirror-linenumber {
+      filter: brightness(-100%) !important;
+    }
+  }
+}

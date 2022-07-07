@@ -1,0 +1,237 @@
+/* Headings */
+.theme-dark,
+.theme-light {
+  .CodeMirror-activeline {
+    // Heading 1
+    .cm-formatting-header-1 {
+      margin-right: 0px !important;
+      visibility: visible;
+    }
+
+    .cm-formatting-header-1:before {
+      margin-right: 0px !important;
+      visibility: hidden;
+    }
+
+    // Heading 2
+    .cm-formatting-header-2 {
+      margin-right: 0px !important;
+      visibility: visible;
+    }
+
+    .cm-formatting-header-2:before {
+      margin-right: 0px !important;
+      visibility: hidden;
+    }
+
+    // Heading 3
+    .cm-formatting-header-3 {
+      margin-right: 0px !important;
+      visibility: visible;
+    }
+
+    .cm-formatting-header-3:before {
+      visibility: hidden;
+    }
+
+    // Heading 4
+    .cm-formatting-header-4 {
+      margin-right: 0px !important;
+      visibility: visible;
+    }
+
+    .cm-formatting-header-4:before {
+      visibility: hidden;
+    }
+
+    // Heading 5
+    .cm-formatting-header-5 {
+      margin-right: 0px !important;
+      visibility: visible;
+    }
+
+    .cm-formatting-header-5:before {
+      visibility: hidden;
+    }
+
+    // Heading 6
+    .cm-formatting-header-6 {
+      margin-right: 0px !important;
+      visibility: visible;
+    }
+
+    .cm-formatting-header-6:before {
+      visibility: hidden;
+    }
+  }
+
+  // Heading 1
+  .cm-formatting-header-1 {
+    margin-right: 10px;
+    visibility: hidden;
+  }
+
+  .cm-formatting-header-1:before {
+    content: "H1 ";
+    color: var(--heading-counter);
+    display: block;
+    position: absolute;
+    visibility: visible;
+  }
+
+  // Heading 2
+  .cm-formatting-header-2 {
+    visibility: hidden;
+  }
+
+  .cm-formatting-header-2:before {
+    content: "H2";
+    color: var(--heading-counter);
+    display: block;
+    position: absolute;
+    visibility: visible;
+  }
+
+  // Heading 3
+  .cm-formatting-header-3 {
+    margin-right: -7px;
+    visibility: hidden;
+  }
+
+  .cm-formatting-header-3:before {
+    content: "H3";
+    color: var(--heading-counter);
+    display: block;
+    position: absolute;
+    font-size: 27px;
+    visibility: visible;
+  }
+
+  // Heading 4
+  .cm-formatting-header-4 {
+    margin-right: -15px;
+    visibility: hidden;
+  }
+
+  .cm-formatting-header-4:before {
+    content: "H4";
+    color: var(--heading-counter);
+    display: block;
+    position: absolute;
+    font-size: 27px;
+    visibility: visible;
+  }
+
+  // Heading 5
+  .cm-formatting-header-5 {
+    margin-right: -20px;
+    visibility: hidden;
+  }
+
+  .cm-formatting-header-5:before {
+    content: "H5";
+    color: var(--heading-counter);
+    display: block;
+    position: absolute;
+    font-size: 27px;
+    visibility: visible;
+  }
+
+  // Heading 6
+  .cm-formatting-header-6 {
+    margin-right: -31px;
+    visibility: hidden;
+  }
+
+  .cm-formatting-header-6:before {
+    content: "H6";
+    color: var(--heading-counter);
+    display: block;
+    position: absolute;
+    font-size: 27px;
+    visibility: visible;
+  }
+
+  /*< Preview view >*/
+  .markdown-preview-view {
+    h1 .heading-collapse-indicator {
+      margin-top: -8px;
+    }
+
+    h2 .heading-collapse-indicator {
+      margin-top: -7px;
+    }
+
+    h3 .heading-collapse-indicator {
+      margin-top: -7px;
+    }
+
+    h4 .heading-collapse-indicator {
+      margin-top: -5px;
+    }
+
+    h5 .heading-collapse-indicator {
+      margin-top: -5px;
+    }
+
+    h6 .heading-collapse-indicator {
+      margin-top: -5px;
+    }
+  }
+
+  .markdown-source-view.mod-cm6 {
+    .cm-formatting-header-1 {
+      visibility: visible;
+      margin-right: 0px;
+
+      &:before {
+        display: none !important;
+      }
+    }
+
+    .cm-formatting-header-2 {
+      visibility: visible;
+      margin-right: 0px;
+
+      &:before {
+        display: none !important;
+      }
+    }
+
+    .cm-formatting-header-3 {
+      visibility: visible;
+      margin-right: 0px;
+
+      &:before {
+        display: none !important;
+      }
+    }
+
+    .cm-formatting-header-4 {
+      visibility: visible;
+      margin-right: 0px;
+
+      &:before {
+        display: none !important;
+      }
+    }
+
+    .cm-formatting-header-5 {
+      visibility: visible;
+      margin-right: 0px;
+
+      &:before {
+        display: none !important;
+      }
+    }
+
+    .cm-formatting-header-6 {
+      visibility: visible;
+      margin-right: 0px;
+
+      &:before {
+        display: none !important;
+      }
+    }
+  }
+}

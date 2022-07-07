@@ -1,0 +1,116 @@
+/* Centered Callouts */
+
+@mixin centered {
+    & .callout-content {
+      text-align: center;
+    }
+  }
+  
+  body {
+    .callout {
+      &[data-callout="note-c"] {
+        --callout-color: 68, 138, 255;
+        --callout-icon: lucide-pencil;
+  
+        @include centered;
+      }
+  
+      &[data-callout="abstract-c"],
+      &[data-callout="summary-c"],
+      &[data-callout="tldr-c"] {
+        --callout-color: 0, 176, 255;
+        --callout-icon: lucide-clipboard-list;
+  
+        @include centered;
+      }
+  
+      &[data-callout="info-c"] {
+        --callout-color: 0, 184, 212;
+        --callout-icon: lucide-info;
+  
+        @include centered;
+      }
+  
+      &.callout[data-callout="todo-c"] {
+        --callout-color: 0, 184, 212;
+        --callout-icon: lucide-check-circle-2;
+  
+        @include centered;
+      }
+  
+      &[data-callout="tip-c"],
+      &[data-callout="hint-c"],
+      &[data-callout="important-c"] {
+        --callout-color: 0, 191, 165;
+        --callout-icon: lucide-flame;
+  
+        @include centered;
+      }
+  
+      &[data-callout="success-c"],
+      &[data-callout="check-c"],
+      &[data-callout="done-c"] {
+        --callout-color: 0, 200, 83;
+        --callout-icon: lucide-check;
+  
+        @include centered;
+      }
+  
+      &[data-callout="question-c"],
+      &[data-callout="help-c"],
+      &[data-callout="faq-c"] {
+        --callout-color: 100, 221, 23;
+        --callout-icon: lucide-help-circle;
+  
+        @include centered;
+      }
+  
+      &[data-callout="warning-c"],
+      &[data-callout="caution-c"],
+      &[data-callout="attention-c"] {
+        --callout-color: 255, 145, 0;
+        --callout-icon: lucide-alert-triangle;
+  
+        @include centered;
+      }
+  
+      &[data-callout="failure-c"],
+      &[data-callout="fail-c"],
+      &[data-callout="missing-c"] {
+        --callout-color: 255, 82, 82;
+        --callout-icon: lucide-x;
+  
+        @include centered;
+      }
+  
+      &[data-callout="danger-c"],
+      &[data-callout="error-c"] {
+        --callout-color: 255, 23, 68;
+        --callout-icon: lucide-zap;
+  
+        @include centered;
+      }
+  
+      &[data-callout="bug-c"] {
+        --callout-color: 245, 0, 87;
+        --callout-icon: lucide-bug;
+  
+        @include centered;
+      }
+  
+      &[data-callout="example-c"] {
+        --callout-color: 124, 77, 255;
+        --callout-icon: lucide-list;
+  
+        @include centered;
+      }
+  
+      &[data-callout="quote-c"],
+      .callout[data-callout="cite-c"] {
+        --callout-color: 158, 158, 158;
+        --callout-icon: quote-glyph;
+  
+        @include centered;
+      }
+    }
+  }

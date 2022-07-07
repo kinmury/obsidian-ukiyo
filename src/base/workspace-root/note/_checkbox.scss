@@ -1,0 +1,22 @@
+/* Checkbox */
+
+.markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:not([data-task=" "]) {
+  text-decoration: none;
+  color: var(--text-faint);
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.markdown-preview-view ul > li > ul > li.task-list-item.is-checked,
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  > ul
+  > li.task-list-item.is-checked {
+  text-decoration: none;
+  color: var(--text-faint);
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked > ul > li {
+  color: var(--text-normal);
+}

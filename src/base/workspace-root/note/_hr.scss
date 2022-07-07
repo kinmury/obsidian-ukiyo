@@ -1,0 +1,19 @@
+/* Horizontal Line */
+
+.theme-dark,
+.theme-light {
+  .markdown-preview-view {
+    hr {
+      border: none;
+      margin-top: 2.2em;
+      margin-bottom: 2.2em;
+
+      &:after {
+        content: " ";
+        display: block;
+        height: 3px;
+        background-color: var(--background-modifier-border);
+      }
+    }
+  }
+}

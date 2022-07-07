@@ -1,0 +1,30 @@
+/*!
+/* @settings
+
+name: General Settings
+id: GS
+settings:
+    - 
+        id: AT
+        title: Alternative Theme
+        description: 
+            "Choose which alternative theme to use"
+        description.es:
+            "Escoge el tema alternativo a usar"
+        type: class-select
+        allowEmpty: false
+        default: AT_default
+        options:
+            - 
+                label: Ukiyo
+                value: AT_default
+            - 
+                label: Golden Coffee
+                value: AT_GC
+            -
+                label: Golden Book
+                value: AT_GB
+            -
+                label: Alchemy
+                value: AT_Alch        
+*/

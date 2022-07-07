@@ -1,0 +1,17 @@
+{
+  "showLineNumber": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 78
+  },
+  "legacyEditor": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "spellcheck": false,
+  "defaultViewMode": "source",
+  "tabSize": 4,
+  "trashOption": "local",
+  "userIgnoreFilters": null
+}

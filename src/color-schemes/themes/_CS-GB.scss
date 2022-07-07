@@ -1,0 +1,356 @@
+/* Golden Book - Color Scheme */
+
+@use "./GB-mods/GB-M-main";
+
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .cm-s-obsidian {
+      .cm-hmd-frontmatter.cm-meta {
+        color: #3b2f23;
+      }
+    }
+
+    /*----------
+    DARK MODE
+    ----------*/
+
+    /*<Base Variables>*/
+    --DM-base-bg-main-prim: #b69c83;
+    --DM-base-bg-main-sec: #302418;
+    --DM-base-bg: var(--DM-base-bg-main-sec);
+
+    --DM-base-bg-prim: var(--DM-base-bg-main-prim);
+    --DM-base-bg-prim-alt: var(--DM-base-bg-main-prim);
+    --DM-base-bg-sec: var(--DM-base-bg-main-sec);
+    --DM-base-bg-sec-alt: var(--DM-base-bg-main-sec);
+
+    --DM-base-modifier-bg: #29221c;
+    --DM-base-modifier-bg-h: #302720; // (-h) == hover
+    --DM-base-modifier-border: #7e5638;
+    --DM-base-modifier-box-shadow: #20140d;
+    --DM-base-modifier-cover: #ff00ff;
+
+    --DM-base-modifier-success: #356b3e;
+    --DM-base-modifier-error: #800000;
+    --DM-base-modifier-error-h: #a10000;
+
+    --DM-base-txt-accent: #500000;
+    --DM-base-txt-accent-h: #750000;
+    --DM-base-txt-normal: #1f0e00;
+    --DM-base-txt-muted: #803c00;
+    --DM-base-txt-faint: var(--DM-base-txt-muted);
+    --DM-base-txt-error: #da0000;
+    --DM-base-txt-error-h: #ff0000;
+
+    --DM-base-highlight-bg: rgba(167, 105, 43, 0.4);
+    --DM-base-highlight-bg-a: rgba(170, 107, 45, 0.4); // (-a) == active
+
+    --DM-base-txt-select: #ac8d71;
+    --DM-base-txt-on-accent: #f0c7aa;
+
+    --DM-base-itrc-normal: #ff00ff; // (itrc) == interactive
+    --DM-base-itrc-h: #ff00ff;
+    --DM-base-itrc-accent: #b17f54;
+    --DM-base-itrc-accent-h: #c48956;
+    --DM-base-itrc-success: var(--base-txt-muted);
+
+    --DM-base-scrollbar-bg: #703c17;
+    --DM-base-scrollbar-bg-a: #914815;
+
+    /*<Theme Variables>*/
+    --DM-popover-border: #b87f59;
+    --DM-popover-shadow: var(--DM-popover-border-color);
+    --DM-popover-bg: var(--DM-base-bg-main-prim);
+
+    --DM-prompt-border: #b87f59;
+
+    --DM-suggestion-container-bg: #2e2113;
+    --DM-suggestion-item-sel-bg: #ac8b6d; // (sel) == selected
+    --DM-suggestion-highlight: #2e2113;
+
+    --DM-kbd-bg: #5e240f;
+    --DM-kbd-sel-bg: #7e3419;
+    --DM-kbd-sel-border: #351500;
+
+    --DM-tooltip-bg: #5a230f;
+
+    --DM-modal-bg: #2713029a;
+    --DM-modal-settings-border: #943715;
+    --DM-settings-button-bg: var(--interactive-accent);
+
+    --DM-slide-dot: #943715;
+
+    --DM-settings-checkbox-container-bg: #944021;
+    --DM-settings-checkbox-container-enabled-bg: #ad5820;
+    --DM-settings-checkbox-container-bg-h: #c55b35;
+
+    --DM-T-comment-meta: #9daec2;
+    --DM-T-constant-symbol: #68b8b4;
+    --DM-T-punctuation-bracket: #dadada;
+    --DM-T-number-boolean: #e2a97a;
+    --DM-T-string-char: #cebf3f;
+    --DM-T-operator-variable: #91b8ec;
+    --DM-T-function-type: #5dadee;
+    --DM-T-keyword: #bd82ec;
+    --DM-T-regex-imp: #fd971f;
+    --DM-T-general: #5cb392;
+    --DM-T-tag: #f92672;
+
+    --DM-L-T-default: #292929;
+    --DM-L-T-formatting: #0c486b;
+    --DM-L-T-tag: #236d7c;
+    --DM-L-T-bracket: #292929;
+    --DM-L-T-number: #945726;
+    --DM-L-T-error: #945050;
+    --DM-L-T-variable: #075a20;
+
+    --DM-nav-file-a: #412e1b;
+    --DM-nav-tag-bg: #66260e;
+
+    --DM-activeline-bg: #ac8d71;
+    --DM-cursor: #b65630;
+
+    --DM-resize-handles-bg: #99442a;
+    --DM-resize-handles-bg-h: #cc522d;
+
+    --DM-FM-limits: #b44f0c; // (FM) = FrontMatter
+    --DM-FM-tag: #8b5400;
+
+    --DM-blockquote-bg: #36281a;
+
+    --DM-EV-CB-bg: #352515;
+    --DM-EV-IC-bg: #352515;
+    --DM-EV-IC: #fa4747;
+    --DM-PV-CB-copy-button: #613424;
+
+    --DM-borgonia: #f72e2e;
+
+    --DM-tables-thead-bg: #3a2715;
+
+    --DM-bold: #8f3d07;
+    --DM-italic: #522500;
+
+    --DM-PU_pu-bf-bg: #6687be; // (PU) == PopUp / (pu) == Default / (bf) == before
+    --DM-PU_pu-tl-bg: #778292; // (tl) == title
+    --DM-PU_pu-ct-bg: #6e7a8b; // (ct) == content
+    // --
+    --DM-PU_pu-info-bf-bg: #499696;
+    --DM-PU_pu-info-tl-bg: #698a8a;
+    --DM-PU_pu-info-ct-bg: #608585;
+    // --
+    --DM-PU_pu-imp-bf-bg: #aa7435;
+    --DM-PU_pu-imp-tl-bg: #77624a;
+    --DM-PU_pu-imp-ct-bg: #705a43;
+    // --
+    --DM-PU_pu-quest-bf-bg: #af5f9e;
+    --DM-PU_pu-quest-tl-bg: #885d7f;
+    --DM-PU_pu-quest-ct-bg: #815777;
+    // --
+    --DM-PU_pu-check-bf-bg: #3d8854;
+    --DM-PU_pu-check-tl-bg: #4d7e5c;
+    --DM-PU_pu-check-ct-bg: #467755;
+    // --
+    --DM-PU_pu-fail-bf-bg: #c75353;
+    --DM-PU_pu-fail-tl-bg: #8f5353;
+    --DM-PU_pu-fail-ct-bg: #884848;
+
+    --DM-P-calendar-today: #cca68a; // (P) - Plugin
+    --DM-P-calendar-today-bg: #75625744;
+    --DM-P-calendar-day-bg-h: #795e469a;
+
+    --DM-P-dataview-th-bg: #49331d;
+    --DM-P-dataview-th-border: #966f54;
+    --DM-P-dataview-th-border-bottom: #966f54;
+    --DM-P-dataview-td-border: #966f54;
+
+    --DM-P-dialogue-bg: #57351d;
+
+    --DM-P-kanban-hr-wrapper: #966f54;
+    --DM-P-kanban-item-border: #9c795f;
+
+    --DM-P-langTool-button-bg: #743f1a;
+    --DM-P-langTool-button-bg-h: #884e24;
+
+    --DM-SS-hidden-hl: #774219; // (hl) == Horizontal Line
+    --DM-SS-hidden-hl-a: #91745f;
+
+    --DM-graph-tag: #ff7300;
+    --DM-graph-attach: #ff2600;
+
+    --DM-txt-selected-arrow: #a04800;
+
+    --heading-counter: #a81d05;
+
+    /* Light Mode */
+    --LM-base-bg-prim: var(--DM-base-bg-prim);
+    --LM-base-bg-prim-alt: var(--DM-base-bg-prim-alt);
+    --LM-base-bg-sec: var(--DM-base-bg-sec);
+    --LM-base-bg-sec-alt: var(--DM-base-bg-sec-alt);
+
+    --LM-base-modifier-bg: var(--DM-base-modifier-bg);
+    --LM-base-modifier-bg-h: var(--DM-base-modifier-bg-h);
+    --LM-base-modifier-border: var(--DM-base-modifier-border);
+    --LM-base-modifier-box-shadow: var(--DM-base-modifier-box-shadow);
+    --LM-base-modifier-cover: var(--DM-base-modifier-cover);
+
+    --LM-base-modifier-success: var(--DM-base-modifier-success);
+    --LM-base-modifier-error: var(--DM-base-modifier-error);
+    --LM-base-modifier-error-h: var(--DM-base-modifier-error-h);
+
+    --LM-base-txt-accent: var(--DM-base-txt-accent);
+    --LM-base-txt-accent-h: var(--DM-base-txt-accent-h);
+    --LM-base-txt-normal: var(--DM-base-txt-normal);
+    --LM-base-txt-muted: var(--DM-base-txt-muted);
+    --LM-base-txt-faint: var(--DM-base-txt-muted);
+    --LM-base-txt-error: var(--DM-base-txt-error);
+    --LM-base-txt-error-h: var(--DM-base-txt-error-h);
+
+    --LM-base-highlight-bg: var(--DM-base-highlight-bg);
+    --LM-base-highlight-bg-a: var(--DM-base-highlight-bg-a);
+
+    --LM-activeline-bg: var(--DM-activeline-bg);
+    --LM-cursor: var(--DM-cursor);
+
+    --LM-base-txt-select: var(--DM-base-txt-select);
+    --LM-base-txt-on-accent: var(--DM-base-txt-on-accent);
+
+    --LM-base-itrc-normal: var(--DM-base-itrc-normal); // (itrc) == interactive
+    --LM-base-itrc-h: var(--DM-base-itrc-h);
+    --LM-base-itrc-accent: var(--DM-base-itrc-accent);
+    --LM-base-itrc-accent-h: var(--DM-base-itrc-accent-h);
+    --LM-base-itrc-success: var(--DM-base-modifier-success);
+
+    --LM-base-scrollbar-bg: var(--DM-base-scrollbar-bg);
+    --LM-base-scrollbar-bg-a: var(--DM-base-scrollbar-bg-a);
+
+    --LM-popover-border: var(--DM-popover-border);
+    --LM-popover-shadow: var(--DM-popover-shadow);
+    --LM-popover-bg: var(--DM-base-bg);
+
+    --LM-prompt-border: var(--DM-prompt-border);
+
+    --LM-suggestion-container-bg: var(--DM-suggestion-container-bg);
+    --LM-suggestion-item-sel-bg: var(--DM-suggestion-item-sel-bg);
+    --LM-suggestion-highlight: var(--DM-suggestion-highlight);
+
+    --LM-kbd-bg: var(--DM-kbd-bg);
+    --LM-kbd-sel-bg: var(--DM-kbd-sel-bg);
+    --LM-kbd-sel-border: var(--DM-kbd-sel-border);
+
+    --LM-tooltip-bg: var(--DM-tooltip-bg);
+
+    --LM-modal-bg: var(--DM-modal-bg);
+    --LM-modal-settings-border: var(--DM-modal-settings-border);
+    --LM-settings-button-bg: var(--interactive-accent);
+
+    --LM-slide-dot: var(--DM-slide-dot);
+
+    --LM-settings-checkbox-container-bg: var(
+      --DM-settings-checkbox-container-bg
+    );
+    --LM-settings-checkbox-container-enabled-bg: var(
+      --DM-settings-checkbox-container-enabled-bg
+    );
+    --LM-settings-checkbox-container-bg-h: var(
+      --DM-settings-checkbox-container-bg-h
+    );
+
+    --LM-T-comment-meta: var(--DM-T-comment-meta);
+    --LM-T-constant-symbol: var(--DM-T-constant-symbol);
+    --LM-T-punctuation-bracket: var(--DM-T-punctuation-bracket);
+    --LM-T-number-boolean: var(--DM-T-number-boolean);
+    --LM-T-string-char: var(--DM-T-string-char);
+    --LM-T-operator-variable: var(--DM-T-operator-variable);
+    --LM-T-function-type: var(--DM-T-function-type);
+    --LM-T-keyword: var(--DM-T-keyword);
+    --LM-T-regex-imp: var(--DM-T-regex-imp);
+    --LM-T-general: var(--DM-T-general);
+    --LM-T-tag: var(--DM-T-tag);
+
+    --LM-L-T-default: var(--DM-L-T-default);
+    --LM-L-T-formatting: var(--DM-L-T-formatting);
+    --LM-L-T-tag: var(--DM-L-T-tag);
+    --LM-L-T-bracket: var(--DM-L-T-bracket);
+    --LM-L-T-number: var(--DM-L-T-number);
+    --LM-L-T-error: var(--DM-L-T-error);
+    --LM-L-T-variable: var(--DM-L-T-variable);
+
+    --LM-nav-file-a: var(--DM-nav-file-a);
+    --LM-nav-tag-bg: var(--DM-nav-tag-bg);
+
+    --LM-resize-handles-bg: var(--DM-resize-handles-bg);
+    --LM-resize-handles-bg-h: var(--DM-resize-handles-bg-h);
+
+    --LM-FM-limits: var(--DM-FM-limits);
+    --LM-FM-tag: var(--DM-FM-tag);
+
+    --LM-blockquote-bg: var(--DM-blockquote-bg);
+
+    --LM-EV-CB-bg: var(--DM-EV-CB-bg);
+    --LM-EV-IC-bg: var(--DM-EV-IC-bg);
+    --LM-EV-IC: var(--DM-EV-IC);
+    --LM-PV-CB-copy-button: var(--DM-PV-CB-copy-button);
+
+    --LM-borgonia: var(--DM-borgonia);
+
+    --LM-tables-thead-bg: var(--DM-tables-thead-bg);
+
+    --LM-bold: var(--DM-bold);
+    --LM-italic: var(--DM-italic);
+
+    --LM-PU_pu-bf-bg: var(--DM-PU_pu-bf-bg);
+    --LM-PU_pu-tl-bg: var(--DM-PU_pu-tl-bg);
+    --LM-PU_pu-ct-bg: var(--DM-PU_pu-ct-bg);
+    --LM-PU_pu-info-bf-bg: var(--DM-PU_pu-info-bf-bg);
+    --LM-PU_pu-info-tl-bg: var(--DM-PU_pu-info-tl-bg);
+    --LM-PU_pu-info-ct-bg: var(--DM-PU_pu-info-ct-bg);
+    --LM-PU_pu-imp-bf-bg: var(--DM-PU_pu-imp-bf-bg);
+    --LM-PU_pu-imp-tl-bg: var(--DM-PU_pu-imp-tl-bg);
+    --LM-PU_pu-imp-ct-bg: var(--DM-PU_pu-imp-ct-bg);
+    --LM-PU_pu-quest-bf-bg: var(--DM-PU_pu-quest-bf-bg);
+    --LM-PU_pu-quest-tl-bg: var(--DM-PU_pu-quest-tl-bg);
+    --LM-PU_pu-quest-ct-bg: var(--DM-PU_pu-quest-ct-bg);
+    --LM-PU_pu-check-bf-bg: var(--DM-PU_pu-check-bf-bg);
+    --LM-PU_pu-check-tl-bg: var(--DM-PU_pu-check-tl-bg);
+    --LM-PU_pu-check-ct-bg: var(--DM-PU_pu-check-ct-bg);
+    --LM-PU_pu-fail-bf-bg: var(--DM-PU_pu-fail-bf-bg);
+    --LM-PU_pu-fail-tl-bg: var(--DM-PU_pu-fail-tl-bg);
+    --LM-PU_pu-fail-ct-bg: var(--DM-PU_pu-fail-ct-bg);
+
+    --LM-P-calendar-today: var(--DM-P-calendar-today);
+    --LM-P-calendar-today-bg: var(--DM-P-calendar-today-bg);
+    --LM-P-calendar-day-bg-h: var(--DM-P-calendar-day-bg-h);
+
+    --LM-P-dataview-th-bg: var(--DM-P-dataview-th-bg);
+    --LM-P-dataview-th-border: var(--DM-P-dataview-th-border);
+    --LM-P-dataview-th-border-bottom: var(--DM-P-dataview-th-border-bottom);
+    --LM-P-dataview-td-border: var(--DM-P-dataview-td-border);
+
+    --LM-P-dialogue-bg: var(--DM-P-dialogue-bg);
+
+    --LM-P-kanban-hr-wrapper: var(--DM-P-kanban-hr-wrapper);
+    --LM-P-kanban-item-border: var(--DM-P-kanban-item-border);
+
+    --LM-P-langTool-button-bg: var(--DM-P-langTool-button-bg);
+    --LM-P-langTool-button-bg-h: var(--DM-P-langTool-button-bg-h);
+
+    --LM-SS-hidden-hl: var(--DM-SS-hidden-hl);
+    --LM-SS-hidden-hl-a: var(--DM-SS-hidden-hl-a);
+
+    --LM-graph-tag: var(--DM-graph-tag);
+    --LM-graph-attach: var(--DM-graph-attach);
+  }
+}
+
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    #calendar-container {
+      --color-text-weeknum: #c0997d;
+      --color-background-weeknum: #3b2e21;
+      --color-background-weekend: #3b2e21;
+      --color-text-day: #cca68a;
+    }
+  }
+}

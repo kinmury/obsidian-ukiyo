@@ -1,0 +1,34 @@
+/* Status Bar */
+
+.theme-dark,
+.theme-light {
+  .status-bar {
+    border: none;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    background: transparent;
+  }
+
+  .status-bar-item {
+    display: block;
+    background-color: var(--statusbar-item-background);
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+
+    &:first-of-type {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/* Language Tool Integration */
+
+@mixin notHover {
+  transition: 0.125s ease-in-out;
+  background-color: var(--P-langTool-button-bg);
+}
+
+@mixin hover {
+  background-color: var(--P-langTool-button-bg-h);
+}
+
+.theme-dark,
+.theme-light {
+  .lt-buttoncontainer {
+    & > button {
+      @include notHover;
+
+      &:hover {
+        @include hover;
+      }
+    }
+  }
+
+  .lt-ignore-btn {
+    @include notHover;
+
+    &:hover {
+      @include hover;
+    }
+  }
+}

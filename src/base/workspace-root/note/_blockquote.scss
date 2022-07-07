@@ -1,0 +1,15 @@
+/* Blockquote */
+
+.theme-dark,
+.theme-light {
+  .markdown-preview-view {
+    blockquote {
+      margin-inline-start: 10px;
+      margin-inline-end: 10px;
+
+      border: none;
+      border-left: 3px solid var(--background-modifier-border);
+      background-color: var(--blockquote-background);
+    }
+  }
+}

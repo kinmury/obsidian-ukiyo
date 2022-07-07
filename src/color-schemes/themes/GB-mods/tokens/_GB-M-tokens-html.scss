@@ -1,0 +1,20 @@
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .cm-tag {
+      color: #156cb4;
+
+      &.cm-bracket {
+        color: #492200;
+      }
+    }
+
+    .cm-attribute:not(pre[class*="language-"]):not(.cm-hmd-codeblock) {
+      color: #4d008b;
+    }
+
+    .cm-string:not(.cm-hmd-codeblock) {
+      color: #743400;
+    }
+  }
+}

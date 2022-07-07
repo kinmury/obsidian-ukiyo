@@ -1,0 +1,18 @@
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .graph-controls {
+      background-color: var(--background-secondary);
+    }
+
+    .graph-control-section-header {
+      color: #966f4d;
+    }
+
+    .tree-item-icon.collapse-icon {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

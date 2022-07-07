@@ -1,0 +1,48 @@
+/* Kanban */
+
+.theme-dark,
+.theme-light {
+  .kanban-plugin__lane-title {
+    text-align: center;
+  }
+
+  .kanban-plugin__board.kanban-plugin__board {
+    & > div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, var(--lane-width));
+      width: 100%;
+      gap: 10px;
+      overflow-y: auto;
+    }
+  }
+
+  .kanban-plugin__markdown-preview-view {
+    & > div {
+      & > * {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+    }
+  }
+
+  .kanban-plugin__lane-header-wrapper {
+    border-bottom: 1px solid var(--P-kanban-hr-wrapper);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .kanban-plugin__lane {
+    border: 2px solid var(--background-modifier-border);
+  }
+  .kanban-plugin__item {
+    transition: 0.2s ease-in-out !important;
+    border-radius: 4px;
+    border: 1px solid var(--P-kanban-item-border);
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/* LaTeX Mathjax Tokens */
+
+.theme-dark,
+.theme-light {
+  .cm-s-obsidian {
+    span {
+      .cm-math {
+        color: var(--latex-token-default);
+      }
+
+      .cm-formatting-math {
+        color: var(--latex-token-formatting) !important;
+      }
+
+      .cm-tag.cm-math {
+        color: var(--latex-token-tag);
+      }
+
+      .cm-bracket.cm-math {
+        color: var(--latex-token-bracket);
+      }
+
+      .cm-number.cm-math {
+        color: var(--latex-token-number);
+      }
+
+      .cm-error.cm-math {
+        color: var(--latex-token-error);
+      }
+
+      span.cm-variable-2.cm-math {
+        color: var(--latex-token-variable);
+      }
+    }
+  }
+}

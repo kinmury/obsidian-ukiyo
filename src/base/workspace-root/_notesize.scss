@@ -1,0 +1,9 @@
+/* Note Size - Readable Line Length */
+
+.theme-dark,
+.theme-light {
+  .CodeMirror-wrap,
+  .markdown-preview-section {
+    min-width: 60%;
+  }
+}

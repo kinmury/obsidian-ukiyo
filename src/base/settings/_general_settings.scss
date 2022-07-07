@@ -1,0 +1,193 @@
+/* General Settings */
+
+.theme-dark,
+.theme-light {
+  .modal-bg {
+    background-color: var(--modal-background);
+  }
+
+  .modal-close-button {
+    right: 13px;
+  }
+
+  .modal {
+    box-shadow: var(--basic-BS);
+
+    &.mod-settings {
+      width: 97vw;
+      max-width: 97vw;
+      height: 51.9vw;
+      border-radius: 0px;
+      border: 2px solid var(--modal-settings-border);
+
+      & .vertical-tab-header {
+        flex-basis: 300px;
+        height: 51.9vw;
+        padding: 0px;
+      }
+
+      & .vertical-tab-content-container {
+        background-color: var(--background-secondary);
+        padding-top: 10px;
+        padding-bottom: 0px;
+        height: 51.9vw;
+      }
+    }
+
+    & button:not(.mod-cta):not(.mod-warning) {
+      transition: 0.12s ease-in-out;
+      background-color: var(--modal-settings-button-background);
+    }
+
+    .mod-warning {
+      font-weight: bold;
+    }
+  }
+
+  .vertical-tab-nav-item {
+    transition: 0.1s ease-in-out;
+
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+
+  .setting-item {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  .setting-item-control {
+    & button {
+      transition: 0.15s ease-in-out;
+    }
+  }
+
+  .modal {
+    button {
+      transition: 0.15s ease-in-out;
+    }
+  }
+
+  .checkbox-container {
+    background-color: var(--settings-checkbox-container-background);
+    border-radius: 4px;
+
+    &::after {
+      border-radius: 4px;
+    }
+
+    &.is-enabled {
+      background-color: var(--settings-checkbox-container-enabled-background);
+    }
+
+    &:hover {
+      background-color: var(--settings-checkbox-container-background-hover);
+    }
+  }
+
+  .setting-hotkey {
+    background-color: var(--kbd-background);
+  }
+
+  .task-list-item-checkbox {
+    width: 15px;
+    height: 15px;
+    filter: hue-rotate(244deg);
+  }
+
+  .setting-editor-extra-setting-button {
+    transition: 0.2s ease-in-out;
+  }
+
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    transition: 0.15s ease-in-out;
+  }
+
+  input[type="range"] {
+    &::-webkit-slider-thumb {
+      background-color: var(--slide-dot);
+      border-radius: 3px;
+      height: 13px;
+    }
+
+    &::-webkit-slider-runnable-track {
+      height: 7px;
+    }
+  }
+
+  .dropdown {
+    transition: 0.25s ease-in-out;
+    border-radius: 4px;
+  }
+
+  .hotkey-search-container {
+    input {
+      width: 100em;
+    }
+  }
+
+  .login-field {
+    max-width: 40em;
+
+    input {
+      width: 24em !important;
+    }
+  }
+}
+
+.theme-dark {
+  .modal {
+    & button:not(.mod-cta):not(.mod-warning) {
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+  }
+
+  .setting-item-info {
+    transition: 0.25s ease-in-out;
+    filter: brightness(100%);
+
+    &:hover {
+      filter: brightness(130%);
+    }
+  }
+
+  .vertical-tab-nav-item {
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+
+  span.mod-warning {
+    font-weight: bold;
+  }
+}
+
+.theme-light {
+  .modal {
+    & button:not(.mod-cta):not(.mod-warning) {
+      color: white;
+    }
+  }
+
+  .setting-item-info {
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      filter: brightness(50%);
+    }
+  }
+
+  .vertical-tab-nav-item {
+    color: var(--settings-nav-item);
+
+    &:hover {
+      filter: brightness(105%);
+    }
+  }
+}

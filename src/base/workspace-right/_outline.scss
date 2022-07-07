@@ -1,0 +1,13 @@
+/* Outline */
+
+.theme-dark,
+.theme-light {
+  .outline .tree-item-children {
+    margin-left: 10px;
+    border-left: 1px solid var(--interactive-accent);
+  }
+
+  .outline .tree-item-children .tree-item-self {
+    padding-left: 23px;
+  }
+}

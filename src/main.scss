@@ -1,0 +1,70 @@
+/* Fonts */
+@use "./fonts/F-default";
+@use "./fonts/F-code";
+
+/* Color Schemes */
+@use "./color-schemes/CS-main";
+
+/* Base Elements */
+@use "./base/base-main";
+
+/* Features */
+@use "./features/F-main";
+
+/* Plugins */
+@use "./plugins/P-main";
+
+/* PDF */
+@use "./PDF/PDF-main";
+
+:root,
+body {
+  --default-font: "default-font";
+  --font-monospace: "code-font";
+  --font-text-size: 16px !important;
+}
+
+/* TBM - To Be Moved - Plain Text */
+.theme-dark,
+.theme-light {
+  /* Everything in general */
+  .cm-s-obsidian .CodeMirror-code *,
+  p {
+    line-height: 21px;
+  }
+
+  /* Headings */
+  .HyperMD-header {
+    padding: 0px;
+  }
+
+  .HyperMD-header .cm-header-1,
+  h1 {
+    line-height: 40px;
+  }
+
+  .HyperMD-header .cm-header-2,
+  h2 {
+    line-height: 33px;
+  }
+
+  .HyperMD-header .cm-header-3,
+  h3 {
+    line-height: 30px;
+  }
+
+  .HyperMD-header .cm-header-4,
+  h4 {
+    line-height: 28px;
+  }
+
+  .HyperMD-header .cm-header-5,
+  h5 {
+    line-height: 25px;
+  }
+
+  .HyperMD-header .cm-header-6,
+  h6 {
+    line-height: 24px;
+  }
+}

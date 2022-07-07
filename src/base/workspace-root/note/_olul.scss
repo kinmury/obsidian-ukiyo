@@ -1,0 +1,155 @@
+/* Ordered Lists / Unordered Lists */
+
+.theme-dark,
+.theme-light {
+  ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+  }
+
+  ol > li {
+    display: table;
+    counter-increment: item;
+  }
+
+  ol > li:before {
+    content: counters(item, ".") ".";
+    display: table-cell;
+    padding-right: 0.6em;
+  }
+
+  ol {
+    & > li:nth-child(1):before,
+    & > li:nth-child(11):before,
+    & > li:nth-child(21):before,
+    & > li:nth-child(31):before,
+    & > li:nth-child(41):before,
+    & > li:nth-child(51):before,
+    & > li:nth-child(61):before,
+    & > li:nth-child(71):before,
+    & > li:nth-child(81):before,
+    & > li:nth-child(91):before,
+    & > li:nth-child(101):before,
+    & > li:nth-child(111):before,
+    & > li:nth-child(121):before,
+    & > li:nth-child(131):before,
+    & > li:nth-child(141):before,
+    & > li:nth-child(151):before,
+    & > li:nth-child(161):before,
+    & > li:nth-child(171):before,
+    & > li:nth-child(181):before,
+    & > li:nth-child(191):before,
+    & > li:nth-child(201):before {
+      padding-right: 0.9em;
+    }
+
+    & > li:nth-child(17):before,
+    & > li:nth-child(27):before,
+    & > li:nth-child(37):before,
+    & > li:nth-child(47):before,
+    & > li:nth-child(57):before,
+    & > li:nth-child(67):before,
+    & > li:nth-child(77):before,
+    & > li:nth-child(87):before,
+    & > li:nth-child(97):before,
+    & > li:nth-child(107):before,
+    & > li:nth-child(117):before,
+    & > li:nth-child(127):before,
+    & > li:nth-child(137):before,
+    & > li:nth-child(147):before,
+    & > li:nth-child(157):before,
+    & > li:nth-child(167):before,
+    & > li:nth-child(177):before,
+    & > li:nth-child(187):before,
+    & > li:nth-child(197):before,
+    & > li:nth-child(207):before {
+      padding-right: 0.7em;
+    }
+  }
+
+  li ol > li {
+    margin: 0;
+  }
+
+  li ol > li:before {
+    content: counters(item, ".") ".";
+  }
+
+  li::marker,
+  li::before {
+    color: var(--li-marker) !important;
+  }
+
+  ol ul {
+    margin-left: -10px;
+  }
+
+  ol ul ul {
+    margin-left: 0px;
+  }
+
+  ol ul ul ul {
+    margin-left: 5px;
+  }
+
+  ol ul ul ul ul {
+    margin-left: 14px;
+  }
+
+  ol ul ul ul ul ul {
+    margin-left: 22px;
+  }
+
+  ol ul ul ul ul ul ul {
+    margin-left: 30px;
+  }
+
+  li blockquote {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .cm-hmd-list-indent {
+    & .cm-tab {
+      position: relative;
+
+      &:first-of-type {
+        &::before {
+          left: 4px;
+        }
+      }
+
+      &::before {
+        content: "";
+        border-left: 1px solid var(--indentation-guide);
+        position: absolute;
+
+        left: 3px;
+        top: -5px;
+        bottom: -4px;
+      }
+    }
+  }
+
+  ol {
+    .list-collapse-indicator {
+      margin-left: -30px;
+      margin-top: 12px;
+    }
+  }
+
+  ul {
+    .list-collapse-indicator {
+      margin-top: -3px;
+    }
+  }
+
+  .cm-s-obsidian span.cm-formatting-list {
+    color: var(--li-marker);
+  }
+}

@@ -1,0 +1,14 @@
+/* Modal */
+
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .modal {
+      .modal-title,
+      .modal-content,
+      .u-muted {
+        color: #c9a083;
+      }
+    }
+  }
+}

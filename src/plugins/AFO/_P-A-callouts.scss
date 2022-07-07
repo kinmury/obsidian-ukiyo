@@ -1,0 +1,75 @@
+/* Callouts */
+
+.theme-dark,
+.theme-light {
+  .callout {
+    & .callout-title {
+      padding: 5px;
+
+      & h1,
+      & h2,
+      & h3,
+      & h4,
+      & h5,
+      & h6 {
+        margin: 0px;
+      }
+
+      & .MathJax {
+        margin: 3px;
+      }
+    }
+
+    & .callout-content {
+      overflow-x: auto;
+      padding-top: 7px;
+      padding-right: 10px;
+      padding-bottom: 7px;
+      padding-left: 10px;
+
+      & p,
+      & strong,
+      & i,
+      & a {
+        padding-left: 0px;
+        margin: 0px;
+      }
+
+      & ul,
+      & ol {
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+        padding-inline-start: 35px;
+      }
+
+      & h1,
+      & h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      & h3,
+      & h4 {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+
+      & h5,
+      & h6 {
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+
+      & img,
+      & table,
+      & .dataview {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      & .MathJax {
+        margin: 3px;
+      }
+    }
+  }
+}

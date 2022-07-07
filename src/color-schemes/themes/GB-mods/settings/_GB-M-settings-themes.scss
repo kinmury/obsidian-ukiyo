@@ -1,0 +1,11 @@
+/* Themes Settings */
+
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .mod-community-theme {
+      --text-muted: #be662b;
+      color: #aa896c;
+    }
+  }
+}

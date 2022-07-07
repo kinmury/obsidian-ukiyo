@@ -1,0 +1,97 @@
+/*
+    Dataview - Books
+    Makes a Dataview Table display like a bunch of "books/cards"
+*/
+
+.theme-dark,
+.theme-light {
+  .dv-books {
+    .dataview {
+      .table-view-tr-header {
+        display: none;
+      }
+
+      tbody {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-column-gap: 0.75rem;
+        grid-row-gap: 0.75rem;
+      }
+
+      tbody > tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px;
+        overflow: hidden;
+
+        border: 3px solid var(--background-modifier-border);
+        border-radius: 3px;
+        transition: all 0.175s ease-in-out;
+
+        &:hover {
+          transform: translate(0%, -1.2%);
+          box-shadow: var(--background-modifier-box-shadow) 0px 20px 30px -10px;
+        }
+      }
+
+      tbody > tr > td {
+        display: flex;
+        white-space: normal;
+
+        padding: 0px;
+        padding-bottom: 5px;
+
+        justify-content: center;
+        text-align: center;
+
+        border: none;
+        border-top: 1px solid rgba(49, 49, 49, 0.5);
+
+        &:first-of-type,
+        &:nth-child(2) {
+          border: none;
+        }
+
+        img {
+          border: none;
+          aspect-ratio: 7/10;
+          object-fit: contain;
+
+          &:active {
+            cursor: default;
+            display: flex;
+
+            position: relative;
+            object-fit: contain;
+            text-align: initial;
+
+            transform: none;
+
+            height: auto;
+            width: 250px;
+
+            padding: 0px;
+
+            margin: 0px;
+
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            z-index: initial;
+
+            background-color: transparent;
+            background-position: 0 0;
+            background-size: 0px 0px;
+          }
+        }
+
+        &:last-of-type {
+          padding: 2px;
+        }
+      }
+    }
+  }
+}

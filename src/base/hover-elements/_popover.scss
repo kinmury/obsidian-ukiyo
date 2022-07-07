@@ -1,0 +1,46 @@
+/* Popover */
+
+.theme-dark,
+.theme-light {
+  .popover {
+    &.hover-popover {
+      border-radius: 4px;
+      min-height: 100px;
+      max-height: 700px;
+      width: 750px;
+
+      border: 2px solid var(--popover-border);
+      box-shadow: 1px 1px 4px var(--popover-shadow);
+      background-color: var(--popover-bg);
+
+      & .markdown-embed {
+        height: 600px;
+        width: 738px;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 6px;
+
+        & .markdown-embed {
+          height: unset;
+        }
+      }
+
+      & .markdown-embed-link {
+        & svg {
+          margin-top: 1px;
+          margin-left: 3px;
+        }
+
+        height: 25px;
+        width: 26px;
+
+        margin-right: 0px;
+
+        background-color: var(--popover-bg);
+        border: 2px solid var(--popover-border);
+        border-radius: 20px;
+      }
+    }
+  }
+}

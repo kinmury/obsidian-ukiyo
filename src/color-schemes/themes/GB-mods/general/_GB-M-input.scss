@@ -1,0 +1,16 @@
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    input {
+      color: #e2a977;
+
+      &::placeholder {
+        color: #976940;
+      }
+
+      &::selection {
+        background-color: #5c3819;
+      }
+    }
+  }
+}

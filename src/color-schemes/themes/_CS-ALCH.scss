@@ -1,0 +1,405 @@
+/* Alchemy - Color Scheme */
+
+/* Background Patterns */
+
+.theme-dark,
+.theme-light {
+  &.AT_Alch {
+    .workspace-split.mod-vertical.mod-root .view-content {
+      background-image: radial-gradient(#c6b18b09 20%, var(--DM-base-bg) 20%);
+      background-position: 0 0;
+      background-size: 7px 7px;
+    }
+
+    .view-header,
+    .titlebar,
+    .workspace-ribbon,
+    .workspace-tabs .workspace-tab-header-container,
+    .modal.mod-settings .vertical-tab-content-container,
+    .modal.mod-settings .vertical-tab-content,
+    .modal-content.community-plugin .community-plugin-info,
+    .workspace-tab-header-inner {
+      background-color: #1d1d1d;
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.3' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: 7px;
+    }
+
+    .view-header-title-container::after {
+      display: none;
+    }
+
+    .workspace-tabs .workspace-leaf,
+    .modal.mod-settings .vertical-tab-header,
+    .modal-content.community-plugin .community-plugin-search {
+      background-color: #1d1d1d;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23262626' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+    }
+
+    .modal.mod-settings {
+      .vertical-tab-nav-item,
+      .setting-item {
+        transition: 0.2s all ease-in-out;
+        background-color: transparent;
+
+        &:hover {
+          background-color: var(--DM-base-bg);
+        }
+      }
+    }
+
+    button,
+    .flair {
+      color: #1d1d1d;
+      font-weight: bold;
+    }
+
+    .community-theme.is-selected {
+      button {
+        color: var(--text-faint);
+      }
+
+      .community-theme-title {
+        color: #1d1d1d;
+      }
+
+      .community-theme-info.u-center-text {
+        color: #1d1d1d;
+        font-weight: bold;
+
+        &::after {
+          color: #1d1d1d;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/* Color Scheme */
+.theme-dark,
+.theme-light {
+  &.AT_Alch {
+    /*----------
+    DARK MODE
+    ----------*/
+    /*<Base Variables>*/
+    --DM-base-bg: #1d1d1d;
+
+    --DM-base-bg-prim: var(--DM-base-bg);
+    --DM-base-bg-prim-alt: var(--DM-base-bg);
+    --DM-base-bg-sec: var(--DM-base-bg);
+    --DM-base-bg-sec-alt: var(--DM-base-bg);
+
+    --DM-base-modifier-bg: #2a2a2b;
+    --DM-base-modifier-bg-h: #313135; // (-h) == hover
+    --DM-base-modifier-border: #5d6886;
+    --DM-base-modifier-box-shadow: #20140d;
+    --DM-base-modifier-cover: #ff00ff;
+
+    --DM-base-modifier-success: #3d5340;
+    --DM-base-modifier-error: #800000;
+    --DM-base-modifier-error-h: #a10000;
+
+    --DM-base-txt-accent: #778bce;
+    --DM-base-txt-accent-h: #8698d4;
+    --DM-base-txt-normal: #ccbd9e;
+    --DM-base-txt-muted: #b39c70;
+    --DM-base-txt-faint: var(--DM-base-txt-muted);
+    --DM-base-txt-error: #c50909;
+    --DM-base-txt-error-h: #ff0000;
+
+    --DM-base-highlight-bg: rgba(167, 105, 43, 0.4);
+    --DM-base-highlight-bg-a: rgba(170, 107, 45, 0.4); // (-a) == active
+
+    --DM-activeline-bg: #26292e;
+    --DM-cursor: #ccbd9e;
+
+    --DM-base-txt-select: #26292e;
+    --DM-base-txt-on-accent: #f0c7aa;
+
+    --DM-base-itrc-normal: #4d6592; // (itrc) == interactive
+    --DM-base-itrc-h: #4f6ea8;
+    --DM-base-itrc-accent: #b17f54;
+    --DM-base-itrc-accent-h: #c48956;
+    --DM-base-itrc-success: var(--DM-base-modifier-success);
+
+    --DM-base-scrollbar-bg: #333841;
+    --DM-base-scrollbar-bg-a: #3f4653;
+
+    /*<Theme Variables>*/
+    --DM-popover-border: #92735f;
+    --DM-popover-shadow: #6d5443;
+    --DM-popover-bg: var(--DM-base-bg);
+
+    --DM-prompt-border: #b87f59;
+
+    --DM-suggestion-container-bg: #242424;
+    --DM-suggestion-item-sel-bg: #2b2b2b; // (sel) == selected
+    --DM-suggestion-highlight: #caac98;
+
+    --DM-kbd-bg: #2c3146;
+    --DM-kbd-sel-bg: #414968;
+    --DM-kbd-sel-border: #92735f;
+
+    --DM-tooltip-bg: #2c3146;
+
+    --DM-modal-bg: #1015249a;
+    --DM-modal-settings-border: #414968;
+    --DM-settings-button-bg: var(--interactive-accent);
+
+    --DM-slide-dot: #caac98;
+
+    --DM-settings-checkbox-container-bg: #34426b;
+    --DM-settings-checkbox-container-enabled-bg: #2d6a83;
+    --DM-settings-checkbox-container-bg-h: #caac98;
+
+    --DM-T-comment-meta: #9daec2;
+    --DM-T-constant-symbol: #68b8b4;
+    --DM-T-punctuation-bracket: #dadada;
+    --DM-T-number-boolean: #e2a97a;
+    --DM-T-string-char: #cebf3f;
+    --DM-T-operator-variable: #91b8ec;
+    --DM-T-function-type: #5dadee;
+    --DM-T-keyword: #bd82ec;
+    --DM-T-regex-imp: #fd971f;
+    --DM-T-general: #5cb392;
+    --DM-T-tag: #f92672;
+
+    --DM-L-T-default: #9e9e9e;
+    --DM-L-T-formatting: #23939b;
+    --DM-L-T-tag: #3a8d9e;
+    --DM-L-T-bracket: #9e9e9e;
+    --DM-L-T-number: #c08b60;
+    --DM-L-T-error: #8b3535;
+    --DM-L-T-variable: #4faaa6;
+
+    --DM-nav-file-a: #31363d;
+    --DM-nav-tag-bg: #2a374b;
+
+    --DM-resize-handles-bg: #243746;
+    --DM-resize-handles-bg-h: #355672;
+
+    --DM-FM-limits: #caac98; // (FM) = FrontMatter
+    --DM-FM-tag: #98a4ca;
+
+    --DM-blockquote-bg: #262a38;
+
+    --DM-EV-CB-bg: #202b35;
+    --DM-EV-IC-bg: #202b35;
+    --DM-EV-IC: #f7367c;
+    --DM-PV-CB-copy-button: #2a3353;
+
+    --DM-borgonia: #a51414;
+
+    --DM-tables-thead-bg: #2f334b;
+
+    --DM-bold: #469b97;
+    --DM-italic: #52a87d;
+
+    --DM-PU_pu-bf-bg: #334c77; // (PU) == PopUp / (pu) == Default / (bf) == before
+    --DM-PU_pu-tl-bg: #344258; // (tl) == title
+    --DM-PU_pu-ct-bg: #2e3a4e; // (ct) == content
+    // --
+    --DM-PU_pu-info-bf-bg: #177a7a;
+    --DM-PU_pu-info-tl-bg: #204444;
+    --DM-PU_pu-info-ct-bg: #1e3d3d;
+    // --
+    --DM-PU_pu-imp-bf-bg: #a36013;
+    --DM-PU_pu-imp-tl-bg: #41301c;
+    --DM-PU_pu-imp-ct-bg: #3a2b1c;
+    // --
+    --DM-PU_pu-quest-bf-bg: #6e1b5c;
+    --DM-PU_pu-quest-tl-bg: #3f1837;
+    --DM-PU_pu-quest-ct-bg: #33162d;
+    // --
+    --DM-PU_pu-check-bf-bg: #1b7736;
+    --DM-PU_pu-check-tl-bg: #173b22;
+    --DM-PU_pu-check-ct-bg: #16331e;
+    // --
+    --DM-PU_pu-fail-bf-bg: #800000;
+    --DM-PU_pu-fail-tl-bg: #4e1e1e;
+    --DM-PU_pu-fail-ct-bg: #441d1d;
+
+    --DM-P-calendar-today: #cca68a; // (P) - Plugin
+    --DM-P-calendar-today-bg: #75625744;
+    --DM-P-calendar-day-bg-h: #795e469a;
+
+    --DM-P-dataview-th-bg: #2f334b;
+    --DM-P-dataview-th-border: #776657;
+    --DM-P-dataview-th-border-bottom: #776657;
+    --DM-P-dataview-td-border: #776657;
+
+    --DM-P-dialogue-bg: #2f334b;
+
+    --DM-P-kanban-hr-wrapper: #5d6886;
+    --DM-P-kanban-item-border: #887464;
+
+    --DM-P-langTool-button-bg: #5d6886;
+    --DM-P-langTool-button-bg-h: #637092;
+
+    --DM-SS-hidden-hl: #5d6886; // (hl) == Horizontal Line
+    --DM-SS-hidden-hl-a: #3b4255;
+
+    --DM-graph-tag: #a04420;
+    --DM-graph-attach: #5d6886;
+
+    /* Light Mode */
+    --LM-base-bg-prim: var(--DM-base-bg-prim);
+    --LM-base-bg-prim-alt: var(--DM-base-bg-prim-alt);
+    --LM-base-bg-sec: var(--DM-base-bg-sec);
+    --LM-base-bg-sec-alt: var(--DM-base-bg-sec-alt);
+
+    --LM-base-modifier-bg: var(--DM-base-modifier-bg);
+    --LM-base-modifier-bg-h: var(--DM-base-modifier-bg-h);
+    --LM-base-modifier-border: var(--DM-base-modifier-border);
+    --LM-base-modifier-box-shadow: var(--DM-base-modifier-box-shadow);
+    --LM-base-modifier-cover: var(--DM-base-modifier-cover);
+
+    --LM-base-modifier-success: var(--DM-base-modifier-success);
+    --LM-base-modifier-error: var(--DM-base-modifier-error);
+    --LM-base-modifier-error-h: var(--DM-base-modifier-error-h);
+
+    --LM-base-txt-accent: var(--DM-base-txt-accent);
+    --LM-base-txt-accent-h: var(--DM-base-txt-accent-h);
+    --LM-base-txt-normal: var(--DM-base-txt-normal);
+    --LM-base-txt-muted: var(--DM-base-txt-muted);
+    --LM-base-txt-faint: var(--DM-base-txt-muted);
+    --LM-base-txt-error: var(--DM-base-txt-error);
+    --LM-base-txt-error-h: var(--DM-base-txt-error-h);
+
+    --LM-base-highlight-bg: var(--DM-base-highlight-bg);
+    --LM-base-highlight-bg-a: var(--DM-base-highlight-bg-a);
+
+    --LM-activeline-bg: var(--DM-activeline-bg);
+    --LM-cursor: var(--DM-cursor);
+
+    --LM-base-txt-select: var(--DM-base-txt-select);
+    --LM-base-txt-on-accent: var(--DM-base-txt-on-accent);
+
+    --LM-base-itrc-normal: var(--DM-base-itrc-normal); // (itrc) == interactive
+    --LM-base-itrc-h: var(--DM-base-itrc-h);
+    --LM-base-itrc-accent: var(--DM-base-itrc-accent);
+    --LM-base-itrc-accent-h: var(--DM-base-itrc-accent-h);
+    --LM-base-itrc-success: var(--DM-base-modifier-success);
+
+    --LM-base-scrollbar-bg: var(--DM-base-scrollbar-bg);
+    --LM-base-scrollbar-bg-a: var(--DM-base-scrollbar-bg-a);
+
+    --LM-popover-border: var(--DM-popover-border);
+    --LM-popover-shadow: var(--DM-popover-shadow);
+    --LM-popover-bg: var(--DM-base-bg);
+
+    --LM-prompt-border: var(--DM-prompt-border);
+
+    --LM-suggestion-container-bg: var(--DM-suggestion-container-bg);
+    --LM-suggestion-item-sel-bg: var(--DM-suggestion-item-sel-bg);
+    --LM-suggestion-highlight: var(--DM-suggestion-highlight);
+
+    --LM-kbd-bg: var(--DM-kbd-bg);
+    --LM-kbd-sel-bg: var(--DM-kbd-sel-bg);
+    --LM-kbd-sel-border: var(--DM-kbd-sel-border);
+
+    --LM-tooltip-bg: var(--DM-tooltip-bg);
+
+    --LM-modal-bg: var(--DM-modal-bg);
+    --LM-modal-settings-border: var(--DM-modal-settings-border);
+    --LM-settings-button-bg: var(--interactive-accent);
+
+    --LM-slide-dot: var(--DM-slide-dot);
+
+    --LM-settings-checkbox-container-bg: var(
+      --DM-settings-checkbox-container-bg
+    );
+    --LM-settings-checkbox-container-enabled-bg: var(
+      --DM-settings-checkbox-container-enabled-bg
+    );
+    --LM-settings-checkbox-container-bg-h: var(
+      --DM-settings-checkbox-container-bg-h
+    );
+
+    --LM-T-comment-meta: var(--DM-T-comment-meta);
+    --LM-T-constant-symbol: var(--DM-T-constant-symbol);
+    --LM-T-punctuation-bracket: var(--DM-T-punctuation-bracket);
+    --LM-T-number-boolean: var(--DM-T-number-boolean);
+    --LM-T-string-char: var(--DM-T-string-char);
+    --LM-T-operator-variable: var(--DM-T-operator-variable);
+    --LM-T-function-type: var(--DM-T-function-type);
+    --LM-T-keyword: var(--DM-T-keyword);
+    --LM-T-regex-imp: var(--DM-T-regex-imp);
+    --LM-T-general: var(--DM-T-general);
+    --LM-T-tag: var(--DM-T-tag);
+
+    --LM-L-T-default: var(--DM-L-T-default);
+    --LM-L-T-formatting: var(--DM-L-T-formatting);
+    --LM-L-T-tag: var(--DM-L-T-tag);
+    --LM-L-T-bracket: var(--DM-L-T-bracket);
+    --LM-L-T-number: var(--DM-L-T-number);
+    --LM-L-T-error: var(--DM-L-T-error);
+    --LM-L-T-variable: var(--DM-L-T-variable);
+
+    --LM-nav-file-a: var(--DM-nav-file-a);
+    --LM-nav-tag-bg: var(--DM-nav-tag-bg);
+
+    --LM-resize-handles-bg: var(--DM-resize-handles-bg);
+    --LM-resize-handles-bg-h: var(--DM-resize-handles-bg-h);
+
+    --LM-FM-limits: var(--DM-FM-limits);
+    --LM-FM-tag: var(--DM-FM-tag);
+
+    --LM-blockquote-bg: var(--DM-blockquote-bg);
+
+    --LM-EV-CB-bg: var(--DM-EV-CB-bg);
+    --LM-EV-IC-bg: var(--DM-EV-IC-bg);
+    --LM-EV-IC: var(--DM-EV-IC);
+    --LM-PV-CB-copy-button: var(--DM-PV-CB-copy-button);
+
+    --LM-borgonia: var(--DM-borgonia);
+
+    --LM-tables-thead-bg: var(--DM-tables-thead-bg);
+
+    --LM-bold: var(--DM-bold);
+    --LM-italic: var(--DM-italic);
+
+    --LM-PU_pu-bf-bg: var(--DM-PU_pu-bf-bg);
+    --LM-PU_pu-tl-bg: var(--DM-PU_pu-tl-bg);
+    --LM-PU_pu-ct-bg: var(--DM-PU_pu-ct-bg);
+    --LM-PU_pu-info-bf-bg: var(--DM-PU_pu-info-bf-bg);
+    --LM-PU_pu-info-tl-bg: var(--DM-PU_pu-info-tl-bg);
+    --LM-PU_pu-info-ct-bg: var(--DM-PU_pu-info-ct-bg);
+    --LM-PU_pu-imp-bf-bg: var(--DM-PU_pu-imp-bf-bg);
+    --LM-PU_pu-imp-tl-bg: var(--DM-PU_pu-imp-tl-bg);
+    --LM-PU_pu-imp-ct-bg: var(--DM-PU_pu-imp-ct-bg);
+    --LM-PU_pu-quest-bf-bg: var(--DM-PU_pu-quest-bf-bg);
+    --LM-PU_pu-quest-tl-bg: var(--DM-PU_pu-quest-tl-bg);
+    --LM-PU_pu-quest-ct-bg: var(--DM-PU_pu-quest-ct-bg);
+    --LM-PU_pu-check-bf-bg: var(--DM-PU_pu-check-bf-bg);
+    --LM-PU_pu-check-tl-bg: var(--DM-PU_pu-check-tl-bg);
+    --LM-PU_pu-check-ct-bg: var(--DM-PU_pu-check-ct-bg);
+    --LM-PU_pu-fail-bf-bg: var(--DM-PU_pu-fail-bf-bg);
+    --LM-PU_pu-fail-tl-bg: var(--DM-PU_pu-fail-tl-bg);
+    --LM-PU_pu-fail-ct-bg: var(--DM-PU_pu-fail-ct-bg);
+
+    --LM-P-calendar-today: var(--DM-P-calendar-today);
+    --LM-P-calendar-today-bg: var(--DM-P-calendar-today-bg);
+    --LM-P-calendar-day-bg-h: var(--DM-P-calendar-day-bg-h);
+
+    --LM-P-dataview-th-bg: var(--DM-P-dataview-th-bg);
+    --LM-P-dataview-th-border: var(--DM-P-dataview-th-border);
+    --LM-P-dataview-th-border-bottom: var(--DM-P-dataview-th-border-bottom);
+    --LM-P-dataview-td-border: var(--DM-P-dataview-td-border);
+
+    --LM-P-dialogue-bg: var(--DM-P-dialogue-bg);
+
+    --LM-P-kanban-hr-wrapper: var(--DM-P-kanban-hr-wrapper);
+    --LM-P-kanban-item-border: var(--DM-P-kanban-item-border);
+
+    --LM-P-langTool-button-bg: var(--DM-P-langTool-button-bg);
+    --LM-P-langTool-button-bg-h: var(--DM-P-langTool-button-bg-h);
+
+    --LM-SS-hidden-hl: var(--DM-SS-hidden-hl);
+    --LM-SS-hidden-hl-a: var(--DM-SS-hidden-hl-a);
+
+    --LM-graph-tag: var(--DM-graph-tag);
+    --LM-graph-attach: var(--DM-graph-attach);
+  }
+}

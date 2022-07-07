@@ -1,0 +1,93 @@
+/* Tokens - Code */
+
+.theme-dark,
+.theme-light {
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata,
+  .cm-comment,
+  .cm-meta,
+  .cm-qualifier {
+    color: var(--token-comment-meta);
+  }
+
+  .token.namespace {
+    opacity: 0.7;
+  }
+
+  .token.property,
+  .token.tag,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    color: var(--token-constant-symbol);
+  }
+
+  .cm-tag {
+    color: var(--token-tag);
+    font-weight: bold;
+  }
+
+  .token.punctuation,
+  .cm-punctuation,
+  .cm-bracket,
+  .cm-hr {
+    color: var(--token-punctuation-bracket);
+  }
+
+  .token.boolean,
+  .token.number,
+  .cm-number {
+    color: var(--token-number-boolean);
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted,
+  .cm-string,
+  .cm-string-2 {
+    color: var(--token-string-char);
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string,
+  .token.variable,
+  .cm-operator,
+  .cm-link,
+  .cm-variable-2,
+  .cm-variable-3 {
+    color: var(--token-operator-variable);
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.function,
+  .token.class-name,
+  .cm-attribute,
+  .cm-type,
+  .cm-def {
+    color: var(--token-function-type);
+  }
+
+  .token.keyword,
+  .cm-keyword,
+  .cm-builtin {
+    color: var(--token-keyword);
+  }
+
+  .token.regex,
+  .token.important {
+    color: var(--token-regex-imp);
+  }
+
+  pre[class*="language-"] *:not(span) {
+    color: var(--token-general);
+  }
+}

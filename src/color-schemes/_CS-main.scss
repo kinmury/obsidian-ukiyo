@@ -1,0 +1,439 @@
+@use "./themes/CS-ukiyo"; /* Ukiyo */
+@use "./themes/CS-GC"; /* Golden Coffee */
+@use "./themes/CS-GB"; /* Golden Book */
+@use "./themes/CS-ALCH"; /* Alchmey */
+
+:root {
+  --basic-BS: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px; // (BS) == Box Shadow
+}
+
+.theme-dark {
+  /*< Base Variables >*/
+  --background-primary: var(--DM-base-bg-prim);
+  --background-primary-alt: var(--DM-base-bg-prim-alt);
+  --background-secondary: var(--DM-base-bg-sec);
+  --background-secondary-alt: var(--DM-base-bg-sec-alt);
+
+  --svg-faint: var(--text-muted);
+
+  --background-modifier-form-field: var(--DM-base-modifier-bg);
+  --background-modifier-form-field-highlighted: var(--DM-base-modifier-bg-h);
+  --background-modifier-border: var(--DM-base-modifier-border);
+  --background-modifier-box-shadow: var(--DM-base-modifier-box-shadow);
+
+  --background-modifier-success: var(--DM-base-modifier-success);
+  --background-modifier-error: var(--DM-base-modifier-error);
+  --background-modifier-error-hover: var(--DM-base-modifier-error-h);
+  --background-modifier-cover: var(--DM-base-modifier-cover);
+
+  --text-accent: var(--DM-base-txt-accent);
+  --text-accent-hover: var(--DM-base-txt-accent-h);
+
+  --text-normal: var(--DM-base-txt-normal);
+  --text-muted: var(--DM-base-txt-muted);
+  --text-faint: var(--DM-base-txt-faint);
+
+  --text-error: var(--DM-base-txt-error);
+  --text-error-hover: var(--DM-base-txt-error-h);
+
+  --text-highlight-bg: var(--DM-base-highlight-bg);
+  --text-highlight-bg-active: var(--DM-base-highlight-bg-a);
+
+  --text-selection: var(--DM-base-txt-select);
+  --text-on-accent: var(--DM-base-txt-on-accent);
+
+  --interactive-normal: var(--DM-base-itrc-normal);
+  --interactive-hover: var(--DM-base-itrc-h);
+  --interactive-accent: var(--DM-base-itrc-accent);
+  --interactive-accent-hover: var(--DM-base-itrc-accent-h);
+  --interactive-success: var(--DM-base-itrc-success);
+
+  --scrollbar-thumb-bg: var(--DM-base-scrollbar-bg);
+  --scrollbar-active-thumb-bg: var(--DM-base-scrollbar-bg-a);
+  --scrollbar-bg: transparent;
+
+  --highlight-mix-blend-mode: lighten;
+
+  /*< Theme Variables >*/
+  --graph-tag: var(--DM-graph-tag);
+  --graph-attach: var(--DM-graph-attach);
+
+  --popover-border: var(--DM-popover-border);
+  --popover-shadow: var(--DM-popover-shadow);
+  --popover-bg: var(--DM-popover-bg);
+
+  --prompt-border: var(--DM-prompt-border);
+
+  --suggestion-container-background: var(--DM-suggestion-container-bg);
+  --suggestion-item-selected-background: var(--DM-suggestion-item-sel-bg);
+  --suggestion-highlight: var(--DM-suggestion-highlight);
+
+  --kbd-background: var(--DM-kbd-bg);
+  --kbd-selected-background: var(--DM-kbd-sel-bg);
+  --kbd-selected-border: var(--DM-kbd-sel-border);
+
+  --tooltip-background: var(--DM-tooltip-bg);
+
+  --modal-background: var(--DM-modal-bg);
+  --modal-settings-border: var(--DM-modal-settings-border);
+  --modal-settings-button-background: var(--interactive-accent);
+
+  --settings-checkbox-container-background: var(
+    --DM-settings-checkbox-container-bg
+  );
+  --settings-checkbox-container-enabled-background: var(
+    --DM-settings-checkbox-container-enabled-bg
+  );
+  --settings-checkbox-container-background-hover: var(
+    --DM-settings-checkbox-container-bg-h
+  );
+
+  --slide-dot: var(--DM-slide-dot);
+
+  --s-community-themes-modal-border: var(--DM-modal-settings-border);
+  --s-community-plugins-modal-border: var(--DM-modal-settings-border);
+
+  --titlebar-background: var(--DM-base-bg);
+  --titlebar-buttons: var(--DM-base-txt-faint);
+
+  --token-comment-meta: var(--DM-T-comment-meta);
+  --token-constant-symbol: var(--DM-T-constant-symbol);
+  --token-tag: var(--DM-T-tag);
+  --token-punctuation-bracket: var(--DM-T-punctuation-bracket);
+  --token-number-boolean: var(--DM-T-number-boolean);
+  --token-string-char: var(--DM-T-string-char);
+  --token-operator-variable: var(--DM-T-operator-variable);
+  --token-function-type: var(--DM-T-function-type);
+  --token-keyword: var(--DM-T-keyword);
+  --token-regex-imp: var(--DM-T-regex-imp);
+  --token-general: var(--DM-T-general);
+
+  --latex-token-default: var(--DM-L-T-default);
+  --latex-token-formatting: var(--DM-L-T-formatting);
+  --latex-token-tag: var(--DM-L-T-tag);
+  --latex-token-bracket: var(--DM-L-T-bracket);
+  --latex-token-number: var(--DM-L-T-number);
+  --latex-token-error: var(--DM-L-T-error);
+  --latex-token-variable: var(--DM-L-T-variable);
+
+  --nav-file: var(--DM-base-txt-normal);
+  --nav-file-a: var(--DM-nav-file-a);
+  --nav-tag-background: var(--DM-nav-tag-bg);
+
+  --ribbon-background: var(--DM-base-bg);
+
+  --activeline: var(--DM-activeline-bg);
+  --cursor: var(--DM-cursor);
+
+  --resize-handles-background: var(--DM-resize-handles-bg);
+  --resize-handles-background-hover: var(--DM-resize-handles-bg-h);
+
+  --frontmatter-limits: var(--DM-FM-limits);
+  --frontmatter-tag: var(--DM-FM-tag);
+
+  --menu-background-color: var(--DM-base-bg);
+  --statusbar-item-background: var(--DM-base-modifier-bg);
+
+  --blockquote-background: var(--DM-blockquote-bg);
+
+  --EV-CB-bg: var(--DM-EV-CB-bg); // (EV) == Edit View / (CB) == CodeBlock
+  --EV-IC-bg: var(--DM-EV-IC-bg); // (IC) == Inline Code
+  --EV-IC: var(--DM-EV-IC);
+
+  --PV-CB: var(--DM-EV-IC); // (PV) == Preview View
+  --PV-CB-bg: var(--DM-EV-CB-bg);
+
+  --pre-bg: var(--DM-EV-CB-bg);
+  --PV-CB-copy-button: var(--DM-PV-CB-copy-button);
+
+  --heading-counter: var(--DM-borgonia);
+
+  --img-active-background: var(--DM-base-bg);
+  --img-border: var(--DM-base-modifier-border);
+
+  --mermaid-background: var(--DM-base-bg);
+  --mermaid-border: var(--DM-base-modifier-border);
+
+  --link: var(--DM-base-txt-accent);
+  --cite: var(--DM-borgonia);
+  --a: var(--DM-base-txt-accent);
+
+  --li-marker: var(--DM-base-txt-accent);
+  --indentation-guide: var(--DM-base-modifier-border);
+
+  --tables-thead-bg: var(--DM-tables-thead-bg);
+
+  --bold: var(--DM-bold);
+  --italic: var(--DM-italic);
+
+  --PU_pu-bf-bg: var(
+    --DM-PU_pu-bf-bg
+  ); // (PU) == PopUp / (pu) == Default / (bf) == before
+  --PU_pu-tl-bg: var(--DM-PU_pu-tl-bg); // (tl) == title
+  --PU_pu-ct-bg: var(--DM-PU_pu-ct-bg); // (ct) == content
+  // --
+  --PU_pu-info-bf-bg: var(--DM-PU_pu-info-bf-bg);
+  --PU_pu-info-tl-bg: var(--DM-PU_pu-info-tl-bg);
+  --PU_pu-info-ct-bg: var(--DM-PU_pu-info-ct-bg);
+  // --
+  --PU_pu-imp-bf-bg: var(--DM-PU_pu-imp-bf-bg);
+  --PU_pu-imp-tl-bg: var(--DM-PU_pu-imp-tl-bg);
+  --PU_pu-imp-ct-bg: var(--DM-PU_pu-imp-ct-bg);
+  // --
+  --PU_pu-quest-bf-bg: var(--DM-PU_pu-quest-bf-bg);
+  --PU_pu-quest-tl-bg: var(--DM-PU_pu-quest-tl-bg);
+  --PU_pu-quest-ct-bg: var(--DM-PU_pu-quest-ct-bg);
+  // --
+  --PU_pu-check-bf-bg: var(--DM-PU_pu-check-bf-bg);
+  --PU_pu-check-tl-bg: var(--DM-PU_pu-check-tl-bg);
+  --PU_pu-check-ct-bg: var(--DM-PU_pu-check-ct-bg);
+  // --
+  --PU_pu-fail-bf-bg: var(--DM-PU_pu-fail-bf-bg);
+  --PU_pu-fail-tl-bg: var(--DM-PU_pu-fail-tl-bg);
+  --PU_pu-fail-ct-bg: var(--DM-PU_pu-fail-ct-bg);
+
+  --P-calendar-today: var(--DM-P-calendar-today); // (P) - Plugin
+  --P-calendar-today-bg: var(--DM-P-calendar-today-bg);
+  --P-calendar-day-bg-h: var(--DM-P-calendar-day-bg-h);
+
+  --P-dataview-th-bg: var(--DM-P-dataview-th-bg);
+  --P-dataview-th-border: var(--DM-P-dataview-th-border);
+  --P-dataview-th-border-bottom: var(--DM-P-dataview-th-border-bottom);
+  --P-dataview-td-border: var(--DM-P-dataview-td-border);
+
+  --P-dialogue-bg: var(--DM-P-dialogue-bg);
+
+  --P-kanban-hr-wrapper: var(--DM-P-kanban-hr-wrapper);
+  --P-kanban-item-border: var(--DM-P-kanban-item-border);
+
+  --P-langTool-button-bg: var(
+    --DM-P-langTool-button-bg
+  ); // (langTool) == Language Tool
+  --P-langTool-button-bg-h: var(--DM-P-langTool-button-bg-h);
+
+  --SS-hidden-hl: var(--DM-SS-hidden-hl); // (hl) == Horizontal Line
+  --SS-hidden-hl-a: var(--DM-SS-hidden-hl-a);
+
+  --txt-selected-arrow: var(--DM-txt-selected-arrow);
+
+  --backlash: var(--text-faint);
+  --escaped-char: var(--text-faint);
+}
+
+.theme-light {
+  /*<Default Variables>*/
+  --background-primary: var(--LM-base-bg-prim);
+  --background-primary-alt: var(--LM-base-bg-prim-alt);
+  --background-secondary: var(--LM-base-bg-sec);
+  --background-secondary-alt: var(--LM-base-bg-sec-alt);
+
+  --svg-faint: var(--text-muted);
+
+  --background-modifier-form-field: var(--LM-base-modifier-bg);
+  --background-modifier-form-field-highlighted: var(--LM-base-modifier-bg-h);
+  --background-modifier-border: var(--LM-base-modifier-border);
+  --background-modifier-box-shadow: var(--LM-base-modifier-box-shadow);
+  --background-modifier-cover: var(--LM-base-modifier-cover);
+
+  --background-modifier-success: var(--LM-base-modifier-success);
+  --background-modifier-error: var(--LM-base-modifier-error);
+  --background-modifier-error-hover: var(--LM-base-modifier-error-h);
+
+  --text-accent: var(--LM-base-txt-accent);
+  --text-accent-hover: var(--LM-base-txt-accent-h);
+
+  --text-normal: var(--LM-base-txt-normal);
+  --text-muted: var(--LM-base-txt-muted);
+  --text-faint: var(--LM-base-txt-faint);
+
+  --text-error: var(--LM-base-txt-error);
+  --text-error-hover: var(--LM-base-error-h);
+
+  --text-highlight-bg: var(--LM-base-highlight-bg);
+  --text-highlight-bg-active: var(--LM-base-highlight-bg-a);
+
+  --text-selection: var(--LM-base-txt-select);
+  --text-on-accent: var(--LM-base-txt-on-accent);
+
+  --interactive-normal: var(--LM-base-itrc-normal);
+  --interactive-hover: var(--LM-base-itrc-h);
+  --interactive-accent: var(--LM-base-itrc-accent);
+  --interactive-accent-hover: var(--LM-base-itrc-accent-h);
+  --interactive-success: var(--LM-base-itrc-success);
+
+  --scrollbar-thumb-bg: var(--LM-base-scrollbar-bg);
+  --scrollbar-active-thumb-bg: var(--LM-base-scrollbar-bg-a);
+  --scrollbar-bg: transparent;
+
+  --highlight-mix-blend-mode: darken;
+
+  /*<Theme Variables>*/
+  --graph-tag: var(--LM-graph-tag);
+  --graph-attach: var(--LM-graph-attach);
+
+  --popover-border: var(--LM-popover-border);
+  --popover-shadow: var(--LM-popover-shadow);
+  --popover-bg: var(--LM-popover-bg);
+
+  --prompt-border: var(--LM-prompt-border);
+
+  --suggestion-container-background: var(--LM-suggestion-container-bg);
+  --suggestion-item-selected-background: var(--LM-suggestion-item-sel-bg);
+  --suggestion-highlight: var(--LM-suggestion-highlight);
+
+  --kbd-background: var(--LM-kbd-bg);
+  --kbd-selected-background: var(--LM-kbd-sel-bg);
+  --kbd-selected-border: var(--LM-kbd-sel-border);
+
+  --tooltip-background: var(--LM-tooltip-bg);
+
+  --modal-background: var(--LM-modal-bg);
+  --modal-settings-border: var(--LM-modal-settings-border);
+  --modal-settings-button-background: var(--interactive-accent);
+
+  --settings-checkbox-container-background: var(
+    --LM-settings-checkbox-container-bg
+  );
+  --settings-checkbox-container-enabled-background: var(
+    --LM-settings-checkbox-container-enabled-bg
+  );
+  --settings-checkbox-container-background-hover: var(
+    --LM-settings-checkbox-container-bg-h
+  );
+
+  --slide-dot: var(--LM-slide-dot);
+
+  --s-community-themes-modal-border: var(--LM-modal-settings-border);
+  --s-community-plugins-modal-border: var(--LM-modal-settings-border);
+
+  --titlebar-background: var(--LM-base-bg);
+  --titlebar-buttons: var(--LM-base-txt-faint);
+
+  --token-comment-meta: var(--LM-T-comment-meta);
+  --token-constant-symbol: var(--LM-T-constant-symbol);
+  --token-tag: var(--LM-T-tag);
+  --token-punctuation-bracket: var(--LM-T-punctuation-bracket);
+  --token-number-boolean: var(--LM-T-number-boolean);
+  --token-string-char: var(--LM-T-string-char);
+  --token-operator-variable: var(--LM-T-operator-variable);
+  --token-function-type: var(--LM-T-function-type);
+  --token-keyword: var(--LM-T-keyword);
+  --token-regex-imp: var(--LM-T-regex-imp);
+  --token-general: var(--LM-T-general);
+
+  --latex-token-default: var(--LM-L-T-default);
+  --latex-token-formatting: var(--LM-L-T-formatting);
+  --latex-token-tag: var(--LM-L-T-tag);
+  --latex-token-bracket: var(--LM-L-T-bracket);
+  --latex-token-number: var(--LM-L-T-number);
+  --latex-token-error: var(--LM-L-T-error);
+  --latex-token-variable: var(--LM-L-T-variable);
+
+  --nav-file: var(--LM-base-txt-normal);
+  --nav-file-a: var(--LM-nav-file-a);
+  --nav-tag-background: var(--LM-nav-tag-bg);
+  --light-nav-ff-hover: var(--LM-nav-ff-h); // (ff) == file folder
+
+  --ribbon-background: var(--LM-base-bg);
+
+  --activeline: var(--LM-activeline-bg);
+  --cursor: var(--LM-cursor);
+
+  --resize-handles-background: var(--LM-resize-handles-bg);
+  --resize-handles-background-hover: var(--LM-resize-handles-bg-h);
+
+  --frontmatter-limits: var(--LM-FM-limits);
+  --frontmatter-tag: var(--LM-FM-tag);
+
+  --menu-background-color: var(--LM-base-bg);
+  --statusbar-item-background: var(--LM-base-modifier-bg);
+
+  --blockquote-background: var(--LM-blockquote-bg);
+
+  --EV-CB-bg: var(--LM-EV-CB-bg); // (EV) == Edit View / (CB) == CodeBlock
+  --EV-IC-bg: var(--LM-EV-IC-bg); // (IC) == Inline Code
+  --EV-IC: var(--LM-EV-IC);
+
+  --PV-CB: var(--LM-EV-IC); // (PV) == Preview View
+  --PV-CB-bg: var(--LM-EV-CB-bg);
+
+  --pre-bg: var(--LM-EV-CB-bg);
+  --PV-CB-copy-button: var(--LM-PV-CB-copy-button);
+
+  --heading-counter: var(--LM-borgonia);
+
+  --img-active-background: var(--LM-base-bg);
+  --img-border: var(--LM-base-modifier-border);
+
+  --mermaid-background: var(--LM-base-bg);
+  --mermaid-border: var(--LM-base-modifier-border);
+
+  --link: var(--LM-base-txt-accent);
+  --cite: var(--LM-borgonia);
+  --a: var(--LM-base-txt-accent);
+
+  --li-marker: var(--LM-base-txt-accent);
+  --indentation-guide: var(--LM-base-modifier-border);
+
+  --tables-thead-bg: var(--LM-tables-thead-bg);
+
+  --bold: var(--LM-bold);
+  --italic: var(--LM-italic);
+
+  --PU_pu-bf-bg: var(
+    --LM-PU_pu-bf-bg
+  ); // (PU) == PopUp / (pu) == Default / (bf) == before
+  --PU_pu-tl-bg: var(--LM-PU_pu-tl-bg); // (tl) == title
+  --PU_pu-ct-bg: var(--LM-PU_pu-ct-bg); // (ct) == content
+  // --
+  --PU_pu-info-tl-bg: var(--LM-PU_pu-info-tl-bg);
+  --PU_pu-info-bf-bg: var(--LM-PU_pu-info-bf-bg);
+  --PU_pu-info-ct-bg: var(--LM-PU_pu-info-ct-bg);
+  // --
+  --PU_pu-imp-bf-bg: var(--LM-PU_pu-imp-bf-bg);
+  --PU_pu-imp-tl-bg: var(--LM-PU_pu-imp-tl-bg);
+  --PU_pu-imp-ct-bg: var(--LM-PU_pu-imp-ct-bg);
+  // --
+  --PU_pu-quest-bf-bg: var(--LM-PU_pu-quest-bf-bg);
+  --PU_pu-quest-tl-bg: var(--LM-PU_pu-quest-tl-bg);
+  --PU_pu-quest-ct-bg: var(--LM-PU_pu-quest-ct-bg);
+  // --
+  --PU_pu-check-bf-bg: var(--LM-PU_pu-check-bf-bg);
+  --PU_pu-check-tl-bg: var(--LM-PU_pu-check-tl-bg);
+  --PU_pu-check-ct-bg: var(--LM-PU_pu-check-ct-bg);
+  // --
+  --PU_pu-fail-bf-bg: var(--LM-PU_pu-fail-bf-bg);
+  --PU_pu-fail-tl-bg: var(--LM-PU_pu-fail-tl-bg);
+  --PU_pu-fail-ct-bg: var(--LM-PU_pu-fail-ct-bg);
+
+  --P-calendar-today: var(--LM-P-calendar-today); // (P) - Plugin
+  --P-calendar-today-bg: var(--LM-P-calendar-today-bg);
+  --P-calendar-day-bg-h: var(--LM-P-calendar-day-bg-h);
+
+  --P-dataview-th-bg: var(--LM-P-dataview-th-bg);
+  --P-dataview-th-border: var(--LM-P-dataview-th-border);
+  --P-dataview-th-border-bottom: var(--LM-P-dataview-th-border-bottom);
+  --P-dataview-td-border: var(--LM-P-dataview-td-border);
+
+  --P-dialogue-bg: var(--LM-P-dialogue-bg);
+
+  --P-kanban-hr-wrapper: var(--LM-P-kanban-hr-wrapper);
+  --P-kanban-item-border: var(--LM-P-kanban-item-border);
+
+  --P-langTool-button-bg: var(
+    --LM-P-langTool-button-bg
+  ); // (langTool) == Language Tool
+  --P-langTool-button-bg-h: var(--LM-P-langTool-button-bg-h);
+
+  --SS-hidden-hl: var(--LM-SS-hidden-hl); // (hl) == Horizontal Line
+  --SS-hidden-hl-a: var(--LM-SS-hidden-hl-a);
+
+  --txt-selected-arrow: var(--LM-txt-selected-arrow);
+
+  --backlash: var(--LM-backlash);
+  --escaped-char: var(--LM-escaped-char);
+
+  --backlash: var(--text-faint);
+  --escaped-char: var(--text-faint);
+}

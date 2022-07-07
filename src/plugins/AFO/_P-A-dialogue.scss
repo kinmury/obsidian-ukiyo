@@ -1,0 +1,12 @@
+/* Dialogue */
+
+.theme-dark,
+.theme-light {
+  .dialogue-plugin-message-title {
+    color: var(--text-normal);
+  }
+  .dialogue-plugin-message-content {
+    color: var(--text-normal);
+    background-color: var(--P-dialogue-bg);
+  }
+}

@@ -1,0 +1,9 @@
+.theme-dark,
+.theme-light {
+  .document-search-container.mod-replace-mode {
+    button {
+      background-color: var(--modal-settings-button-background);
+      color: var(--text-on-accent);
+    }
+  }
+}

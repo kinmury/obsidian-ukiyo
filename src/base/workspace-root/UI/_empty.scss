@@ -1,0 +1,36 @@
+/* Empty State */
+
+.prompt-instructions,
+.empty-state-action,
+.empty-state-close-button {
+  display: none;
+}
+
+.empty-state-title {
+  font-size: 0;
+  color: var(--text-faint);
+
+  &::before {
+    content: "All I need is a sheet of paper and something to write with, and then I can turn the world upside down";
+    display: block;
+    position: absolute;
+    height: 20px;
+    font-size: 2rem;
+    width: 21em;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: -5.5em;
+    font-style: italic;
+    line-height: 32px;
+  }
+
+  &::after {
+    content: "¯\\_[ ◑.◑]_/¯";
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+.theme-light {
+  color: var(--empty-color);
+}

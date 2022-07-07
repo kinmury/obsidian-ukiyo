@@ -1,0 +1,63 @@
+site_name: Ukiyo
+
+theme:
+  name: material
+  #custom_dir: mkdocs-material/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  favicon: assets/favicon.png
+  
+  icon:
+    repo: fontawesome/brands/github-square
+    #logo: logo
+
+extra_css:
+  - stylesheets/main.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+repo_url: https://github.com/kinmury/Ukiyo.git
+repo_name: kinmury/Ukiyo
+
+nav:
+  - Home Page: "index.md"
+  - General Changes: "general_changes.md"
+  - Features: "features.md"
+  - Style Settings: "stylesettings.md"

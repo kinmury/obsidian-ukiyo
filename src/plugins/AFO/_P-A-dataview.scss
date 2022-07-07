@@ -1,0 +1,46 @@
+/* Dataview */
+
+.theme-dark,
+.theme-light {
+  .dataview {
+    .dataview-result-list-root-ul {
+      margin-left: 17px !important;
+    }
+
+    a {
+      .internal-link {
+        text-decoration: none;
+
+        &:before {
+          content: "";
+        }
+      }
+    }
+
+    tr {
+      &:last-of-type {
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .table-view-th {
+      border-bottom: 2px solid var(--P-dataview-th-border-bottom);
+    }
+
+    th {
+      background-color: var(--P-dataview-th-bg);
+      border-right: 1px solid var(--P-dataview-th-border) !important;
+    }
+
+    td {
+      border-bottom: 1px solid var(--P-dataview-td-border);
+      border-left: 1px solid var(--P-dataview-td-border);
+
+      &:first-of-type {
+        border-left: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/* Graph View */
+
+.theme-dark,
+.theme-light {
+  .graph-controls {
+    transition: 0.3s ease-in-out;
+    filter: opacity(30%);
+
+    &:hover {
+      filter: opacity(100%);
+
+      box-shadow: var(--basic-BS);
+    }
+  }
+
+  .graph-view {
+    &.color-fill-tag {
+      color: var(--graph-tag);
+    }
+    &.color-fill-attachment {
+      color: var(--graph-attach);
+    }
+
+    &.color-line {
+      opacity: 0.75;
+    }
+  }
+
+  .tree-item-icon.collapse-icon {
+    margin-top: -2px;
+  }
+}

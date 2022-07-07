@@ -1,0 +1,31 @@
+/*!
+/* @settings
+
+name: CSS Classes
+id: CSSC
+settings:
+    -
+        id: CSSC_1
+        title: no-width
+        description:
+            "The note will look like you have the 'Readable Line Length' Setting turned off"
+        description.es: 
+            "La nota se verá igual que si tuvieras el ajuste de 'Longitud de Línea Legible' desactivado"
+        type: class-toggle
+        default: false
+    -  
+        id: CSSC_2
+        title: dv-books
+        description:
+            "The Dataview Tables will transform and became organized cards. The rest of the note will stay normal"
+        description.es:
+            "Las tablas Dataview se transformarán en un conjunto de cartas, mantienendo el resto de la nota inalterada"
+        type: class-toggle
+        default: false
+*/
+
+.style-settings-container:last-of-type {
+  & .setting-item-control {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+/* LATEX Figures using Calouts */
+
+body {
+  .callout {
+    &[data-callout="img-center"],
+    &[data-callout="img-left"],
+    &[data-callout="img-right"] {
+      background-color: transparent;
+      border: none;
+
+      & .callout-title {
+        display: none;
+      }
+
+      & .callout-content {
+        text-align: center;
+      }
+    }
+
+    &[data-callout="img-left"] {
+      & .callout-content {
+        float: left;
+      }
+    }
+
+    &[data-callout="img-right"] {
+      & .callout-content {
+        float: right;
+      }
+    }
+  }
+}

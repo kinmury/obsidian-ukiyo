@@ -1,0 +1,20 @@
+/* HTML */
+
+.theme-dark,
+.theme-light {
+  .cm-tag {
+    color: var(--token-function-type);
+
+    &.cm-bracket {
+      color: var(--text-muted);
+    }
+  }
+
+  .cm-attribute:not(pre[class*="language-"]):not(.cm-hmd-codeblock) {
+    color: var(--token-keyword);
+  }
+
+  .cm-string:not(.cm-hmd-codeblock) {
+    color: var(--token-number-boolean);
+  }
+}

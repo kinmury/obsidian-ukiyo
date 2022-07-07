@@ -1,0 +1,95 @@
+/* Inline codes and Code blocks */
+
+.theme-dark,
+.theme-light {
+  .cm-s-obsidian {
+    div.HyperMD-codeblock-bg {
+      background-color: var(--EV-CB-bg);
+    }
+
+    .HyperMD-codeblock-begin {
+      padding-top: 4px;
+    }
+
+    .HyperMD-codeblock-end {
+      padding-top: 12px;
+      height: 21px;
+    }
+
+    span {
+      &.cm-inline-code {
+        background-color: var(--EV-IC-bg) !important;
+        color: var(--EV-IC);
+      }
+    }
+  }
+
+  .markdown-preview-view {
+    code {
+      background-color: var(--PV-CB-bg);
+      color: var(--PV-CB);
+
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    pre {
+      background-color: var(--pre-bg);
+    }
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background-color: var(--pre-bg) !important;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  button {
+    &.copy-code-button {
+      transition: all 0.125s ease-in-out;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      background-color: var(--PV-CB-copy-button);
+
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+  }
+
+  .CodeMirror,
+  .HyperMD-codeblock-begin,
+  .CodeMirror-line:not(.HyperMD-codeblock) {
+    counter-set: algo;
+  }
+
+  pre.HyperMD-codeblock.CodeMirror-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+    &::before {
+      content: counter(algo);
+      counter-increment: algo;
+
+      position: absolute;
+
+      width: 18px;
+      height: 20px;
+
+      margin-left: -23px;
+
+      text-align: right;
+      opacity: 0.5;
+    }
+  }
+}
+
+.theme-light {
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"],
+  code[class*="language-"] {
+    text-shadow: none;
+  }
+}

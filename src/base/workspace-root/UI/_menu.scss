@@ -1,0 +1,27 @@
+/* Menu */
+
+.theme-dark,
+.theme-light {
+  .menu {
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    background-color: var(--menu-background-color);
+  }
+
+  .menu-separator {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .menu-item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    transition: 0.125s ease-in-out;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}

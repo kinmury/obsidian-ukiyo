@@ -1,0 +1,105 @@
+/* Workspace Left */
+
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .nav-action-button,
+    .workspace-tab-header-inner,
+    .workspace-tab-header {
+      color: #a07249;
+
+      &:hover {
+        color: #bb895d;
+      }
+    }
+
+    .nav-folder-collapse-indicator {
+      color: #a07249 !important;
+    }
+
+    .nav-folder-title {
+      color: #a07249;
+
+      &:hover {
+        filter: none;
+        background-color: #47331e;
+        color: #bb895d;
+      }
+    }
+
+    .nav-file-title {
+      color: #c77b17;
+
+      &:hover {
+        filter: none;
+        background-color: #47331e;
+        color: #e4860b;
+      }
+    }
+
+    // -----
+    .workspace-ribbon-collapse-btn,
+    .side-dock-ribbon-action {
+      color: #aa6e20;
+
+      &:hover {
+        color: #c77b17 !important;
+      }
+    }
+
+    // ---
+
+    .search-suggest-item {
+      &.mod-group,
+      &.mod-group * {
+        color: #c44911;
+      }
+
+      &.is-selected {
+        background-color: #522d0e;
+      }
+    }
+
+    .suggestion {
+      color: #e4860b;
+    }
+
+    .search-suggest-info-text {
+      color: #b17f54;
+    }
+
+    // Search Result
+    .tree-item-self {
+      &.search-result-file-title,
+      .tree-item-icon {
+        color: #976940;
+
+        &:hover {
+          background-color: #462a0a;
+          color: #c9905f;
+        }
+      }
+    }
+
+    .nav-action-button {
+      &.is-active {
+        color: #462a0a;
+      }
+    }
+
+    .search-result-file-match {
+      color: #a5754b;
+
+      &:hover {
+        background-color: #462a0a;
+        color: #c9905f;
+      }
+    }
+
+    .search-result-file-matched-text {
+      background-color: #834a1166;
+      color: #b9804d;
+      font-weight: bold;
+    }
+  }
+}

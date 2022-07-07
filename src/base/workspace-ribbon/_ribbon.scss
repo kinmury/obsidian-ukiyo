@@ -1,0 +1,98 @@
+/* Workspace Ribbons */
+
+.theme-dark,
+.theme-light {
+  .workspace-ribbon-collapse-btn {
+    margin-top: 0px;
+    padding-left: 4px;
+
+    transition: 0.125s ease-in-out;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    &:hover {
+      color: var(--text-accent);
+    }
+  }
+
+  .side-dock-ribbon {
+    flex-basis: 25px;
+  }
+
+  .side-dock-settings {
+    margin-bottom: 12px;
+  }
+
+  .side-dock-ribbon-action {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: -1px;
+
+    transition: 0.125s ease-in-out;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      color: var(--text-accent);
+    }
+  }
+
+  .workspace-ribbon {
+    background-color: var(--ribbon-background);
+
+    &.mod-right.is-collapsed,
+    &.mod-left.is-collapsed {
+      border-left-color: transparent;
+      border-right-color: transparent;
+      transition: 0.2s ease-in-out;
+    }
+
+    &:hover {
+      &.mod-right.is-collapsed {
+        border-left-color: var(--background-modifier-border);
+      }
+
+      &.mod-left.is-collapsed {
+        border-right-color: var(--background-modifier-border);
+      }
+    }
+  }
+
+  .workspace-ribbon.mod-left {
+    &.is-collapsed {
+      .side-dock-ribbon-action,
+      .workspace-ribbon-collapse-btn {
+        color: transparent;
+        transition: 0.125s ease-in-out;
+      }
+    }
+
+    &.is-collapsed:hover {
+      .side-dock-ribbon-action,
+      .workspace-ribbon-collapse-btn {
+        color: var(--text-faint);
+      }
+    }
+  }
+
+  .workspace-ribbon.mod-right {
+    &.is-collapsed {
+      .workspace-ribbon-collapse-btn {
+        color: transparent;
+        transition: 0.125s ease-in-out;
+      }
+    }
+
+    &.is-collapsed:hover {
+      .workspace-ribbon-collapse-btn {
+        color: var(--text-faint);
+      }
+    }
+  }
+}

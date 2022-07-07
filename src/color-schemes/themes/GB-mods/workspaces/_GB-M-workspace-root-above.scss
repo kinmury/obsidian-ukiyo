@@ -1,0 +1,29 @@
+/* Workspace Root Above */
+
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .view-header-title {
+      color: #b17f54;
+    }
+
+    .view-header-icon,
+    .view-action {
+      background-color: transparent;
+      color: #ff9100;
+
+      &:hover {
+        background-color: transparent;
+        color: #ffa42d !important;
+      }
+    }
+
+    .view-header-title-container::after {
+      display: none;
+    }
+
+    .view-header {
+      background-color: var(--background-secondary);
+    }
+  }
+}

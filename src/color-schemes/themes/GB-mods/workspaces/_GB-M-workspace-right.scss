@@ -1,0 +1,35 @@
+/* Workspace Right */
+
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .workspace-split.mod-horizontal.mod-right-split {
+      .tree-item-self {
+        .tree-item-inner,
+        .tree-item-icon {
+          color: #a5754b;
+
+          &:hover {
+            color: #c9905f;
+          }
+        }
+
+        .tree-item-flair {
+          color: #a5754b;
+
+          &:hover {
+            color: #462a0a !important;
+          }
+        }
+
+        &:hover {
+          background-color: #462a0a;
+        }
+      }
+
+      .search-empty-state {
+        color: #b14412;
+      }
+    }
+  }
+}

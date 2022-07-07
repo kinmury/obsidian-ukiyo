@@ -1,0 +1,137 @@
+{
+  "main": {
+    "id": "c3221b8123ce717d",
+    "type": "split",
+    "children": [
+      {
+        "id": "951c1b540311a6bf",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3e27fcf55c02ce89",
+    "type": "split",
+    "children": [
+      {
+        "id": "77b016b047f0d544",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40f1829f14fc5284",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e35a396d8bb641f3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "deb99b2371fef590",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 283,
+    "collapsed": true
+  },
+  "right": {
+    "id": "e5275c8375994ee4",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f89143c1054a708",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2cea4e540b68ee5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f82172540c2bc0a2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0319040f532fe0ed",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6b7755df746e2722",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 290.9957580566406,
+    "collapsed": true
+  },
+  "active": "951c1b540311a6bf",
+  "lastOpenFiles": [
+    "adsf.md",
+    "Example Note 2.md",
+    "Example Note 1.md",
+    "Lorem Ipsum.md",
+    "Untitled Kanban.md",
+    "foldenr de ejeadsfasdf/otro archivo.md",
+    "Kanban.md",
+    "Dataview.md",
+    "Callouts.md"
+  ]
+}

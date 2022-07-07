@@ -1,0 +1,10 @@
+/* Tooltip */
+
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .tooltip {
+      color: #e4860b;
+    }
+  }
+}

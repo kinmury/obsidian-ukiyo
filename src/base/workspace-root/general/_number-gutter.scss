@@ -1,0 +1,17 @@
+/* Number Gutter */
+
+.theme-dark,
+.theme-light {
+  .cm-s-obsidian {
+    .CodeMirror-linenumber {
+      text-align: center;
+    }
+  }
+
+  .CodeMirror-gutter {
+    &.CodeMirror-linenumbers,
+    &.CodeMirror-gutter.CodeMirror-foldgutter {
+      background-color: transparent;
+    }
+  }
+}
