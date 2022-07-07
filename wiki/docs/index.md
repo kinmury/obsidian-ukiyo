@@ -11,18 +11,18 @@ As I said on the GitHub Repository, I'm more that happy to hear any feedback and
 ## Showcase
 ### Ukiyo
 
-![](/imgs/Ukiyo-D.png)
-![](/imgs/Ukiyo-L.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/Ukiyo-D.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/Ukiyo-L.png)
 
 ### Golden Coffee
 
-![](/imgs/GC-D.png)
-![](/imgs/GC-L.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/GC-D.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/GC-L.png)
 
 ### Golden Book
 
-![](/imgs/GB.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/GB.png)
 
 ### Alchemy
 
-![](/imgs/Alch.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/Alch.png)
