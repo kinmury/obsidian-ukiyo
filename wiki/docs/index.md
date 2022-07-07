@@ -12,12 +12,12 @@ As I said on the GitHub Repository, I'm more that happy to hear any feedback and
 ### Ukiyo
 
 ![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/wiki/docs/imgs/Ukiyo-D.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/Ukiyo-L.png)
+![test](imgs/Ukiyo-L.png)
 
 ### Golden Coffee
 
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/GC-D.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/GC-L.png)
+![test2](https://github.com/kinmury/obsidian-ukiyo/blob/main/wiki/docs/imgs/GC-D.png)
+![test3](/imgs/GC-L.png)
 
 ### Golden Book
 
