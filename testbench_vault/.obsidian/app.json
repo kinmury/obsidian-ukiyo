@@ -9,7 +9,7 @@
   "legacyEditor": true,
   "readableLineLength": true,
   "strictLineBreaks": false,
-  "spellcheck": false,
+  "spellcheck": true,
   "defaultViewMode": "source",
   "tabSize": 4,
   "trashOption": "local",
