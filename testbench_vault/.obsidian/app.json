@@ -6,12 +6,16 @@
     "margin": "0",
     "downscalePercent": 78
   },
-  "legacyEditor": true,
+  "legacyEditor": false,
   "readableLineLength": true,
   "strictLineBreaks": false,
   "spellcheck": true,
   "defaultViewMode": "source",
   "tabSize": 4,
   "trashOption": "local",
-  "userIgnoreFilters": null
+  "userIgnoreFilters": null,
+  "livePreview": false,
+  "spellcheckLanguages": [
+    "en-US"
+  ]
 }

@@ -1,0 +1,38 @@
+/* Pop Out Windows */
+
+.is-popout-window {
+  &.theme-dark,
+  &.theme-light {
+    &.HUI_g {
+      .titlebar {
+        height: 10px !important;
+
+        .titlebar-button-container {
+          &.mod-right {
+            visibility: hidden;
+          }
+        }
+
+        &:after {
+          content: "";
+          background-color: var(--SS-hidden-hl-large);
+
+          display: block;
+          position: absolute;
+
+          top: 4;
+          left: 50%;
+          transform: translate(-50%);
+
+          width: 65vw;
+          height: 3px;
+        }
+      }
+
+      .app-container {
+        margin-top: 0px;
+        height: 100%;
+      }
+    }
+  }
+}

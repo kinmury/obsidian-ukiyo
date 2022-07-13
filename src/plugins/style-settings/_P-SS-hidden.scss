@@ -71,7 +71,8 @@ settings:
     }
 
     .titlebar {
-      height: 4px !important;
+      //height: 4px !important;
+      height: 10px !important;
 
       .titlebar-button-container {
         &.mod-right {
@@ -81,8 +82,9 @@ settings:
     }
 
     .app-container {
-      margin-top: -20px;
-      height: 102.5%;
+      margin-top: -14px;
+      //height: 102.5%;
+      height: 101.5%;
     }
 
     .status-bar {
@@ -106,14 +108,13 @@ settings:
         display: block;
         position: absolute;
 
-        //background-color: var(--hidden-iphone-horizontal-line);
         background-color: var(--SS-hidden-hl);
 
         bottom: 0;
         left: 50%;
         transform: translate(-50%);
 
-        width: 20em;
+        width: 20vw;
         height: 3px;
       }
 

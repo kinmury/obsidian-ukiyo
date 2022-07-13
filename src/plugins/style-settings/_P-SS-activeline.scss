@@ -59,11 +59,13 @@ settings:
 .AL_alt {
   &.theme-dark,
   &.theme-light {
-    .CodeMirror-activeline {
-      .CodeMirror-linebackground {
-        background-color: transparent;
-        border-left: 3px solid var(--cursor);
-        margin-left: -2px;
+    .cm-active {
+      &.cm-line {
+        &::after {
+          background-color: transparent;
+          border-left: 3px solid var(--cursor);
+          margin-left: -5px;
+        }
       }
     }
 
@@ -78,12 +80,14 @@ settings:
 .AL_alt.AAL_right {
   &.theme-dark,
   &.theme-light {
-    .CodeMirror-activeline {
-      .CodeMirror-linebackground {
-        background-color: transparent;
-        border-left: 0px;
-        border-right: 3px solid var(--cursor);
-        margin-right: -2px;
+    .cm-active {
+      &.cm-line {
+        &::after {
+          background-color: transparent;
+          border-left: 0px;
+          border-right: 3px solid var(--cursor);
+          margin-right: -2px;
+        }
       }
     }
   }
@@ -92,11 +96,13 @@ settings:
 .AL_alt.AAL_both {
   &.theme-dark,
   &.theme-light {
-    .CodeMirror-activeline {
-      .CodeMirror-linebackground {
-        background-color: transparent;
-        border-left: 3px solid var(--cursor);
-        border-right: 3px solid var(--cursor);
+    .cm-active {
+      &.cm-line {
+        &::after {
+          background-color: transparent;
+          border-left: 3px solid var(--cursor);
+          border-right: 3px solid var(--cursor);
+        }
       }
     }
   }
@@ -105,9 +111,11 @@ settings:
 .AL_alt.AAL_keep {
   &.theme-dark,
   &.theme-light {
-    .CodeMirror-activeline {
-      .CodeMirror-linebackground {
-        background-color: var(--activeline) !important;
+    .cm-active {
+      &.cm-line {
+        &::after {
+          background-color: var(--activeline) !important;
+        }
       }
     }
   }

@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "951c1b540311a6bf",
+        "id": "2724d9deae1021bd",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Versions/v1.0.8.md",
+            "mode": "source",
+            "source": true
+          }
         }
       }
     ],
@@ -57,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e5275c8375994ee4",
@@ -74,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Versions/v1.0.8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Versions/v1.0.8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Versions/v1.0.8.md"
+              }
             }
           }
         ],
@@ -119,20 +126,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.9957580566406,
+    "width": 261,
     "collapsed": true
   },
-  "active": "951c1b540311a6bf",
+  "active": "2724d9deae1021bd",
   "lastOpenFiles": [
     "Untitled.md",
+    "Changes.md",
+    "Versions/v1.0.8.md",
+    "test.md",
     "adsf.md",
     "Example Note 2.md",
     "Example Note 1.md",
     "Lorem Ipsum.md",
     "Untitled Kanban.md",
-    "foldenr de ejeadsfasdf/otro archivo.md",
-    "Kanban.md",
-    "Dataview.md",
-    "Callouts.md"
+    "foldenr de ejeadsfasdf/otro archivo.md"
   ]
 }

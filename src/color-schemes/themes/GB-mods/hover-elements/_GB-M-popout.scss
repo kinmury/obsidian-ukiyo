@@ -1,0 +1,16 @@
+/* Pop Out Windows */
+
+.is-popout-window {
+  &.theme-dark,
+  &.theme-light {
+    &.AT_GB {
+      &.HUI_g {
+        .titlebar {
+          &:after {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

@@ -108,7 +108,7 @@
     --DM-nav-file-a: #412e1b;
     --DM-nav-tag-bg: #66260e;
 
-    --DM-activeline-bg: #ac8d71;
+    --DM-activeline-bg: #b6967a;
     --DM-cursor: #b65630;
 
     --DM-resize-handles-bg: #99442a;
@@ -183,6 +183,7 @@
     --heading-counter: #a81d05;
 
     /* Light Mode */
+    --titlebar-background: var(--DM-base-bg-sec);
     --LM-base-bg-prim: var(--DM-base-bg-prim);
     --LM-base-bg-prim-alt: var(--DM-base-bg-prim-alt);
     --LM-base-bg-sec: var(--DM-base-bg-sec);

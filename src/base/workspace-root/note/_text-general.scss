@@ -19,51 +19,7 @@
     color: var(--italic);
   }
 
-  .CodeMirror-selected:nth-child(1) {
-    &::before {
-      content: "▼";
-      display: block;
-
-      position: absolute;
-      left: 0;
-
-      font-size: 10px;
-      margin-top: -12px;
-      margin-left: -5px;
-
-      color: var(--txt-selected-arrow);
-    }
-  }
-
-  .CodeMirror-selected:not(:only-child):first-child:nth-last-child(7)
-    ~ .CodeMirror-selected:nth-of-type(6),
-  .CodeMirror-selected:not(:only-child):first-child:nth-last-child(6)
-    ~ .CodeMirror-selected:nth-of-type(5),
-  .CodeMirror-selected:not(:only-child):first-child:nth-last-child(5)
-    ~ .CodeMirror-selected:nth-of-type(4),
-  .CodeMirror-selected:not(:only-child):first-child:nth-last-child(4)
-    ~ .CodeMirror-selected:nth-of-type(3),
-  .CodeMirror-selected:not(:only-child):first-child:nth-last-child(3)
-    ~ .CodeMirror-selected:nth-of-type(2),
-  .CodeMirror-selected:not(:only-child):first-child:nth-last-child(2)
-    ~ .CodeMirror-selected:nth-of-type(2) {
-    &::after {
-      content: "▲";
-      display: block;
-
-      position: absolute;
-      right: 0;
-      bottom: 0;
-
-      font-size: 12px;
-      margin-bottom: -17px;
-      margin-right: -6px;
-
-      color: var(--txt-selected-arrow);
-    }
-  }
-
-  .CodeMirror-selected:only-child {
+  .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground:only-child {
     &::before {
       content: "▲";
       display: block;
@@ -90,6 +46,77 @@
       margin-right: -6px;
 
       color: var(--txt-selected-arrow);
+    }
+  }
+
+  .markdown-source-view.mod-cm6
+    .cm-editor
+    .cm-selectionBackground:not(:only-child):nth-child(1) {
+    &::before {
+      content: "▼";
+      display: block;
+
+      position: absolute;
+      left: 0;
+
+      font-size: 12px;
+      margin-top: -18px;
+      margin-left: -6.5px;
+
+      color: var(--txt-selected-arrow);
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      position: absolute;
+
+      left: 0;
+      top: 0;
+
+      margin-left: -2px;
+
+      height: 100%;
+      width: 2px;
+
+      background-color: var(--txt-selected-arrow);
+    }
+  }
+
+  .markdown-source-view.mod-cm6
+    .cm-editor
+    .cm-selectionBackground:not(:only-child):last-child {
+    &::after {
+      content: "▲";
+      display: block;
+
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      font-size: 12px;
+      margin-bottom: -17px;
+      margin-right: -6px;
+
+      color: var(--txt-selected-arrow);
+    }
+
+    &::before {
+      content: "";
+
+      display: block;
+      position: absolute;
+
+      right: 0;
+      bottom: 0;
+
+      margin-right: -2px;
+
+      height: 100%;
+      width: 2px;
+
+      background-color: var(--txt-selected-arrow);
     }
   }
 }

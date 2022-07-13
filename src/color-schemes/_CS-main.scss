@@ -219,6 +219,8 @@
 
   --backlash: var(--text-faint);
   --escaped-char: var(--text-faint);
+
+  --SS-hidden-hl-large: var(--DM-SS-hidden-hl-large);
 }
 
 .theme-light {
@@ -436,4 +438,6 @@
 
   --backlash: var(--text-faint);
   --escaped-char: var(--text-faint);
+
+  --SS-hidden-hl-large: var(--LM-SS-hidden-hl-large);
 }

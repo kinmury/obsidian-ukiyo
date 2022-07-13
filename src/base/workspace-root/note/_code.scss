@@ -65,13 +65,13 @@
   .CodeMirror,
   .HyperMD-codeblock-begin,
   .CodeMirror-line:not(.HyperMD-codeblock) {
-    counter-set: algo;
+    counter-set: code-counter;
   }
 
-  pre.HyperMD-codeblock.CodeMirror-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+  .HyperMD-codeblock-bg:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
     &::before {
-      content: counter(algo);
-      counter-increment: algo;
+      content: counter(code-counter);
+      counter-increment: code-counter;
 
       position: absolute;
 

@@ -111,7 +111,7 @@
     --DM-base-highlight-bg: rgba(167, 105, 43, 0.4);
     --DM-base-highlight-bg-a: rgba(170, 107, 45, 0.4); // (-a) == active
 
-    --DM-activeline-bg: #26292e;
+    --DM-activeline-bg: #1f2227;
     --DM-cursor: #ccbd9e;
 
     --DM-base-txt-select: #26292e;
@@ -242,6 +242,8 @@
 
     --DM-graph-tag: #a04420;
     --DM-graph-attach: #5d6886;
+
+    --DM-SS-hidden-hl-large: #333333;
 
     /* Light Mode */
     --LM-base-bg-prim: var(--DM-base-bg-prim);

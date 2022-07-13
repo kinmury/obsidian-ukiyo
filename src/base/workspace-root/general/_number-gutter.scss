@@ -14,4 +14,24 @@
       background-color: transparent;
     }
   }
+
+  .cm-gutter {
+    width: 30px;
+  }
+}
+
+.theme-dark {
+  .cm-gutterElement {
+    &.cm-active {
+      filter: brightness(300%) !important;
+    }
+  }
+}
+
+.theme-light {
+  .cm-gutterElement {
+    &.cm-active {
+      filter: brightness(-100%) !important;
+    }
+  }
 }

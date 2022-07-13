@@ -1,155 +1,110 @@
 /* Headings */
+
 .theme-dark,
 .theme-light {
-  .CodeMirror-activeline {
+  .markdown-source-view.mod-cm6 {
     // Heading 1
-    .cm-formatting-header-1 {
-      margin-right: 0px !important;
-      visibility: visible;
-    }
-
-    .cm-formatting-header-1:before {
-      margin-right: 0px !important;
+    .cm-line .cm-formatting-header-1 {
+      margin-right: 10px;
       visibility: hidden;
+
+      &:before {
+        content: "H1 ";
+        color: var(--heading-counter);
+        display: inline;
+        position: absolute;
+        visibility: visible;
+      }
     }
 
     // Heading 2
-    .cm-formatting-header-2 {
-      margin-right: 0px !important;
-      visibility: visible;
-    }
-
-    .cm-formatting-header-2:before {
-      margin-right: 0px !important;
+    .cm-line .cm-formatting-header-2 {
       visibility: hidden;
+
+      &:before {
+        content: "H2 ";
+        color: var(--heading-counter);
+        display: inline;
+        position: absolute;
+        visibility: visible;
+      }
     }
 
     // Heading 3
-    .cm-formatting-header-3 {
-      margin-right: 0px !important;
-      visibility: visible;
-    }
-
-    .cm-formatting-header-3:before {
+    .cm-line .cm-formatting-header-3 {
       visibility: hidden;
+      margin-right: -6px;
+
+      &:before {
+        content: "H3 ";
+        color: var(--heading-counter);
+        display: inline;
+        position: absolute;
+        font-size: 27px;
+        visibility: visible;
+      }
     }
 
     // Heading 4
-    .cm-formatting-header-4 {
-      margin-right: 0px !important;
-      visibility: visible;
-    }
-
-    .cm-formatting-header-4:before {
+    .cm-line .cm-formatting-header-4 {
       visibility: hidden;
+      margin-right: -16px;
+
+      &:before {
+        content: "H4 ";
+        color: var(--heading-counter);
+        display: inline;
+        position: absolute;
+        font-size: 27px;
+        visibility: visible;
+      }
     }
 
     // Heading 5
-    .cm-formatting-header-5 {
-      margin-right: 0px !important;
-      visibility: visible;
-    }
-
-    .cm-formatting-header-5:before {
+    .cm-line .cm-formatting-header-5 {
       visibility: hidden;
+      margin-right: -20px;
+
+      &:before {
+        content: "H5 ";
+        color: var(--heading-counter);
+        display: inline;
+        position: absolute;
+        font-size: 27px;
+        visibility: visible;
+      }
     }
 
     // Heading 6
-    .cm-formatting-header-6 {
+    .cm-line .cm-formatting-header-6 {
+      visibility: hidden;
+      margin-right: -31px;
+
+      &:before {
+        content: "H6 ";
+        color: var(--heading-counter);
+        display: inline;
+        position: absolute;
+        font-size: 27px;
+        visibility: visible;
+      }
+    }
+
+    // Headings Active Line
+    .cm-active.cm-line .cm-formatting-header-1,
+    .cm-active.cm-line .cm-formatting-header-2,
+    .cm-active.cm-line .cm-formatting-header-3,
+    .cm-active.cm-line .cm-formatting-header-4,
+    .cm-active.cm-line .cm-formatting-header-5,
+    .cm-active.cm-line .cm-formatting-header-6 {
       margin-right: 0px !important;
       visibility: visible;
+
+      &:before {
+        margin-right: 0px !important;
+        visibility: hidden;
+      }
     }
-
-    .cm-formatting-header-6:before {
-      visibility: hidden;
-    }
-  }
-
-  // Heading 1
-  .cm-formatting-header-1 {
-    margin-right: 10px;
-    visibility: hidden;
-  }
-
-  .cm-formatting-header-1:before {
-    content: "H1 ";
-    color: var(--heading-counter);
-    display: block;
-    position: absolute;
-    visibility: visible;
-  }
-
-  // Heading 2
-  .cm-formatting-header-2 {
-    visibility: hidden;
-  }
-
-  .cm-formatting-header-2:before {
-    content: "H2";
-    color: var(--heading-counter);
-    display: block;
-    position: absolute;
-    visibility: visible;
-  }
-
-  // Heading 3
-  .cm-formatting-header-3 {
-    margin-right: -7px;
-    visibility: hidden;
-  }
-
-  .cm-formatting-header-3:before {
-    content: "H3";
-    color: var(--heading-counter);
-    display: block;
-    position: absolute;
-    font-size: 27px;
-    visibility: visible;
-  }
-
-  // Heading 4
-  .cm-formatting-header-4 {
-    margin-right: -15px;
-    visibility: hidden;
-  }
-
-  .cm-formatting-header-4:before {
-    content: "H4";
-    color: var(--heading-counter);
-    display: block;
-    position: absolute;
-    font-size: 27px;
-    visibility: visible;
-  }
-
-  // Heading 5
-  .cm-formatting-header-5 {
-    margin-right: -20px;
-    visibility: hidden;
-  }
-
-  .cm-formatting-header-5:before {
-    content: "H5";
-    color: var(--heading-counter);
-    display: block;
-    position: absolute;
-    font-size: 27px;
-    visibility: visible;
-  }
-
-  // Heading 6
-  .cm-formatting-header-6 {
-    margin-right: -31px;
-    visibility: hidden;
-  }
-
-  .cm-formatting-header-6:before {
-    content: "H6";
-    color: var(--heading-counter);
-    display: block;
-    position: absolute;
-    font-size: 27px;
-    visibility: visible;
   }
 
   /*< Preview view >*/
@@ -176,62 +131,6 @@
 
     h6 .heading-collapse-indicator {
       margin-top: -5px;
-    }
-  }
-
-  .markdown-source-view.mod-cm6 {
-    .cm-formatting-header-1 {
-      visibility: visible;
-      margin-right: 0px;
-
-      &:before {
-        display: none !important;
-      }
-    }
-
-    .cm-formatting-header-2 {
-      visibility: visible;
-      margin-right: 0px;
-
-      &:before {
-        display: none !important;
-      }
-    }
-
-    .cm-formatting-header-3 {
-      visibility: visible;
-      margin-right: 0px;
-
-      &:before {
-        display: none !important;
-      }
-    }
-
-    .cm-formatting-header-4 {
-      visibility: visible;
-      margin-right: 0px;
-
-      &:before {
-        display: none !important;
-      }
-    }
-
-    .cm-formatting-header-5 {
-      visibility: visible;
-      margin-right: 0px;
-
-      &:before {
-        display: none !important;
-      }
-    }
-
-    .cm-formatting-header-6 {
-      visibility: visible;
-      margin-right: 0px;
-
-      &:before {
-        display: none !important;
-      }
     }
   }
 }
