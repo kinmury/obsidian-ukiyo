@@ -26,4 +26,4 @@ The only plugin that I want you to download on your Vault it's the **Style Setti
 
 <h2 align=center>Showcase</h2>
 
-![](https://github.com/kinmury/Ukiyo/blob/main/Showcase.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/Showcase.png)
