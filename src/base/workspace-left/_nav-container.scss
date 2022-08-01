@@ -77,6 +77,17 @@
     font-weight: bold;
   }
 
+  .nav-file-tag {
+    background-color: var(--nav-tag-background);
+  }
+
+  /* NAV Vertical Lines */
+  .nav-folder-children:not(.nav-folder.mod-root > .nav-folder-children) {
+    border-left: 1px solid var(--text-muted);
+    padding: 0px;
+    margin-left: 17px;
+  }
+
   .nav-file-title {
     white-space: normal;
     width: auto;
@@ -85,11 +96,17 @@
 
     &.is-active {
       background-color: var(--nav-file-a);
-    }
-  }
 
-  .nav-file-tag {
-    background-color: var(--nav-tag-background);
+      margin-left: -1px;
+      margin-right: 2px;
+      min-width: 98%;
+
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
   }
 }
 

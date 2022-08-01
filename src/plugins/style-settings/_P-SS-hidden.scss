@@ -27,6 +27,28 @@ settings:
       default: false
 */
 
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.17;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .theme-dark,
 .theme-light {
   .setting-item.mod-toggle[data-id="HUI_hl"] {
@@ -71,7 +93,6 @@ settings:
     }
 
     .titlebar {
-      //height: 4px !important;
       height: 10px !important;
 
       .titlebar-button-container {
@@ -83,7 +104,6 @@ settings:
 
     .app-container {
       margin-top: -14px;
-      //height: 102.5%;
       height: 101.5%;
     }
 
@@ -99,12 +119,15 @@ settings:
 
     .view-header {
       border-bottom: 0px;
-      transition: all 0.4s ease-in-out;
       margin-top: -28px;
+
+      transition: margin 0.35s ease-in-out;
 
       &::after {
         content: "";
-        transition: all 0.4s ease-in-out;
+        animation: fade_in 0.7s;
+        opacity: 1;
+
         display: block;
         position: absolute;
 
@@ -118,32 +141,36 @@ settings:
         height: 3px;
       }
 
-      & * {
-        transition: all 0.4s ease-in-out;
-        filter: opacity(0%);
+      .view-header-icon,
+      .view-header-title,
+      .view-actions {
+        opacity: 0;
+        animation: fade_out 0.4s;
       }
 
       &:hover {
         border-bottom: 1px solid var(--interactive-accent);
         margin-top: 0px;
-        & * {
-          filter: opacity(100%);
+
+        .view-header-icon,
+        .view-header-title,
+        .view-actions {
+          animation: fade_in 1.2s;
+          opacity: 1;
         }
 
         &::after {
-          filter: opacity(0%);
+          animation: fade_out 0.4s;
+          opacity: 0;
         }
       }
 
       &:focus-within {
         margin-top: 0px;
 
-        & * {
-          filter: opacity(100%);
-        }
-
-        &::after {
-          filter: opacity(0%);
+        .view-header-title {
+          animation: none;
+          opacity: 1;
         }
       }
     }

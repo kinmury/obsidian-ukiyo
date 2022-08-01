@@ -6,6 +6,7 @@
 @use "./AFO/P-A-kanban";
 @use "./AFO/P-A-langTool";
 @use "./AFO/P-A-templater";
+@use "./AFO/P-A-sliding";
 
 /* Style Settings */
 @use "./style-settings/P_SS-alt-themes";
@@ -24,3 +25,4 @@
 .style-settings-container {
   padding-bottom: 5px !important;
 }
+

@@ -1,5 +1,27 @@
 /* Header */
 
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.17;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .theme-dark,
 .theme-light {
   .workspace-leaf:only-of-type .view-header {
@@ -13,31 +35,48 @@
     }
 
     .view-header {
-      .view-header-title {
-        padding-top: 5px;
-        line-height: initial;
-      }
-
       svg[class^="reading-glasses"],
       svg[class^="cross"],
       svg[class^="pencil"] {
         display: none;
       }
 
+      .view-header-title {
+        padding-top: 5px;
+        line-height: initial;
+      }
+
+      .view-actions {
+        animation: fade_out 0.3s;
+        transition: none;
+      }
+
+      .view-action {
+        color: var(--text-muted);
+      }
+
       .view-header-icon {
+        animation: fade_out 0.3s;
+        transition: 0.2s visibility ease-in-out;
         visibility: hidden;
       }
 
-      &:hover {
-        .view-header-icon {
-          visibility: visible;
-        }
+      .view-header-title-container {
+        transition: 0.25s margin ease-in-out;
+      }
 
+      &:hover {
         .view-header-title-container {
           margin-left: -10px;
         }
 
+        .view-header-icon {
+          animation: fade_in 0.4s;
+          visibility: visible;
+        }
+
         .view-actions {
+          animation: fade_in 0.4s;
           visibility: visible;
         }
       }
