@@ -37,7 +37,7 @@ theme:
   favicon: assets/favicon.png
   
   icon:
-    repo: fontawesome/brands/github-square
+    repo: fontawesome/brands/square-github
     #logo: logo
 
 extra_css:
