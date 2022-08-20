@@ -28,9 +28,26 @@
     {
       "modifiers": [
         "Alt",
-        "Mod"
+        "Shift"
       ],
       "key": "P"
+    }
+  ],
+  "editor:toggle-bullet-list": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "editor:toggle-checklist-status": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "Enter"
     }
   ]
 }

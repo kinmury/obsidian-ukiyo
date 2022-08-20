@@ -1,8 +1,23 @@
 /* General Settings */
 
+@keyframes fade_in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
 .theme-dark,
 .theme-light {
+  .modal {
+    animation: fade_in 0.3s;
+  }
+
   .modal-bg {
+    animation: fade_in 0.25s;
     background-color: var(--modal-background);
   }
 

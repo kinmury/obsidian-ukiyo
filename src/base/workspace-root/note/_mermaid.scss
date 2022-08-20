@@ -21,7 +21,9 @@
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    //transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1, 1);
+    animation: scaling_mermaid 0.15s;
 
     height: 75%;
     width: 75%;
@@ -33,5 +35,15 @@
       height: 100%;
       width: 100%;
     }
+  }
+}
+
+@keyframes scaling_mermaid {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3, 0.3);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1, 1);
   }
 }

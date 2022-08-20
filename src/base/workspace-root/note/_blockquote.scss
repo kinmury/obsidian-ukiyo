@@ -2,6 +2,10 @@
 
 .theme-dark,
 .theme-light {
+  .HyperMD-quote {
+    background-color: var(--blockquote-background);
+  }
+
   .markdown-preview-view {
     blockquote {
       margin-inline-start: 10px;

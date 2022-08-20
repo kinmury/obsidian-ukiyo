@@ -133,4 +133,68 @@
       margin-top: -5px;
     }
   }
+
+  .is-live-preview {
+    //Feature done by: Luke242#8485
+    .cm-widgetBuffer + .cm-header {
+      animation: outdent 250ms ease-out;
+      display: inline-block;
+    }
+
+    .cm-widgetBuffer + .cm-header.cm-formatting {
+      animation: opac 250ms ease-in;
+    }
+
+    .cm-active .cm-header + .cm-header {
+      animation: indent 250ms ease-out;
+      display: inline-block;
+    }
+
+    .cm-header-1 {
+      --header-offset: 1.2ch;
+    }
+    .cm-header-2 {
+      --header-offset: 2.2ch;
+    }
+    .cm-header-3 {
+      --header-offset: 3.2ch;
+    }
+    .cm-header-4 {
+      --header-offset: 4.2ch;
+    }
+    .cm-header-5 {
+      --header-offset: 5.2ch;
+    }
+    .cm-header-6 {
+      --header-offset: 6.2ch;
+    }
+  }
+}
+
+//Feature done by: Luke242#8485
+@keyframes indent {
+  from {
+    transform: translateX(calc(-1 * var(--header-offset)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes outdent {
+  from {
+    transform: translateX(var(--header-offset));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

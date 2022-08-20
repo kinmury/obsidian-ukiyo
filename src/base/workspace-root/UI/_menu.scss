@@ -18,10 +18,19 @@
     padding-top: 0px;
     padding-bottom: 0px;
 
-    transition: 0.125s ease-in-out;
+    transition: all 0.125s ease-in-out;
 
     &:hover {
       filter: brightness(110%);
     }
+
+    &.is-warning:hover {
+      color: var(--text-error-hover);
+      font-weight: bold;
+    }
+  }
+
+  .menu-item-icon {
+    transition: all 0.125s ease-in-out;
   }
 }

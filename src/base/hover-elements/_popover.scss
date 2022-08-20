@@ -1,21 +1,38 @@
 /* Popover */
 
+@keyframes fade_in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
 .theme-dark,
 .theme-light {
   .popover {
+    animation: fade_in 0.15s;
+
     &.hover-popover {
       border-radius: 4px;
-      min-height: 100px;
-      max-height: 700px;
-      width: 750px;
+
+      min-height: 45%;
+      height: 45%;
+      width: 70%;
+
+      /*min-height: 70%;
+      height: 70%;
+      width: 70%;*/
 
       border: 2px solid var(--popover-border);
       box-shadow: 1px 1px 4px var(--popover-shadow);
       background-color: var(--popover-bg);
 
       & .markdown-embed {
-        height: 600px;
-        width: 738px;
+        height: 100%;
+        width: 98.9%;
 
         margin-top: 5px;
         margin-bottom: 5px;

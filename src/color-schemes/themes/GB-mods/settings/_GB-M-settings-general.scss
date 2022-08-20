@@ -25,6 +25,10 @@
       background-color: #744625 !important;
       color: #f0c7aa;
 
+      &.mod-warning {
+        background-color: var(--background-modifier-error) !important;
+      }
+
       &:hover {
         filter: brightness(120%);
       }
@@ -55,15 +59,17 @@
     }
 
     .modal {
-      & button:not(.mod-cta):not(.mod-warning) {
-        &:hover {
-          filter: none;
+      & button {
+        &:not(.mod-cta):not(.mod-warning) {
+          &:hover {
+            filter: none;
+          }
         }
       }
     }
 
     .setting-item-info {
-      transition: 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
       filter: brightness(120%);
 
       &:hover {

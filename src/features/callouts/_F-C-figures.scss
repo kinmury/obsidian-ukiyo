@@ -20,12 +20,14 @@ body {
     &[data-callout="img-left"] {
       & .callout-content {
         float: left;
+        margin-right: 10px;
       }
     }
 
     &[data-callout="img-right"] {
       & .callout-content {
         float: right;
+        margin-left: 10px;
       }
     }
   }

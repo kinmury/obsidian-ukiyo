@@ -99,6 +99,7 @@
 
     --DM-nav-file-a: #af55354f;
     --DM-nav-tag-bg: #944021;
+    --DM-nav-indent: #b87e55;
 
     --DM-activeline-bg: #5a3020;
     --DM-cursor: #e09c35;
@@ -268,6 +269,7 @@
     --LM-nav-file-a: #f8dcc2;
     --LM-nav-tag-bg: #f5cba4;
     --LM-nav-ff-h: #ffe3ca;
+    --LM-nav-indent: #be6f4a;
 
     --LM-activeline-bg: #fce5d0;
     --LM-cursor: #f0936f;
@@ -339,6 +341,11 @@
     --LM-txt-selected-arrow: #522d20;
 
     --LM-SS-hidden-hl-large: #dabba1;
+
+    // Mini-fixes
+    .kanban-plugin__lane-action-cancel {
+      color: white;
+    }
   }
 }
 

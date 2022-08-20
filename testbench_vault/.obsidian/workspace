@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Versions/v1.0.12.md",
+            "file": "Versions/v1.0.27.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      },
+      {
+        "id": "8b03677d0c5c700a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
             "mode": "source",
             "source": true
           }
@@ -61,7 +73,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255
+    "width": 254.010160446167,
+    "collapsed": true
   },
   "right": {
     "id": "e5275c8375994ee4",
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Versions/v1.0.12.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,9 +118,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Versions/v1.0.12.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -117,28 +130,29 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Versions/v1.0.12.md"
+                "file": "Untitled.md"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 261
+    "width": 260.65911865234375,
+    "collapsed": true
   },
-  "active": "ef3de2566b0addc2",
+  "active": "8b03677d0c5c700a",
   "lastOpenFiles": [
+    "Versions/v1.0.27.md",
     "Untitled.md",
-    "Versions/v1.0.12.md",
-    "Versions/v1.0.8.md",
-    "Versions/test/Untitled.md",
-    "Changes.md",
-    "test.md",
+    "Versions/v1.0.X.md",
+    "Untitled Kanban.md",
     "adsf.md",
-    "Example Note 2.md",
-    "Example Note 1.md",
-    "Lorem Ipsum.md"
+    "Versions/v1.0.12.md",
+    "obsidian-hub-main/00 - Start here.md",
+    "obsidian-hub-main/02 - Community Expansions/02.05 All Community Expansions/Themes/Ukiyo.md",
+    "obsidian-hub-main/01 - Community/People/kinmury.md",
+    "obsidian-hub-main/02 - Community Expansions/02.05 All Community Expansions/Themes/Alchemy.md"
   ]
 }

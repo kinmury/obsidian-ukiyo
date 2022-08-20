@@ -28,7 +28,7 @@
   --DM-base-txt-muted: #5cb986;
   --DM-base-txt-faint: var(--DM-base-txt-muted);
   --DM-base-txt-error: #ff0000;
-  --DM-base-txt-error-h: #ff4e4e;
+  --DM-base-txt-error-h: #ff0000;
 
   --DM-base-highlight-bg: rgba(160, 99, 38, 0.4);
   --DM-base-highlight-bg-a: var(--base-highlight-bg); // (-a) == active
@@ -97,12 +97,13 @@
 
   --DM-nav-file-a: #9df1ca2d;
   --DM-nav-tag-bg: #14553f;
+  --DM-nav-indent: #2e8053;
 
   --DM-activeline-bg: #2c3d4d83;
   --DM-cursor: #b99052;
 
-  --DM-resize-handles-bg: #2a4357;
-  --DM-resize-handles-bg-h: #385d7c;
+  --DM-resize-handles-bg: #293846; //#2a4357;
+  --DM-resize-handles-bg-h: #2a4357; //#385d7c;;
 
   --DM-FM-limits: #2ebd7a; // (FM) = FrontMatter
   --DM-FM-tag: #c59555;
@@ -190,8 +191,8 @@
   --LM-base-modifier-cover: #93bdb9a8;
 
   --LM-base-modifier-success: #a4e7c3;
-  --LM-base-modifier-error: #990000;
-  --LM-base-modifier-error-h: #bb0000;
+  --LM-base-modifier-error: #ff6060;
+  --LM-base-modifier-error-h: #ff7d7d;
 
   --LM-base-txt-accent: #3982f0;
   --LM-base-txt-accent-h: #004ab9;
@@ -268,6 +269,7 @@
   --LM-nav-file-a: #bde7ec;
   --LM-nav-tag-bg: #96d3da;
   --LM-nav-ff-h: #bceff5;
+  --LM-nav-indent: #91afc2;
 
   --LM-activeline-bg: #ceeaec;
   --LM-cursor: #f0bc6f;

@@ -24,6 +24,10 @@
   }
 
   .markdown-preview-view {
+    img {
+      transition: all 0.15s ease-in-out;
+    }
+
     img:active {
       cursor: none;
       display: block;
@@ -33,10 +37,12 @@
       text-align: center;
 
       top: 50%;
-      transform: translateY(-50%);
+      //transform: translateY(-50%);
+      transform: translateY(-50%) scale(1, 1);
+      animation: scaling_img 0.15s;
 
       height: 70%;
-      width: 70%;
+      width: 80%;
 
       padding: 0;
 
@@ -50,5 +56,15 @@
       background-position: 0 0;
       background-size: 10px 10px;
     }
+  }
+}
+
+@keyframes scaling_img {
+  0% {
+    transform: translateY(-50%) scale(0.3, 0.3);
+  }
+
+  100% {
+    transform: translateY(-50%) scale(1, 1);
   }
 }

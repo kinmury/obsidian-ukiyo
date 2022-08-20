@@ -6,7 +6,7 @@
   .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
     background-color: var(--resize-handles-background);
     border-color: var(--resize-handles-background);
-    width: 2px !important;
+    width: 1px !important;
 
     &:hover {
       background-color: var(--resize-handles-background-hover);

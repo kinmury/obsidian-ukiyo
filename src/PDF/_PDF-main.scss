@@ -36,6 +36,20 @@
       color: black !important;
     }
 
+    mark {
+      display: inline-block;
+      line-height: 19px !important;
+      background-color: rgba(167, 105, 43, 0.4) !important;
+      color: black !important;
+      padding: 0px 2px !important;
+    }
+
+    hr {
+      &::after {
+        border-radius: 2px !important;
+        background-color: black !important;
+      }
+    }
     .markdown-preview-view blockquote {
       background-color: white !important;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
@@ -112,6 +126,23 @@
         span {
           color: white !important;
         }
+      }
+    }
+
+    button {
+      background-color: transparent !important;
+      border: 1px solid black !important;
+      border-radius: 2px !important;
+
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      * {
+        font-style: normal !important;
+        font-weight: 100 !important;
+        font-family: "Amiri Italic" !important;
       }
     }
   }

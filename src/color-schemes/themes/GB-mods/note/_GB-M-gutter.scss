@@ -1,0 +1,10 @@
+.theme-dark,
+.theme-light {
+  &.AT_GB {
+    .cm-gutterElement {
+      &.cm-active {
+        filter: brightness(-100%) !important;
+      }
+    }
+  }
+}

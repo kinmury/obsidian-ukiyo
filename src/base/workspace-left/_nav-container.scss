@@ -77,15 +77,40 @@
     font-weight: bold;
   }
 
+  .workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title,
+  .workspace-leaf.mod-active .nav-file.has-focus {
+    transition: all 0.2s ease-in-out;
+    border-color: transparent;
+    min-width: 98%;
+
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .workspace-leaf.mod-active
+    .nav-folder.has-focus
+    > .nav-folder-title:focus-within,
+  .workspace-leaf.mod-active .nav-file.has-focus:focus-within {
+    border-color: transparent;
+  }
+
   .nav-file-tag {
     background-color: var(--nav-tag-background);
   }
 
+  .nav-file-title.has-active-menu,
+  .nav-folder-title.is-being-dragged-over {
+    background-color: var(--interactive-accent) !important;
+  }
+
   /* NAV Vertical Lines */
   .nav-folder-children:not(.nav-folder.mod-root > .nav-folder-children) {
-    border-left: 1px solid var(--text-muted);
+    border-left: 1px solid var(--nav-indent);
     padding: 0px;
-    margin-left: 17px;
+    margin-left: 16.5px;
   }
 
   .nav-file-title {

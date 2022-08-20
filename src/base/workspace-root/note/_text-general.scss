@@ -19,6 +19,10 @@
     color: var(--italic);
   }
 
+  mark {
+    padding: 0px 2px !important;
+  }
+
   .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground:only-child {
     &::before {
       content: "▲";

@@ -16,6 +16,7 @@
   "userIgnoreFilters": null,
   "livePreview": false,
   "spellcheckLanguages": [
-    "en-US"
-  ]
+    "en-GB"
+  ],
+  "alwaysUpdateLinks": true
 }

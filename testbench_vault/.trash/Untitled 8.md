@@ -1,0 +1,46 @@
+# Ukiyo V1.0.27
+
+> ==Obsidian Version== - `v0.15.9`
+
+## Improvements
+### General
+
+- **Folder Indent Line** - Reduced line width and color
+- **Subtle Animations** - Various elements such as modals (like the settings, community themes and plugins panels), prompts and suggestions have an animations when appearing
+- **Highlights** - Padding on both sides of the highlight was added on preview view
+- **PDF** - Minor improvements and buttons where styled
+- **File Dragging and Active File** - Missing color style added
+- **Blockquote Background** - *Edit View* - Now there is a background color on every blockquote line (`>`)
+- **Headings Feature** - *Live Preview* - New there is a clean and soft animation when the cursor enters a line with a heading on it
+	- Feature created by `Luke242#8485`
+- **Images and Mermaid** - New transitions where added when you click over them
+- **Kanban Plugin** - Better and better style was added
+	- Better hover animations
+	- The margins and paddings of all the elements inside the items where remove, so that the information can be seen in less space
+
+---
+
+## Fixes
+### General
+
+- **Folder Indent Line** - Fixed position
+- **\[\[Links]]**
+	- The size of the popover note now adapts to the width and height of the note
+	- Said popover won't hide anymore the link below itself, so that you can still click the link without moving the cursor to the link icon of the popover
+- **Menu/Red Items** - Subtle issues fixed (when hover over the "Remove" option, the `svg` icon and the text transition on different speed and, in some cases, the color intensity was different)
+- **PDF** - Subtle issues fixed (such as the highlight having unnecessary top and bottom padding)
+
+## Golden Coffee 
+
+- **Kanban** - Fixed color issues
+
+### Golden Book
+
+- **Note Line Number** - Fixed Active Line Color
+- **Red Buttons** - Fixed color
+- **Kanban** - Fixed color issues
+
+### Alchemy
+
+- **Red Buttons** - Fixed Color
+- **Kanban** - Fixed color issues

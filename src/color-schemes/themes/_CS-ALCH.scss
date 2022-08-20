@@ -53,6 +53,12 @@
       font-weight: bold;
     }
 
+    button {
+      &.mod-warning {
+        color: #ccbd9e;
+      }
+    }
+
     .community-theme.is-selected {
       button {
         color: var(--text-faint);
@@ -71,6 +77,14 @@
           font-weight: bold;
         }
       }
+    }
+
+    .kanban-plugin__new-item-button:not(:hover) {
+      color: var(--text-normal);
+    }
+
+    .kanban-plugin__lane-action-cancel {
+      color: var(--text-normal);
     }
   }
 }
@@ -175,6 +189,7 @@
 
     --DM-nav-file-a: #31363d;
     --DM-nav-tag-bg: #2a374b;
+    --DM-nav-indent: #88724a;
 
     --DM-resize-handles-bg: #243746;
     --DM-resize-handles-bg-h: #355672;
@@ -341,6 +356,7 @@
 
     --LM-nav-file-a: var(--DM-nav-file-a);
     --LM-nav-tag-bg: var(--DM-nav-tag-bg);
+    --LM-nav-indent: var(--DM-nav-indent);
 
     --LM-resize-handles-bg: var(--DM-resize-handles-bg);
     --LM-resize-handles-bg-h: var(--DM-resize-handles-bg-h);
