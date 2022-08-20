@@ -5528,11 +5528,11 @@ id: GS
 settings:
     - 
         id: AT
-        title: Alternative Theme
+        title: Alternative Color Scheme
         description: 
-            "Choose which alternative theme to use"
+            "Choose which alternative color scheme to use"
         description.es:
-            "Escoge el tema alternativo a usar"
+            "Escoge el esquema de colores alternativo a usar"
         type: class-select
         allowEmpty: false
         default: AT_default

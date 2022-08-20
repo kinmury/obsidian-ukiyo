@@ -9,18 +9,10 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Versions/v1.0.27.md",
+            "file": "Versions/v1.0.X.md",
             "mode": "source",
             "source": true
           }
-        }
-      },
-      {
-        "id": "8b03677d0c5c700a",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
         }
       }
     ],
@@ -85,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Versions/v1.0.X.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,6 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Versions/v1.0.X.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -122,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Versions/v1.0.X.md"
+              }
             }
           }
         ],
@@ -133,11 +129,11 @@
     "width": 260.65911865234375,
     "collapsed": true
   },
-  "active": "8b03677d0c5c700a",
+  "active": "ef3de2566b0addc2",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Versions/v1.0.X.md",
     "Versions/v1.0.27.md",
+    "Versions/v1.0.X.md",
+    "Untitled.md",
     "Untitled Kanban.md",
     "adsf.md",
     "Versions/v1.0.12.md",
