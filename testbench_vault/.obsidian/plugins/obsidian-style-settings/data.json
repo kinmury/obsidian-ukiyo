@@ -1,10 +1,11 @@
 {
-  "GS@@AT": "AT_Alch",
-  "HUI_tituloPrincipal@@HUI_g": false,
+  "GS@@AT": "AT_default",
+  "HUI_tituloPrincipal@@HUI_g": true,
   "AL_tituloPrincipal@@AL_alt": false,
   "minimal-style@@active-line-on": true,
   "AL_tituloPrincipal@@AAL_right": false,
   "AL_tituloPrincipal@@AAL_both": false,
   "AL_tituloPrincipal@@AAL_keep": false,
-  "RF@@refined_font": false
+  "RF@@refined_font": false,
+  "HUI_tituloPrincipal@@HUI_hl": false
 }

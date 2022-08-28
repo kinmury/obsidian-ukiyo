@@ -13,22 +13,24 @@
 .theme-dark,
 .theme-light {
   .popover {
-    animation: fade_in 0.15s;
+    animation: 0.2s fade_in;
 
     &.hover-popover {
-      border-radius: 4px;
-
       min-height: 45%;
       height: 45%;
-      width: 70%;
-
-      /*min-height: 70%;
-      height: 70%;
-      width: 70%;*/
+      width: 65%;
 
       border: 2px solid var(--popover-border);
-      box-shadow: 1px 1px 4px var(--popover-shadow);
+      border-radius: 4px;
+
       background-color: var(--popover-bg);
+      box-shadow: 1px 1px 4px var(--popover-shadow);
+
+      &.is-loaded {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        margin: auto;
+      }
 
       & .markdown-embed {
         height: 100%;
@@ -54,9 +56,10 @@
 
         margin-right: 0px;
 
-        background-color: var(--popover-bg);
         border: 2px solid var(--popover-border);
         border-radius: 20px;
+
+        background-color: var(--popover-bg);
       }
     }
   }

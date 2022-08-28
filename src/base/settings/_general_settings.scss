@@ -13,11 +13,11 @@
 .theme-dark,
 .theme-light {
   .modal {
-    animation: fade_in 0.3s;
+    animation: 0.3s fade_in;
   }
 
   .modal-bg {
-    animation: fade_in 0.25s;
+    animation: 0.25s fade_in;
     background-color: var(--modal-background);
   }
 
@@ -29,23 +29,42 @@
     box-shadow: var(--basic-BS);
 
     &.mod-settings {
-      width: 97vw;
+      /*width: 97vw;
       max-width: 97vw;
-      height: 51.9vw;
+      height: 51.9vw;*/
+
+      /*width: 57vw;
+      max-width: 57vw;
+      height: 81.9vh;*/
+
+      width: 57vw;
+      max-width: 57vw;
+      height: 81.9vh;
+
       border-radius: 0px;
       border: 2px solid var(--modal-settings-border);
 
       & .vertical-tab-header {
-        flex-basis: 300px;
-        height: 51.9vw;
+        //height: 51.9vw;
+        //flex-basis: 200px;
+
+        height: 81.5vh;
+
         padding: 0px;
       }
 
       & .vertical-tab-content-container {
+        //height: 51.9vw;
         background-color: var(--background-secondary);
+
         padding-top: 10px;
         padding-bottom: 0px;
-        height: 51.9vw;
+
+        height: 81.5vh;
+      }
+
+      & .vertical-tab-content {
+        overflow-x: hidden;
       }
     }
 
@@ -56,6 +75,10 @@
 
     .mod-warning {
       font-weight: bold;
+    }
+
+    button {
+      transition: 0.15s ease-in-out;
     }
   }
 
@@ -73,12 +96,6 @@
 
   .setting-item-control {
     & button {
-      transition: 0.15s ease-in-out;
-    }
-  }
-
-  .modal {
-    button {
       transition: 0.15s ease-in-out;
     }
   }

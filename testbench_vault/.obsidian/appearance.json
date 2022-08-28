@@ -2,6 +2,9 @@
   "cssTheme": "Ukiyo",
   "theme": "obsidian",
   "translucency": false,
-  "baseFontSize": 16,
-  "baseFontSizeAction": false
+  "baseFontSize": 20,
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "test"
+  ]
 }

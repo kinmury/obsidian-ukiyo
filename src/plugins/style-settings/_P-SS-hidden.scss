@@ -76,17 +76,21 @@ settings:
 
     .workspace-ribbon {
       &.mod-right.is-collapsed {
-        margin-right: -20px;
+        margin-right: -10px;
+        -webkit-appearance: none;
 
         &:hover {
+          -webkit-appearance: initial;
           margin-right: 0px;
         }
       }
 
       &.mod-left.is-collapsed {
-        margin-left: -20px;
+        margin-left: -10px;
+        -webkit-appearance: none;
 
         &:hover {
+          -webkit-appearance: initial;
           margin-left: 0px;
         }
       }

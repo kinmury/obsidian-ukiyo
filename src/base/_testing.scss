@@ -1,0 +1,217 @@
+/*@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+div {
+  .callout[data-callout*="grid-items"] {
+    .contains-task-list .task-list-item-checkbox {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    border: 0px;
+
+    .callout-title {
+      display: none;
+    }
+
+    .callout-content {
+      & ::-webkit-scrollbar-thumb {
+        display: none;
+      }
+
+      padding: 0px;
+
+      ul:not(ul li ul) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        justify-content: center;
+
+        padding: 0px !important;
+      }
+
+      li:not(ul li ul li) {
+        &::marker {
+          color: transparent !important;
+        }
+
+        &.task-list-item.is-checked {
+          &:before {
+            content: "✔️";
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+          }
+          border: 2px solid green;
+        }
+
+        &.task-list-item {
+          &:before {
+            content: "📝​";
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+          }
+          border: 2px solid rgb(139, 139, 54);
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+
+        position: relative;
+
+        min-height: 120px;
+        overflow: auto;
+
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+        border: 1px solid var(--background-modifier-border);
+
+        .list-collapse-indicator {
+          display: none;
+        }
+
+        * {
+          &:not(ul li ul li):first-child {
+            margin-left: 5px;
+          }
+
+          &:not(ul li ul li):last-child {
+            margin-right: 5px;
+          }
+
+          &:not(ul li ul li, :first-child, :last-child) {
+            margin-right: 5px;
+            margin-left: 5px;
+          }
+        }
+
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          transform: translate(5px, -5px);
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          filter: brightness(120%);
+
+          ul {
+            animation: 0.3s slideIn;
+            position: initial;
+            opacity: 1;
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+
+          width: 100%;
+          padding: 0px;
+
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+
+          position: absolute;
+          bottom: 0;
+          opacity: 0;
+
+          li {
+            &::marker {
+              color: transparent !important;
+            }
+
+            width: 100%;
+
+            &:nth-child(1) {
+              font-family: "Amiri Regular";
+            }
+
+            &:nth-child(2) {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .callout[data-callout*="grid-items-3"] {
+    .callout-content {
+      li {
+        width: calc(100% / 3 - 10px);
+      }
+    }
+  }
+
+  .callout[data-callout*="grid-items-2"] {
+    .callout-content {
+      li {
+        width: calc(100% / 2 - 10px);
+      }
+    }
+  }
+}*/
+
+// Global Sticky Note
+/*
+.callout[data-callout*="sticky-note-left"],
+.callout[data-callout*="sticky-note-right"] {
+  background-color: #9b7a10;
+  box-shadow: rgb(31, 32, 34) 0px 20px 30px -10px;
+
+  transition: all 0.3s ease-in-out;
+
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+
+  position: absolute;
+
+  &:hover {
+    opacity: 0.15;
+  }
+
+  &:active {
+    cursor: none;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  svg {
+    display: none;
+  }
+
+  .callout-title,
+  .callout-content {
+    text-align: center;
+  }
+}
+
+.callout[data-callout*="sticky-note-left"] {
+  transform: rotate(3deg);
+  left: 20%;
+}
+
+.callout[data-callout*="sticky-note-right"] {
+  transform: rotate(-3deg);
+  right: 20%;
+}
+*/
+

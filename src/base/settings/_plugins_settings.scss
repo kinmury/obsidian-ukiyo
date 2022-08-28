@@ -21,8 +21,10 @@
   }
 
   .modal.mod-community-plugin {
-    width: 97.3vw;
-    max-width: 97.3vw;
+    /*width: 97.3vw;
+    max-width: 97.3vw;*/
+    width: 77.3vw;
+    max-width: 77.3vw;
     height: 51.9vw;
     border-radius: 0px;
     border: 2px solid var(--s-community-plugins-modal-border-color);
@@ -56,6 +58,15 @@
         margin-right: 10px;
       }
     }
+
+    /*.community-plugin-info {
+      .external-link {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }*/
 
     .community-plugin-item {
       margin-top: 0px;

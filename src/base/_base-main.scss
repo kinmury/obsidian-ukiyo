@@ -65,3 +65,9 @@
 @use "./workspace-root/note/tables";
 @use "./workspace-root/note/text-general";
 @use "./workspace-root/note/vertical-line";
+
+/* Hole Workspace*/
+@use "./workspace-root/workspace";
+
+/* - Testing*/
+@use "./testing";

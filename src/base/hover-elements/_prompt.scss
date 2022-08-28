@@ -13,7 +13,7 @@
 .theme-dark,
 .theme-light {
   .prompt {
-    animation: fade_in 0.25s;
+    animation: 0.25s fade_in;
 
     border: 2px solid var(--prompt-border);
     border-radius: 2px;
@@ -22,7 +22,7 @@
   }
 
   .suggestion-container {
-    animation: fade_in 0.25s;
+    animation: 0.25s fade_in;
     background-color: var(--suggestion-container-background);
   }
 

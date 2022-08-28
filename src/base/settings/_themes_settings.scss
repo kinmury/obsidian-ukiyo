@@ -3,8 +3,10 @@
 .theme-dark,
 .theme-light {
   .modal.mod-community-theme {
-    width: 97.3vw;
-    max-width: 97.3vw;
+    /*width: 97.3vw;
+    max-width: 97.3vw;*/
+    width: 77.3vw;
+    max-width: 77.3vw;
     height: 51.9vw;
     border-radius: 0px;
     border: 2px solid var(--s-community-themes-modal-border);
@@ -93,6 +95,7 @@
 
       display: grid;
       grid-template-columns: 1.2fr 2fr;
+      //grid-template-rows: 0.2fr 1fr;
       padding: 20px 20px;
 
       & .community-theme-title {
@@ -154,19 +157,37 @@
         }
       }
 
-      div:not(.community-theme-title, .community-theme-info, .modal-button-container) {
+      /*div:not(.community-theme-title, .community-theme-info, .modal-button-container) {
         /*width: 75%;
-        height: 95%;*/
+        height: 95%;*/ /*
         width: 40vw;
         height: 40vh;
         margin: auto;
+        position: relative;
+      }*/
+
+      /*& img.community-theme-screenshot {
+        max-width: 100%;
+        width: 95%;
+        height: 95%;
+        //margin-left: 25px;
+        margin: auto;
+      }*/
+
+      & .community-theme-info.u-center-text + div {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        //max-width: 100%;
       }
 
-      & img.community-theme-screenshot {
-        width: 100%;
+      & .community-theme-screenshot {
         max-width: 100%;
-        height: 100%;
-        margin-left: 25px;
+        width: 90%;
+        height: 90%;
+        //margin-left: 25px;
+        margin: auto;
       }
 
       & .community-theme-remove-button {

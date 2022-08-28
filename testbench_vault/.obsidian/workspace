@@ -4,13 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "ef3de2566b0addc2",
+        "id": "44905be3f13f20cc",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Versions/v1.0.X.md",
+            "file": "Versions/v1.0.37.md",
             "mode": "source",
+            "backlinks": false,
             "source": true
           }
         }
@@ -40,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "asdf",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +62,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.010160446167
+    "width": 306.5,
+    "collapsed": true
   },
   "right": {
     "id": "e5275c8375994ee4",
@@ -77,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Versions/v1.0.X.md",
+                "file": "Versions/v1.0.37.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Versions/v1.0.X.md",
+                "file": "Versions/v1.0.37.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -117,29 +119,37 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Versions/v1.0.X.md"
+                "file": "Versions/v1.0.37.md"
               }
+            }
+          },
+          {
+            "id": "2edc967a8cc4a31d",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 260.65911865234375,
+    "width": 349.5,
     "collapsed": true
   },
-  "active": "ef3de2566b0addc2",
+  "active": "44905be3f13f20cc",
   "lastOpenFiles": [
-    "Versions/v1.0.27.md",
-    "Versions/v1.0.X.md",
     "Untitled.md",
+    "Untitled 1.md",
+    "Versions/v1.0.37.md",
+    "Untitled 2.md",
     "Untitled Kanban.md",
-    "adsf.md",
-    "Versions/v1.0.12.md",
-    "obsidian-hub-main/00 - Start here.md",
-    "obsidian-hub-main/02 - Community Expansions/02.05 All Community Expansions/Themes/Ukiyo.md",
-    "obsidian-hub-main/01 - Community/People/kinmury.md",
-    "obsidian-hub-main/02 - Community Expansions/02.05 All Community Expansions/Themes/Alchemy.md"
+    "Untitled adsf asd fsadfsa fsadfa fdsfasdfadfasdfasfasd fas fasd fsa fsad f.md",
+    "Pasted image 20220822174920.png",
+    "Sticky Note Test.md",
+    "Versions/v1.0.27.md",
+    "Untitled 4.md"
   ]
 }

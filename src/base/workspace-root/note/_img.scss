@@ -2,7 +2,7 @@
 
 .theme-dark,
 .theme-light {
-  img {
+  img:not(.banner-image, .external-link > img) {
     display: block;
 
     margin-left: auto;
@@ -24,11 +24,11 @@
   }
 
   .markdown-preview-view {
-    img {
+    img:not(.banner-image, .external-link > img) {
       transition: all 0.15s ease-in-out;
     }
 
-    img:active {
+    img:not(.banner-image, .external-link > img):active {
       cursor: none;
       display: block;
 

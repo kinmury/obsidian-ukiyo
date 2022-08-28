@@ -32,10 +32,6 @@
     &.internal-link.is-unresolved {
       filter: brightness(115%);
     }
-
-    &:hover {
-      filter: brightness(150%);
-    }
   }
 
   sup {
@@ -44,6 +40,22 @@
       font-size: medium;
       padding-left: 2px;
       line-height: 0px;
+    }
+  }
+}
+
+.theme-dark {
+  a {
+    &:hover {
+      filter: brightness(150%);
+    }
+  }
+}
+
+.theme-light {
+  a {
+    &:hover {
+      filter: brightness(80%);
     }
   }
 }

@@ -1,4 +1,7 @@
 [
   "obsidian-style-settings",
-  "obsidian-kanban"
+  "obsidian-kanban",
+  "obsidian-banners",
+  "calendar",
+  "dataview"
 ]
