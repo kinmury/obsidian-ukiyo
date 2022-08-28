@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Versions/v1.0.37.md",
-            "mode": "source",
+            "file": "Untitled 3.md",
+            "mode": "preview",
             "backlinks": false,
             "source": true
           }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Versions/v1.0.37.md",
+                "file": "Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Versions/v1.0.37.md",
+                "file": "Untitled 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Versions/v1.0.37.md"
+                "file": "Untitled 3.md"
               }
             }
           },
@@ -141,15 +141,15 @@
   },
   "active": "44905be3f13f20cc",
   "lastOpenFiles": [
+    "Untitled 2.md",
     "Untitled.md",
     "Untitled 1.md",
+    "Untitled 3.md",
     "Versions/v1.0.37.md",
-    "Untitled 2.md",
-    "Untitled Kanban.md",
-    "Untitled adsf asd fsadfsa fsadfa fdsfasdfadfasdfasfasd fas fasd fsa fsad f.md",
-    "Pasted image 20220822174920.png",
-    "Sticky Note Test.md",
     "Versions/v1.0.27.md",
-    "Untitled 4.md"
+    "Versions/v1.0.12.md",
+    "Versions/v1.0.8.md",
+    "Untitled Kanban.md",
+    "Untitled adsf asd fsadfsa fsadfa fdsfasdfadfasdfasfasd fas fasd fsa fsad f.md"
   ]
 }

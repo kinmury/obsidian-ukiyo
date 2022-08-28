@@ -5310,6 +5310,103 @@ div {
   right: 20%;
 }
 */
+.theme-dark .callout[data-callout*=container-grey] .dataview tbody > tr {
+  border: 2px solid #79807f;
+}
+.theme-dark .callout[data-callout*=container-yellow] .dataview tbody > tr {
+  border: 2px solid #9c9311;
+}
+.theme-dark .callout[data-callout*=container-purple] .dataview tbody > tr {
+  border: 2px solid #9150c7;
+}
+.theme-dark .callout[data-callout*=container-green] .dataview tbody > tr {
+  border: 2px solid #41993e;
+}
+
+.theme-light .callout[data-callout*=container-grey] .dataview tbody > tr {
+  border: 2px solid #a9b8b5;
+}
+.theme-light .callout[data-callout*=container-yellow] .dataview tbody > tr {
+  border: 2px solid #c9c043;
+}
+.theme-light .callout[data-callout*=container-purple] .dataview tbody > tr {
+  border: 2px solid #bfa0d8;
+}
+.theme-light .callout[data-callout*=container-green] .dataview tbody > tr {
+  border: 2px solid #84c582;
+}
+
+.theme-dark .testing .callout[data-callout*=container],
+.theme-light .testing .callout[data-callout*=container] {
+  border: none;
+}
+.theme-dark .testing .callout[data-callout*=container] .callout-title,
+.theme-light .testing .callout[data-callout*=container] .callout-title {
+  display: none;
+}
+.theme-dark .testing .callout[data-callout*=container] .callout-content,
+.theme-light .testing .callout[data-callout*=container] .callout-content {
+  padding: 0px;
+  width: 105%;
+}
+.theme-dark .testing .callout[data-callout*=container] .callout-content .block-language-dataview.node-insert-event,
+.theme-light .testing .callout[data-callout*=container] .callout-content .block-language-dataview.node-insert-event {
+  width: 95.3%;
+}
+.theme-dark .testing .dataview .table-view-tr-header,
+.theme-light .testing .dataview .table-view-tr-header {
+  display: none;
+}
+.theme-dark .testing .dataview tbody,
+.theme-light .testing .dataview tbody {
+  display: grid;
+  grid-column-gap: 0.75rem;
+  grid-row-gap: 0.75rem;
+}
+.theme-dark .testing .dataview tbody > tr,
+.theme-light .testing .dataview tbody > tr {
+  transition: all 0.175s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+  border: 2px solid var(--background-modifier-border);
+  border-radius: 2px;
+}
+.theme-dark .testing .dataview tbody > tr:hover,
+.theme-light .testing .dataview tbody > tr:hover {
+  background-color: transparent;
+  transform: translate(0.5%, -3%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.theme-dark .testing .dataview td,
+.theme-light .testing .dataview td {
+  border: none;
+}
+.theme-dark .testing .dataview td:not(:nth-child(3)),
+.theme-light .testing .dataview td:not(:nth-child(3)) {
+  padding-bottom: 0px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 50%;
+}
+.theme-dark .testing .dataview td:nth-child(1), .theme-dark .testing .dataview td:nth-child(2),
+.theme-light .testing .dataview td:nth-child(1),
+.theme-light .testing .dataview td:nth-child(2) {
+  flex-grow: 2;
+}
+.theme-dark .testing .dataview td:nth-child(2),
+.theme-light .testing .dataview td:nth-child(2) {
+  text-align: end;
+}
+.theme-dark .testing .dataview td:nth-child(3),
+.theme-light .testing .dataview td:nth-child(3) {
+  padding-top: 0px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
 /* Hover Elements */
 /* Icons */
 /* Loading Screen */
@@ -5718,6 +5815,7 @@ body .callout[data-callout=img-right] .callout-content {
   margin: 0px;
   border-left: 3px solid;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 3;
 }
 .popover .callout[data-callout*=metadata]::before {
   background-color: var(--background-primary);
