@@ -1,29 +1,17 @@
-<h1 align=center>Ukiyo</h1>
+<h1 align=center>!! Ukiyo is being reworked !!</h1>
 
-<div align=center><b>Welcome to Ukiyo!</b></div>
+Hello to everyone 😊,
 
-It's my minimalistic theme take on Obsidian. Some of you may know me as the designer behind `Golden Coffee`, `Golden Book` and `Alchemy`. This theme, even though it's a theme on his own, I decided to include the rest of the previews themes I made in this theme as *"Alternative Theme"s*.
+As you may know, Obsidian is officially on version `1.0.0`, and with all the new amazing features that it brings, it also destroys most of the themes that where on the app. That's why a lot of the themes (including mine) are catalogued (I'm not sure if mine is, but I personally think that it should be marked as) **Legacy Theme**. This means that my theme is no longer suitable to work with on this new Obsidian version. 
 
-There are a number of reasons why I decided to make do this, being one making the maintenance of the themes easier for me, as well as updating them to the newer versions of Obsidian. That's why the themes that I mentioned earlier aren't available on the *Community Themes* anymore, even though they'll still remain on their respective GitHub Repositories in case the users of said themes didn't knew about this change.
+That why I worked as fast as possible to rework and adapt the theme to the new version. So I bring you the *unfinished* version `2.0.0-beta` of this theme. By "unfinished" I don't mean it's also broken (although there might be some things that don't work properly (in such case please open an issue so that I'm aware of it and fix it as soon as possible)), I mean that there is just enough content so that you can work properly with it.
 
-<h2 align=center>Warnings and Feedback</h2>
-	
-I warn all of Ukiyo users. This theme is designed to satisfy the designers needs when using Obsidian. I made some initial changes so that new users can still use this theme, but there might be some options and elements that are hidden. 
+For now there is only one colour scheme, the base one (Ukiyo). From here I'll be working on a number of things, such as the rest of the colour schemes, some features that are missing like the pop-ups or the floating side panels, and will also tweak the `UI` a little and some plugins.
 
-This elements are either not used at all or there is a shortcut for it. There should be an available [wiki](https://kinmury.github.io/obsidian-ukiyo/) on this repository where it's explained which changes where made and how to use those hidden elements.
+One of the main focus that I also have is start building a proper *Style Setting* Settings. This means that I'll bring you the ability to change a lot of stuff or, at the very least, the stuff that I have change that may be interesting for you to change, like the colours of the bold, italic and mark elements for example.
 
-I tried my best to polish the theme in all aspects that I saw fit, but I'm sure there will be some details that I missed, either on the base theme (Ukiyo) itself or on the *alternative theme*s. If you encounter something that isn't right, feel free to post and `issue` explaining it so that I can fix it.
+In any way, I hope that this first update will help you use the new Obsidian version with a more optimised for that version theme. If you encounter any problem/issue at all with my theme, don't hesitate to ask me to fix it on the GitHub Issue page. 
 
-Also, while I was making the theme, I created some "tools" (better explained at the [wiki](https://kinmury.github.io/obsidian-ukiyo/)) to help me make better notes or to create better frameworks (like creating a bookshelf using some CSS Class). I also noticed in other themes what CSS tools they created and, even though I liked them, I didn't feel the need to integrate them on my theme for two reasons: Either these tools are built on snippets, so that you can used them in other themes, or they where too integrated on their respective themes that the amount of work I would put in to make it work on my theme was greater than the need for me to do so.
+Also, I'll implement a Kanban View Project on this repository so that, if you are interested, you can see what elements of the theme its being currently working on.
 
-In conclusion, if you want to see some feature that has another theme integrated into this one, make sure to create a new issue, stating what feature do you want to see implemented in this theme and from which theme was created, so that I can make sure that it works exactly as expected.
-
-On that note, I hope the creators of said features are fine with me implementing them on this theme. I'll make sure to credit them in the code itself, in this main page and in the [wiki](https://kinmury.github.io/obsidian-ukiyo/), where I'll explain which features I had integrated and how could be used (and also I'll put a link to the repositories of the themes that had created said feature)
-
-<h2 align=center>Style Settings</h2>
-
-The only plugin that I want you to download on your Vault it's the **Style Settings** plugins. This will allow you to see all the options this theme provides to you, thus increasing the enjoyment of this theme.
-
-<h2 align=center>Showcase</h2>
-
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/Showcase.png)
+Finally, I want to say **Thank You** for your patience and I hope that you like the new version of this theme 😊
