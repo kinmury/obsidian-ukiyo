@@ -2,7 +2,7 @@
 
 <p align=center>Welcome everyone to my Obsidian Theme: <b>Ukiyo</b>, a theme which contains not only the default color scheme that comes with the theme but has all the color schemes of my previous themes (Golden Coffee, Golden Book and Alchemy).</p>
 
-![](https://github.com/kinmury/Ukiyo/blob/main/Showcase.png)
+![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/Showcase.png)
 
 # News
 ## 2022/11/12
