@@ -1,0 +1,43 @@
+/* Workspace Ribbons */
+
+/* SS TBD
+body {
+  --sidedock-opened: -35px;
+}
+
+.workspace.is-left-sidedock-open {
+  --sidedock-opened: 0px;
+}
+
+.workspace-split.mod-vertical.mod-root {
+  z-index: 10;
+  margin-left: var(--sidedock-opened);
+}*/
+
+.workspace {
+  &:not(.is-left-sidedock-open) {
+    .workspace-ribbon.side-dock-ribbon.mod-left,
+    .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover) {
+      transition: all 0.2s ease-in-out;
+      border-color: transparent;
+
+      .side-dock-actions,
+      .side-dock-settings {
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+      }
+    }
+  }
+
+  .workspace-ribbon.side-dock-ribbon.mod-left,
+  .workspace-ribbon.side-dock-ribbon.mod-left:hover {
+    transition: border-color 0.2s ease-in-out;
+    border-color: var(--divider-color);
+
+    .side-dock-actions,
+    .side-dock-settings {
+      transition: all 0.2s ease-in-out;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.home-page {
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .heading-collapse-indicator {
+    display: none;
+  }
+
+  .callout[data-callout*="table"] {
+    border: none;
+    background-color: transparent;
+    margin: 0px;
+
+    & > .callout-title {
+      display: none;
+    }
+
+    & > .callout-content {
+      display: grid;
+      gap: 10px;
+
+      padding: 0px;
+
+      .callout[data-callout="column"] {
+        border: none;
+        background-color: transparent;
+        margin: 0px;
+
+        & > .callout-title {
+          background-color: transparent;
+          padding: 0px;
+          text-align: center;
+
+          & > .callout-icon {
+            display: none;
+          }
+        }
+
+        & > .callout-content {
+          padding: 0px;
+          border: none;
+          text-align: center;
+
+          .dataview.list-view-ul {
+            padding: 0px;
+            margin: 0px;
+
+            li {
+              &::marker {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .callout[data-callout*="-4"] {
+    & > .callout-content {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .callout[data-callout*="-3"] {
+    & > .callout-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .callout[data-callout*="-2"] {
+    & > .callout-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

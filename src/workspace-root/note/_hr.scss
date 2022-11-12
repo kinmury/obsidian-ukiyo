@@ -1,0 +1,19 @@
+// Horizontal Line
+@use "../../fonts/F-icons";
+
+.markdown-preview-view {
+  hr {
+    overflow: visible;
+    text-align: center;
+    line-height: 1px;
+    font-family: "FA5FS";
+
+    &:after {
+      content: "\f6fc";
+      padding: 0 0.3em;
+
+      background-color: var(--background-primary);
+      color: var(--text-muted);
+    }
+  }
+}

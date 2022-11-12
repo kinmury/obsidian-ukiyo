@@ -1,0 +1,20 @@
+// Prompt
+
+@keyframes fade_in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.prompt {
+  animation: 0.15s fade_in;
+  border-radius: 4px;
+
+  .suggestion-highlight {
+    color: var(--bold-color);
+  }
+}

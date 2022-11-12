@@ -1,0 +1,212 @@
+.ACS_GB {
+  --font-default: "Garamond";
+
+  // Headings Fix
+  .markdown-source-view.mod-cm6 {
+    // Heading 1
+    .cm-line .cm-formatting-header-1 {
+      margin-right: calc(var(--font-text-size) * 1.3);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-2 {
+      margin-right: calc(var(--font-text-size) * 0.5);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-3 {
+      margin-right: calc(var(--font-text-size) * -0.2);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-4 {
+      margin-right: calc(var(--font-text-size) * -0.9);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-5 {
+      margin-right: calc(var(--font-text-size) * -1.3);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-6 {
+      margin-right: calc(var(--font-text-size) * -1.9);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+.theme-dark {
+  &.ACS_GB {
+    // Obsidian Left Panel Icon
+    .sidebar-toggle-button.mod-left {
+      .clickable-icon {
+        &::after {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='18' height='18' fill='none' stroke='bisque' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z'%3E%3C/path%3E%3C/svg%3E");
+        }
+      }
+    }
+
+    // Horizontal Line Icon
+    .markdown-preview-view {
+      hr {
+        &:after {
+          content: "\f02e";
+        }
+      }
+    }
+
+    //// Native Variables
+    // Blockquotes
+    --blockquote-border-thickness: 3px;
+    --blockquote-border-color: #ce5151;
+    --blockquote-color: var(--text-muted);
+    --blockquote-background-color: #ebcdb6;
+
+    // Bold
+    --bold-color: #460c0c;
+
+    // Callouts
+    --callout-blend-mode: normal;
+
+    // Icons
+    --icon-color-active: #460c0c;
+    --icon-color-focused: #460c0c;
+
+    // Indentation Guide
+    --indentation-guide-color: var(--color-base-40);
+    --indentation-guide-color-active: var(--color-base-50);
+
+    // Italic
+    --italic-color: #460c0c;
+
+    // Scrollbars
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: #e2c3aa;
+    --scrollbar-active-thumb-bg: #d1aa8a;
+
+    // Window Frame
+    --titlebar-background: var(--color-base-20);
+    --titlebar-background-focused: var(--background-secondary);
+    --titlebar-text-color-focused: #eddcc0;
+    --titlebar-text-color: #eddcc0;
+
+    // Backgrounds
+    --background-modifier-hover: var(--color-base-25);
+    --background-modifier-border-focus: #694332;
+
+    ///----
+    ///
+    /// THEME VARIABLES
+    color-scheme: dark;
+    --highlight-mix-blend-mode: normal;
+    --mono-rgb-0: 0, 0, 0;
+    --mono-rgb-100: 255, 255, 255;
+    --color-red-rgb: 251, 70, 76;
+    --color-red: #e4374b;
+    --color-green-rgb: 12, 181, 79;
+    --color-green: #0cb54f;
+    --color-orange: #d96c00;
+    --color-yellow: #bd8e37;
+    --color-cyan: #2db7b5;
+    --color-blue: #086ddd;
+    --color-purple: #876be0;
+    --color-pink: #c32b74;
+
+    --color-base-00: #f1ddcd; // bg-primary
+    --color-base-10: #e4cdba; // bg-primary-alt
+    --color-base-20: #64514d; // bg-secondary //title-bar //title-bar-focused
+    --color-base-25: #7d645f; // bg-modifier-form-field
+    --color-base-30: #4e3a35; // bg-secondary-alt
+    --color-base-35: var(--color-base-30); // borders (?)
+    --color-base-40: #e4cdba;
+    --color-base-50: #a72a2a; // txt-faint
+    --color-base-60: #999;
+    --color-base-70: var(--color-base-50); // txt-muted
+    --color-base-100: #460c0c; // txt-normal
+
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+
+    --color-accent: #ac3621; // text-accent
+    --color-accent-2: #ca4f3a; //txt-accent-h
+
+    --color-accent-1: var(--color-base-30);
+
+    --background-modifier-form-field: var(--color-base-25);
+    --background-secondary-alt: var(--color-base-30);
+    --interactive-normal: var(--color-base-30);
+    --interactive-hover: var(--color-base-35);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-cover: rgba(10, 10, 10, 0.4);
+
+    --text-highlight-bg: rgba(214, 94, 64, 0.4);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-selection: #c76c5573;
+    --txt-selected-arrow: #eec5a8;
+
+    --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+      0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+    --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+      0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+      0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+    --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
+      0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+    --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+      0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+
+    //// Theme Variables
+
+    // CUSTOM Variables
+    // Hover Elements
+    --notice-bg-c: #382c2a;
+    --tooltip-bg-c: #493c39;
+
+    // - Settings
+    --settings-button-bg-c-h: #5a4b48; //Settings Button Background Color Hover
+
+    // - Note
+    --activeline: #ebd1bd;
+
+    // - Blockquote
+    --blockquote-cm-highlight-bg-c: rgba(168, 61, 42, 0.4);
+    --blockquote-pre-code-bg-c: #dfb596;
+    --blockquote-bold-c: #460c0c;
+    --blockquote-italic-c: #460c0c;
+
+    // - Callouts
+    --callout-content-bg-c: var(--blockquote-background-color);
+
+    // - Codeblocks
+    --codeblocks-button-bg-c: #dfb596;
+    --codeblocks-button-bg-c-h: #ffdfc7;
+
+    // - Headings
+    --heading-counter: #962a2a;
+
+    // - Plugins
+    // -- Dataview
+    --DV-border-c: #dfb596;
+
+    // -- Kanban
+    --KB-mark-bg-c: rgba(214, 94, 64, 0.4);
+  }
+}

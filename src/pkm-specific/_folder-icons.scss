@@ -1,0 +1,110 @@
+@use "../fonts/F-icons";
+
+.nav-file-title[data-path="Home.md"] {
+  .nav-file-title-content::before {
+    content: "\f015";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path$="Inbox"] {
+  .nav-folder-title-content::before {
+    content: "\f01c";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path="Management"] {
+  .nav-folder-title-content::before {
+    content: "\f46c";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path="Slip-Box"],
+.nav-folder-title[data-path$="Project-Box"] {
+  .nav-folder-title-content::before {
+    content: "\f468";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path$="Sources"] {
+  .nav-folder-title-content::before {
+    content: "\f07c";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path="Workbench"] {
+  .nav-folder-title-content::before {
+    content: "\f7d9";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path$="Attachments"] {
+  .nav-folder-title-content::before {
+    content: "\f0c6";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path$="Documents"] {
+  .nav-folder-title-content::before {
+    content: "\f0c7";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path$="Templates"] {
+  .nav-folder-title-content::before {
+    content: "\f573";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path$="Issues"] {
+  .nav-folder-title-content::before {
+    content: "\f188";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path$="Repository"] {
+  .nav-folder-title-content::before {
+    content: "\f121";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}
+
+.nav-folder-title[data-path$="· Archive"] {
+  .nav-folder-title-content::before {
+    content: "\f1c6";
+    font-family: "FA5FS";
+    font-size: 1em;
+    padding-right: 5px;
+  }
+}

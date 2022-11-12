@@ -1,0 +1,36 @@
+/*!
+/* @settings
+
+name: General Settings
+id: GS
+settings:
+    - 
+        id: AT
+        title: Alternative Color Scheme
+        description: 
+            "Choose which alternative color scheme to use"
+        description.es:
+            "Escoge el esquema de colores alternativo a usar"
+        type: class-select
+        allowEmpty: false
+        default: ACS_default        
+        options:
+            -     
+                label: Ukiyo
+                value: ACS_default
+            - 
+                label: Golden Coffee
+                value: ACS_GC        
+            -   
+                label: Golden Book
+                value: ACS_GB
+            -
+                label: Alchemy
+                value: ACS_ALCH
+            -
+                label: Rose Shadow
+                value: ACS_RS
+            
+    -
+*/
+

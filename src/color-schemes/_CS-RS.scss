@@ -1,0 +1,210 @@
+.ACS_RS {
+  --font-default: "Garamond";
+
+  // Headings Fix
+  .markdown-source-view.mod-cm6 {
+    // Heading 1
+    .cm-line .cm-formatting-header-1 {
+      margin-right: calc(var(--font-text-size) * 1.5);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-2 {
+      margin-right: calc(var(--font-text-size) * 0.5);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-3 {
+      margin-right: calc(var(--font-text-size) * -0.2);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-4 {
+      margin-right: calc(var(--font-text-size) * -0.9);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-5 {
+      margin-right: calc(var(--font-text-size) * -1.3);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+
+    .cm-line .cm-formatting-header-6 {
+      margin-right: calc(var(--font-text-size) * -1.9);
+
+      &:before {
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+// ACS_RS
+.theme-dark {
+  &.ACS_RS {
+    // Obsidian Left Panel Icon
+    .sidebar-toggle-button.mod-left {
+      .clickable-icon {
+        &::after {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='18' height='18' fill='none' stroke='%23ddb19d' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z'%3E%3C/path%3E%3C/svg%3E");
+        }
+      }
+    }
+
+    // Horizontal Line Icon
+    .markdown-preview-view {
+      hr {
+        &:after {
+          content: "\f3a5";
+        }
+      }
+    }
+
+    //// Native Variables
+    // Blockquotes
+    --blockquote-border-thickness: 3px;
+    --blockquote-border-color: #a35e6b;
+    --blockquote-color: var(--text-muted);
+    --blockquote-background-color: #35242a;
+
+    // Bold
+    --bold-color: #fccab1;
+
+    // Italic
+    --italic-color: #eccfe8;
+
+    // Callouts
+    --callout-blend-mode: normal;
+
+    // Icons
+    --icon-color-active: #fccab1;
+    --icon-color-focused: #fccab1;
+
+    // Indentation Guide
+    --indentation-guide-color: var(--color-base-40);
+    --indentation-guide-color-active: var(--color-base-50);
+
+    // Scrollbars
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: #4e363f;
+    --scrollbar-active-thumb-bg: #724757;
+
+    // Window Frame
+    --titlebar-background: var(--color-base-20);
+    --titlebar-background-focused: var(--background-secondary);
+    --titlebar-text-color-focused: #fccab1;
+
+    // Backgrounds
+    --background-modifier-hover: var(--color-base-25);
+    --background-modifier-border-focus: #a35e6b;
+
+    /// THEME VARIABLES
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
+    --mono-rgb-0: 0, 0, 0;
+    --mono-rgb-100: 255, 255, 255;
+    --color-red-rgb: 251, 70, 76;
+    --color-red: #fb464c;
+    --color-green-rgb: 68, 207, 110;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-yellow: #e0de71;
+    --color-cyan: #53dfdd;
+    --color-blue: #027aff;
+    --color-purple: #a882ff;
+    --color-pink: #fa99cd;
+
+    --color-base-00: #3b2b31; // bg-primary
+    --color-base-10: #35242a; // bg-primary-alt
+    --color-base-20: #35242a; // bg-secondary //title-bar //title-bar-focused
+    --color-base-25: #4d313b; // bg-modifier-form-field
+    --color-base-30: #a35e6b; // bg-secondary-alt
+    --color-base-35: var(--color-base-30); // borders (?)
+    --color-base-40: #ca9b84;
+    --color-base-50: #ca9b84; // txt-faint
+    --color-base-60: #999;
+    --color-base-70: var(--color-base-50); // txt-muted
+    --color-base-100: #ddb19d;
+
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+
+    --color-accent: #c695d1; // text-accent
+    --color-accent-2: #d7afe0; //txt-accent-h
+
+    --color-accent-1: var(--color-base-30);
+
+    --background-modifier-form-field: var(--color-base-25);
+    --background-secondary-alt: var(--color-base-30);
+    --interactive-normal: var(--color-base-30);
+    --interactive-hover: var(--color-base-35);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-cover: rgba(10, 10, 10, 0.4);
+
+    --text-highlight-bg: rgba(139, 33, 153, 0.329);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-selection: #5a3f49;
+    --txt-selected-arrow: #d7afe0;
+
+    --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+      0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+    --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+      0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+      0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+    --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
+      0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+    --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+      0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+
+    //// Theme Variables
+
+    // CUSTOM Variables
+    // Hover Elements
+    --notice-bg-c: #29161c;
+    --tooltip-bg-c: #301f25;
+
+    // - Settings
+    --settings-button-bg-c-h: #c57886; //Settings Button Background Color Hover
+
+    // - Note
+    --activeline: #462f37;
+
+    // - Blockquote
+    --blockquote-cm-highlight-bg-c: rgba(109, 17, 121, 0.329);
+    --blockquote-pre-code-bg-c: #64371e;
+    --blockquote-bold-c: #d4a085;
+    --blockquote-italic-c: #d1a5cb;
+
+    // - Callouts
+    --callout-content-bg-c: var(--blockquote-background-color);
+
+    // - Codeblocks
+    --codeblocks-button-bg-c: #5b3d48;
+    --codeblocks-button-bg-c-h: #754859;
+
+    // - Headings
+    --heading-counter: #d12e6d;
+
+    // - Plugins
+    // -- Dataview
+    --DV-border-c: #723b45;
+
+    // -- Kanban
+    --KB-mark-bg-c: rgba(139, 33, 153, 0.329);
+  }
+}

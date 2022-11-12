@@ -1,0 +1,38 @@
+// Callouts
+
+.callout {
+  //padding: 10px;
+  padding: 0px;
+
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+
+  border-left: 3px solid rgb(var(--callout-color));
+  mix-blend-mode: normal;
+
+  .callout-title {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .callout-content {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: var(--callout-content-bg-c);
+
+    h1 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}

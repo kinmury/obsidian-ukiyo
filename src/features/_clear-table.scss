@@ -1,0 +1,12 @@
+.callout[data-callout*="clear-table"] {
+  table {
+    thead {
+      border-bottom: none;
+      background-color: transparent;
+
+      th {
+        color: var(--text-normal);
+      }
+    }
+  }
+}

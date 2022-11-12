@@ -1,0 +1,8 @@
+// Centered Callouts
+
+.callout[data-callout-metadata="center"],
+.callout[data-callout-metadata="c"] {
+  .callout-content {
+    text-align: center;
+  }
+}

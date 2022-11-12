@@ -1,0 +1,34 @@
+// Datavew
+
+.dataview.table-view-table {
+  th:not(:first-of-type, :last-of-type) {
+    border-right: 1px solid var(--DV-border-c);
+    border-left: 1px solid var(--DV-border-c);
+  }
+
+  tr {
+    transition: all 0.15s ease-in-out;
+
+    &:not(:last-of-type) {
+      td {
+        &:not(:first-of-type, :last-of-type) {
+          border: 1px solid var(--DV-border-c);
+        }
+
+        &:first-of-type,
+        &:last-of-type {
+          border-bottom: 1px solid var(--DV-border-c);
+        }
+      }
+    }
+
+    &:last-of-type {
+      td {
+        &:not(:first-of-type, :last-of-type) {
+          border-right: 1px solid var(--DV-border-c);
+          border-left: 1px solid var(--DV-border-c);
+        }
+      }
+    }
+  }
+}

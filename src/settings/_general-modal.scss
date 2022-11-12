@@ -1,0 +1,28 @@
+// General Modal
+
+@keyframes fade_in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.modal {
+  animation: 0.15s fade_in;
+
+  .mod-cta,
+  button {
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover {
+      background-color: var(--settings-button-bg-c-h);
+    }
+  }
+}
+
+.modal-bg {
+  animation: 0.15s fade_in;
+}

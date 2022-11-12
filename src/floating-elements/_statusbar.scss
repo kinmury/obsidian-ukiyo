@@ -1,0 +1,15 @@
+// Statusbar
+
+.status-bar {
+  transition: opacity 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  &:not(:hover) {
+    border-color: transparent;
+    opacity: 0.35;
+  }
+
+  &:hover {
+    border-color: initial;
+    opacity: 1;
+  }
+}

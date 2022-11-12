@@ -1,0 +1,15 @@
+// Figure
+
+.callout[data-callout="figure"] {
+  background-color: transparent;
+  border: none;
+
+  .callout-title {
+    display: none;
+  }
+
+  .callout-content {
+    background-color: transparent;
+    text-align: center;
+  }
+}

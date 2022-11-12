@@ -1,0 +1,326 @@
+.theme-dark {
+  &.ACS_GB {
+    .workspace-split.mod-vertical.mod-root {
+      .view-header {
+        .clickable-icon:hover {
+          background-color: #ddbda2;
+        }
+      }
+    }
+
+    .workspace-split.mod-horizontal.mod-left-split,
+    .workspace-split.mod-horizontal.mod-right-split {
+      --tab-text-color-focused-active-current: #eddcc0;
+
+      --nav-collapse-icon-color: #eddcc0;
+
+      --nav-item-color: #eddcc0;
+      --nav-item-color-hover: #eddcc0;
+      --nav-item-color-active: #f7e8cf;
+
+      --icon-color: #eddcc0;
+      --icon-color-focused: #eddcc0;
+      --icon-color-active: #eddcc0;
+      --icon-color-hover: #f7e8cf;
+
+      --scrollbar-thumb-bg: #866e69;
+      --scrollbar-active-thumb-bg: #9c7f79;
+
+      --nav-collapse-icon-color-collapsed: #f7e8cf;
+    }
+
+    .workspace-ribbon.side-dock-ribbon.mod-left,
+    .workspace-ribbon.side-dock-ribbon.mod-right {
+      --tab-text-color-focused-active-current: #eddcc0;
+
+      --icon-color: #eddcc0;
+      --icon-color-focused: #eddcc0;
+      --icon-color-active: #eddcc0;
+      --icon-color-hover: #f7e8cf;
+    }
+
+    .workspace-ribbon.mod-left.is-collapsed {
+      transition: background-color 0.2s ease-in-out !important;
+
+      &:hover {
+        background-color: var(--color-base-20);
+      }
+    }
+
+    .workspace-tab-header {
+      --icon-color: #eddcc0;
+      --icon-color-focused: #eddcc0;
+      --icon-color-active: #eddcc0;
+      --icon-color-hover: #f7e8cf;
+
+      --tab-text-color: #f7e8cf;
+      --tab-text-color-focused: #f7e8cf;
+    }
+
+    .workspace-tab-header-tab-list,
+    .workspace-tab-header-new-tab,
+    .sidebar-toggle-button {
+      --icon-color: #eddcc0;
+      --icon-color-focused: #eddcc0;
+      --icon-color-active: #eddcc0;
+      --icon-color-hover: #f7e8cf;
+    }
+
+    .workspace-split.mod-vertical.mod-root
+      .workspace-tab-header-container
+      .workspace-tab-header-tab-list::after,
+    .workspace-split.mod-vertical.mod-root
+      .workspace-tab-header-container
+      .sidebar-toggle-button.mod-right::after {
+      color: #eddcc0;
+    }
+
+    .backlink-pane > .tree-item-self,
+    .outgoing-link-pane > .tree-item-self {
+      --text-normal: #eecea9;
+    }
+
+    .search-empty-state,
+    .pane-empty,
+    .backlink-pane > .tree-item-self.is-collapsed,
+    .outgoing-link-pane > .tree-item-self.is-collapsed {
+      color: #ff6055;
+    }
+
+    .menu {
+      color: #eddcc0;
+
+      .menu-item-icon,
+      .menu-item.is-disabled {
+        color: #ff6055;
+      }
+    }
+
+    textarea::placeholder,
+    input[type="text"]::placeholder,
+    input[type="search"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="password"]::placeholder,
+    input[type="number"]::placeholder,
+    input[type="text"],
+    input[type="search"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"] {
+      color: #d8c098;
+    }
+
+    textarea:focus,
+    input[type="text"]:focus,
+    input[type="search"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="number"]:focus {
+      color: #eddcc0;
+    }
+
+    .search-input-container:before {
+      background-color: #d8c098;
+    }
+
+    .search-suggest-item.mod-group,
+    .search-suggest-info-text {
+      color: #eddcc0;
+    }
+
+    .suggestion-item.mod-complex.search-suggest-item {
+      .suggestion-title {
+        span:first-of-type {
+          color: #ff5246;
+        }
+      }
+    }
+
+    .list-item-part.clickable-icon,
+    .search-input-clear-button,
+    .tree-item-flair {
+      color: #ff5246;
+    }
+
+    .status-bar {
+      --status-bar-background: #ebcdb6;
+      --status-bar-text-color: #64514d;
+
+      .status-bar-item {
+        &:hover {
+          background-color: #dab69b;
+        }
+      }
+    }
+
+    .mermaid {
+      .node {
+        .label {
+          color: #eddcc0 !important;
+        }
+      }
+
+      text.actor > tspan,
+      .labelText {
+        fill: #eddcc0 !important;
+      }
+    }
+
+    .prompt,
+    .suggestion {
+      textarea::placeholder,
+      input[type="text"]::placeholder,
+      input[type="search"]::placeholder,
+      input[type="email"]::placeholder,
+      input[type="password"]::placeholder,
+      input[type="number"]::placeholder,
+      input[type="text"],
+      input[type="search"],
+      input[type="email"],
+      input[type="password"],
+      input[type="number"] {
+        color: var(--text-muted);
+      }
+
+      textarea:focus,
+      input[type="text"]:focus,
+      input[type="search"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus,
+      input[type="number"]:focus {
+        color: var(--text-muted);
+      }
+
+      .suggestion-item.is-selected {
+        background-color: #e2c2a8;
+      }
+
+      .suggestion-item.mod-complex .suggestion-hotkey {
+        color: black;
+        background-color: #d1a583;
+      }
+    }
+
+    .kanban-plugin {
+      .kanban-plugin__lane {
+        background-color: #eed5c3;
+      }
+
+      .kanban-plugin__item-wrapper {
+        background-color: #ebd0bd;
+      }
+
+      .kanban-plugin__new-item-button {
+        background-color: #e6c5ad;
+
+        &:hover {
+          color: var(--text-normal);
+          background-color: #dbb69b;
+        }
+      }
+    }
+
+    // Frontmatter
+    .cm-hmd-frontmatter {
+      color: var(--text-normal);
+    }
+
+    .cm-def.cm-hmd-frontmatter,
+    .cm-hmd-frontmatter.cm-meta {
+      color: var(--text-muted) !important;
+    }
+
+    .cm-atom.cm-hmd-frontmatter {
+      color: #ce7d20 !important;
+    }
+
+    .cm-hmd-frontmatter.cm-string {
+      color: #5e3e38 !important;
+    }
+
+    .cm-hmd-frontmatter.cm-number {
+      color: #63328f !important;
+    }
+
+    .cm-hmd-frontmatter.cm-keyword {
+      color: #068b8d !important;
+    }
+
+    // Modal General
+    .modal {
+      button,
+      select {
+        background-color: #52413d;
+        color: #ebd0bd;
+
+        option {
+          color: #52413d;
+        }
+
+        &:hover {
+          background-color: #493935;
+        }
+      }
+    }
+
+    // Settings (General)
+    .modal.mod-settings {
+      --interactive-accent: #52413d;
+
+      .vertical-tab-header-group-title {
+        color: #ff5246;
+      }
+
+      .vertical-tab-nav-item {
+        color: #ebd0bd;
+      }
+
+      .dropdown,
+      .setting-hotkey,
+      button {
+        background-color: #52413d;
+        color: #ebd0bd;
+
+        &:hover {
+          background-color: #493935;
+        }
+      }
+
+      .dropdown {
+        option {
+          color: #52413d;
+        }
+      }
+    }
+
+    // Settings (Appereance)
+    .modal.mod-community-theme,
+    .modal.mod-community-plugin {
+      .setting-item-name,
+      .clickable-icon {
+        color: #ebd0bd;
+      }
+
+      .clickable-icon {
+        &:hover {
+          background-color: #745f5b;
+        }
+      }
+
+      .community-modal-search-summary.u-muted {
+        color: #ff5246;
+      }
+
+      .community-modal-button-container {
+        button {
+          background-color: #52413d;
+          color: #ebd0bd;
+
+          &:hover {
+            background-color: #493935;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// Notice
+
+@keyframes fade_in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.notice {
+  animation: 0.5s fade_in;
+  border-radius: 4px;
+
+  background-color: var(--notice-bg-c);
+  font-style: italic;
+}

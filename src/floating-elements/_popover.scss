@@ -1,0 +1,23 @@
+// Popover
+
+@keyframes fade_in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.popover {
+  animation: 0.1s fade_in;
+
+  &.hover-popover {
+    border-radius: 4px;
+
+    .markdown-embed-link {
+      right: 14px;
+    }
+  }
+}

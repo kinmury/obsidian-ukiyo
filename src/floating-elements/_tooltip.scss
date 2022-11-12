@@ -1,0 +1,10 @@
+// Tooltip
+
+.tooltip {
+  .tooltip-arrow {
+    display: none;
+  }
+
+  font-style: italic;
+  background-color: var(--tooltip-bg-c);
+}

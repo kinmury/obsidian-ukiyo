@@ -1,0 +1,26 @@
+// Blockquote
+
+.cm-quote.cm-quote-1 {
+  &.cm-strong {
+    color:var(--blockquote-bold-c);
+  }
+
+  &.cm-em {
+    color: var(--blockquote-italic-c);
+  }
+
+  &.cm-highlight {
+    background-color: var(--blockquote-cm-highlight-bg-c);
+  }
+}
+
+.markdown-rendered {
+  blockquote {
+    padding-right: var(--size-4-6);
+
+    pre,
+    code {
+      background-color: var(--blockquote-pre-code-bg-c);
+    }
+  }
+}

@@ -1,0 +1,73 @@
+// Custom Table
+
+.callout[data-callout*="table"] {
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+
+  & > .callout-title {
+    display: none;
+  }
+
+  & > .callout-content {
+    display: grid;
+    gap: 10px;
+    background-color: transparent;
+
+    padding: 0px;
+
+    .callout[data-callout="column"] {
+      border: none;
+      background-color: transparent;
+      margin: 0px;
+
+      & > .callout-title {
+        padding: 0px;
+        justify-content: center;
+
+        background-color: transparent;
+        color: var(--text-normal);
+
+        & > .callout-icon {
+          display: none;
+        }
+      }
+
+      & > .callout-content {
+        background-color: transparent;
+        padding: 0px;
+        border: none;
+        text-align: center;
+
+        .dataview.list-view-ul {
+          padding: 0px;
+          margin: 0px;
+
+          li {
+            &::marker {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.callout[data-callout*="-2"] {
+  & > .callout-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.callout[data-callout*="-3"] {
+  & > .callout-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.callout[data-callout*="-4"] {
+  & > .callout-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
