@@ -4,7 +4,19 @@
 
 ## Galery
 
-![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/Showcase.png)
+![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/Showcase2.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Default.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Deep.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Light.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_GC.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_GCD.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_GC-Light.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_GB.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_ALCH.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_ALCH-T.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_ALCH-L.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo-ALCH-L-T.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_RS.png)
 
 
 # Utils
