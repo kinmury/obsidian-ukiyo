@@ -4,7 +4,7 @@
 
 ## Galery
 
-![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/Showcase2.png)
+![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/Showcase.png)
 ![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Default.png)
 ![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Deep.png)
 ![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Light.png)
