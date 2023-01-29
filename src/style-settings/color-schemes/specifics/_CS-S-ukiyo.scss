@@ -1,0 +1,136 @@
+/*!
+/* @settings
+
+name: Color Scheme Specifics
+id: CS_Ukiyo_Dark
+settings:
+  -
+    id: CS_U_D_font
+    title: Custom Theme Font
+    type: class-select
+    allowEmpty: false
+    default: CS_U_D_F_Asap_Default
+    options:
+      -
+        label: Asap
+        value: CS_U_D_F_Asap_Default
+      - 
+        label: Kalam
+        value: CS_U_D_F_Kalam_Coffee
+      -
+        label: Amiri
+        value: CS_U_D_F_Amiri_Fancy
+  -
+    id: CS_U_D_bold
+    title: Bold Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#15aa9e"
+  -
+    id: CS_U_D_italic
+    title: Italic Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#4dabe0"
+  -
+    id: CS_U_D_highlight
+    title: Highlight Color
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: rgba(160, 99, 38, 0.4)
+*/
+
+/*!
+/* @settings
+
+name: Color Scheme Specifics
+id: CS_Ukiyo_Light
+settings:
+  -
+    id: CS_U_L_font
+    title: Custom Theme Font
+    type: class-select
+    allowEmpty: false
+    default: CS_U_L_F_Asap_Default
+    options:
+      -
+        label: Asap
+        value: CS_U_L_F_Asap_Default
+      -
+        label: Kalam
+        value: CS_U_L_F_Kalam_Coffee
+      -
+        label: Amiri
+        value: CS_U_L_F_Amiri_Fancy
+  - 
+    id: CS_U_L_bold
+    title: Bold Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#48B7CA"
+  -
+    id: CS_U_L_italic
+    title: Italic Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#41Af8B"
+  -
+    id: CS_U_L_highlight
+    title: Highlight Color
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: rgba(255, 203, 61, 0.4)
+*/
+
+body {
+  // Dark Mode
+  --CS_U_D_bold: #15aa9e;
+  --CS_U_D_italic: #4dabe0;
+  --CS_U_D_highlight: rgba(160, 99, 38, 0.4);
+}
+
+.theme-dark {
+  &.CS_default {
+    &.CS_U_D_F_Asap_Default {
+      --font-default: "Asap";
+    }
+
+    &.CS_U_D_F_Kalam_Coffee {
+      --font-default: "Kalam";
+    }
+
+    &.CS_U_D_F_Amiri_Fancy {
+      --font-default: "Amiri";
+    }
+
+    --bold-color: var(--CS_U_D_bold);
+    --italic-color: var(--CS_U_D_italic);
+    --text-highlight-bg: var(--CS_U_D_highlight);
+  }
+}
+
+.theme-light {
+  &.CS_default {
+    &.CS_U_L_F_Asap_Default {
+      --font-default: "Asap";
+    }
+
+    &.CS_U_L_F_Kalam_Coffee {
+      --font-default: "Kalam";
+    }
+
+    &.CS_U_L_F_Amiri_Fancy {
+      --font-default: "Amiri";
+    }
+
+    --bold-color: var(--CS_U_L_bold);
+    --italic-color: var(--CS_U_L_italic);
+    --text-highlight-bg: var(--CS_U_L_highlight);
+  }
+}

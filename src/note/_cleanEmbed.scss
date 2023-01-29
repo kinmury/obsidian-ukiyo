@@ -1,0 +1,35 @@
+.internal-embed {
+  &.markdown-embed {
+    border: none;
+    padding: 0px;
+
+    .embed-title {
+      display: none;
+    }
+
+    .markdown-embed-link {
+      display: absolute;
+      transition: all 75ms ease-in-out;
+
+      width: 25px;
+
+      left: -30px;
+      top: 0px;
+
+      &:not(:hover) {
+        opacity: 0.25;
+      }
+    }
+  }
+
+  &.is-loaded.file-embed.mod-empty {
+    transition: all 100ms ease-in-out;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 4px;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+}

@@ -1,25 +1,11 @@
 <h1 align=center>Ukiyo</h1>
 
-<p align=center>Welcome everyone to my Obsidian Theme: <b>Ukiyo</b>, a theme which contains not only the default color scheme that comes with the theme but has all the color schemes of my previous themes (Golden Coffee, Golden Book and Alchemy).</p>
+<p align=center>Welcome to <b>Ukiyo</b>, an Obsidian theme which main focus is to ease your eyes while using this amazin app, reducing the unnecessary empty spaces from UI elements so that you can have more room for the important stuff: <i>your notes</i>.</p>
+
+## Galery
 
 ![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/Showcase.png)
 
-# News
-## 2022/11/12
-
-As you may know, Obsidian had recently upload the `v1.0.0` version, which means that pretty much all of the themes need to go through a rework in order to be useful in that version (and the ones to come after that).
-
-That's why I spend the free time that I had in order to update this theme. Sadly, I have to upload the official version sooner that I wanted since the `O_O` Submission will end soon and I don't have time to implement anything else until that date.
-
-Even after that, I'll be busy for a while, so that means that there will be a little `hiatus` in the development/update of the theme. But also this doesn't mean that I'll stop adding/fixing stuff with the upcoming versions. I'll still be working on the theme as long as I'm using Obsidian, so sooner or later I'll implement all the stuff that could be added on this release and more (`Spoiler`: Some of this stuff have to do with `PDF` elements and the `UI`, but I won't say anything more (for now `;P`)).
-
-And as for the submission (I'll say it as well on the submission), I'm actually won't participate to win the event, but to show to anyone that's interested on the *Creation of Themes* that it's not that hard. Yes, I know it takes time and knowledge but... doesn't it required anything that it's interesting? 
-
-My last year submission (and the first one) was *Golden Book*. If you go to the archive repository for said Theme, look a it and compare it to its color scheme in this theme, or any color scheme of this theme for that manner, and you'll definitely will see that there is some improvement. Sure enough it isn't the best theme there is (and won't be, since every user has his own taste), but you can see the difference of someone that had 3 month worth of CSS experience and, the same person, but with almost a year worth of CSS knowledge.
-
-Once again, I know that I have a lot to learn the this theme has a lot of room for improvement, and I'll make sure it improves to the extend of my capabilities.
-
-And, last but not least, I want to say thank you for everyone that has help me getting started with CSS (yes, I'm looking at you SIR `;P`) and to all the user that used all of my previous themes and this one. I hope you enjoy it as much as I do and it helps you use Obsidian as comfy as possible.
 
 # Utils
 
@@ -29,17 +15,30 @@ And, last but not least, I want to say thank you for everyone that has help me g
 
 - **Style Settings**
 	- *General Settings*
-		- <ins>Alternative Color Scheme</ins>
-	- *Hidden Levels* - Choose with level of hidden status you want to have for each `UI` element
+		- <ins>Color Scheme</ins> - Lets you choose between the available color schemes that come with the theme: Golden Coffee, Golden Book, Alchemy and Rose Shadow.
+	- *Color Schemes Specifics* - `in-progress` - Lets you change the properties of some of the elements like bold, italics, highlight and the font family. Said changes are applied to that color-scheme **and** used mode (dark and light) independently.
+	- *UI - Visibility* - Choose which elements to hide and how to hide them
 		- <ins>Side Dock Ribbon</ins>
-		- <ins>Workspace Tab Headers</ins>
-		- <ins>Note Tabs</ins>
-		- <ins>Nav Buttons</ins>
-- **Callouts** - `TBD`
+	- *Modes* - Depending on the Color scheme, you can apply a mode to it:
+		- <ins>Ukiyo Default</ins>
+			- `Deep Dive` - Changes the default dark color scheme into one a little more darker one
+		- <ins>Golden Coffee</ins>
+			- `Dark Coffee` - For those who like dark coffee ;P
+		- <ins>Alchemy</ins> 
+			- `Enable texture` - By default, both dark and light mode won't have the "textures" the original Alchemy theme had, but you can bring it back by enabling this setting
+		- <ins>Common Modes</ins> - These modes are common for all color schemes. For now there is just one:
+			- `Smooth UI` - Make the UI smoother (yup, *shockingly unexpected*, I know XD)
+- **Callouts** - There are a couple of custom callouts that you can use with this theme:
+	- *`![<type>|center-title]`* - Using said "modifier" you can center the title
+	- *`![<type>|center-cont]`* - Using said "modifier" you can center the content of the callout. You can stack modifiers by using a space in between the modifiers.
+	- *`![cont]/![container]`* && *`![col]/![column]`* - Inside the `![cont]` callout, you can but as much `![col]` callouts as you want. This will let you create a custom kanban with any content that you may see fit. An good example would be using these "kanban-like-callouts" and the Dataview plugin to create a dynamic kanban query with notes that represent tasks.
+	- *`![fig]/![figure]`* - Just like the LaTeX figures, all the content will be centered, so that you can put captions more easily below your images.
+	- *`![clear-table]`* - The only content that should be inside this callout is a unique table. Said table won't have **any** CSS applied to it, so its just a clean table.
+	- *`![index-table]`* - Same as the previous callout, but the thing is that the first row and the first column have the same distinctive background, so that you can create schedules, for example.
 - **CSS Classes**
-	- *no-width* - Eliminates the readable line length of the note that it's in
-	- *home-page* - Adds custom `CSS` to the page
-	- *issues-appereance* - `TBD`
+	- *full-width* - The note will expand as much as it can, as if the `readable line lenght` settings was disabled
+	- *center-headings* - All headings will be centered
+	- *DV_tasks* - Changes you Dataview tables into small blocks
 - **Tasks/Checkboxes** - `TBD`
 
 # Plugins
@@ -48,5 +47,7 @@ And, last but not least, I want to say thank you for everyone that has help me g
 > 
 > The isn't a lot of plugins here, and I'm not sure if it will grow, since I'm comfortable with only a few plugins, but if there is a Feature Request about some plugin, I'll try my best to adapt it to the theme and add it here.
 
-- **Kanban** - The `Add a Card` button and scroll bar are hidden until hovered, reducing the cluster of unnecessary elements on the screen.
-- **Editor Syntax Highlight** - `in-progress` - Different color scheme for each theme color scheme.
+- **Kanban**
+- **Editor Syntax Highlight** - `TBD`
+- **Dataview**
+- **Calendar**

@@ -1,0 +1,58 @@
+.callout[data-callout="clear-table"] {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+
+  .callout-title {
+    display: none;
+  }
+
+  .callout-content {
+    background-color: transparent;
+    padding: 0px;
+
+    table {
+      thead {
+        border-bottom: none;
+        background-color: transparent;
+
+        th {
+          color: var(--text-normal);
+        }
+      }
+    }
+  }
+}
+
+.callout[data-callout="index-table"] {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+
+  .callout-title {
+    display: none;
+  }
+
+  .callout-content {
+    background-color: transparent;
+    padding: 0px;
+
+    table {
+      thead {
+        border-bottom: none;
+
+        th {
+          background-color: var(--tab-outline-color);
+        }
+      }
+
+      tbody {
+        tr {
+          td:first-of-type {
+            background-color: var(--tab-outline-color);
+          }
+        }
+      }
+    }
+  }
+}

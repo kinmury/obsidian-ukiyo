@@ -1,0 +1,7 @@
+.titlebar {
+  .titlebar-inner {
+    .titlebar-button-container.mod-right {
+      height: calc(var(--top-header-height) - 1px);
+    }
+  }
+}

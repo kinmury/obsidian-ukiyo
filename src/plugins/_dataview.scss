@@ -1,33 +1,30 @@
-// Datavew
+body {
+  --dataview-cell-line-color: #4a4a4a80;
+}
 
-.dataview.table-view-table {
-  th:not(:first-of-type, :last-of-type) {
-    border-right: 1px solid var(--DV-border-c);
-    border-left: 1px solid var(--DV-border-c);
+.dataview {
+  .table-view-thead {
+    th {
+      border-bottom: 3px solid var(--dataview-cell-line-color);
+
+      &:not(:last-of-type) {
+        border-right: 1px solid var(--dataview-cell-line-color);
+      }
+    }
   }
 
-  tr {
-    transition: all 0.15s ease-in-out;
+  .table-view-tbody {
+    tr {
+      transition: all 75ms ease-in-out;
 
-    &:not(:last-of-type) {
-      td {
-        &:not(:first-of-type, :last-of-type) {
-          border: 1px solid var(--DV-border-c);
-        }
-
-        &:first-of-type,
-        &:last-of-type {
-          border-bottom: 1px solid var(--DV-border-c);
-        }
+      &:not(:last-of-type) {
+        border-bottom: 1px solid var(--dataview-cell-line-color);
       }
     }
 
-    &:last-of-type {
-      td {
-        &:not(:first-of-type, :last-of-type) {
-          border-right: 1px solid var(--DV-border-c);
-          border-left: 1px solid var(--DV-border-c);
-        }
+    td {
+      &:not(:last-of-type) {
+        border-right: 1px solid var(--dataview-cell-line-color);
       }
     }
   }

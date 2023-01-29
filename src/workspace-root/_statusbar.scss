@@ -1,0 +1,23 @@
+.status-bar {
+  border: 0.01px solid #404040;
+  border-radius: 3px;
+
+  padding: 0px;
+  gap: 0px;
+
+  bottom: 2px;
+  right: 2px;
+
+  transition: opacity 150ms ease-in-out;
+
+  &:not(:hover) {
+    opacity: 0.5;
+  }
+
+  .status-bar-item {
+    border-radius: 0px;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}

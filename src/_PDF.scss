@@ -1,0 +1,220 @@
+.theme-dark,
+.theme-light {
+  @media print {
+    strong {
+      font-family: "Amiri" !important;
+      color: black !important;
+    }
+
+    p,
+    ol,
+    ul {
+      font-family: "Amiri" !important;
+    }
+
+    li {
+      &::marker,
+      &::before {
+        color: black !important;
+        font-weight: bold !important;
+      }
+    }
+
+    .markdown-rendered.show-indentation-guide li > ul::before,
+    .markdown-rendered.show-indentation-guide li > ol::before {
+      display: none;
+    }
+
+    .task-list-item {
+      border-color: black !important;
+      input[type="checkbox"] {
+        border-color: black !important;
+      }
+
+      &.is-checked {
+        color: grey !important;
+        input[type="checkbox"] {
+          border-color: black !important;
+        }
+      }
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: black !important;
+      border-color: black !important;
+      color: grey !important;
+
+      &:after {
+        background-color: grey !important;
+        color: black !important;
+      }
+    }
+
+    i,
+    em {
+      font-family: "Amiri" !important;
+      color: black !important;
+    }
+
+    a {
+      font-family: "Amiri" !important;
+      color: black !important;
+    }
+
+    mark {
+      display: inline-block;
+      line-height: 19px !important;
+      background-color: rgba(167, 105, 43, 0.4) !important;
+      color: black !important;
+      padding: 0px 2px !important;
+    }
+
+    hr {
+      color: black !important;
+      background-color: black !important;
+      border-color: black !important;
+
+      &::after {
+        display: none;
+      }
+    }
+    .markdown-preview-view blockquote {
+      background-color: white !important;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+      border-left: 2px solid black !important;
+      color: black !important;
+    }
+
+    .callout {
+      font-family: "Amiri" !important;
+      background-color: white !important;
+      color: black !important;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+
+      .callout-title {
+        border: none;
+        background-color: rgba(var(--callout-color), 0.1) !important;
+      }
+
+      .callout-content {
+        background-color: white !important;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .markdonw-rendered h1,
+    .markdonw-rendered h2,
+    .markdonw-rendered h3,
+    .markdonw-rendered h4,
+    .markdonw-rendered h5,
+    .markdonw-rendered h6 {
+      color: black !important;
+      font-family: "Amiri" !important;
+      font-weight: normal !important;
+    }
+
+    img {
+      border: none !important;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+    }
+
+    pre[class*="language-"] {
+      font-size: 12px !important;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+      border-radius: 3px !important;
+
+      background-color: #292929 !important;
+
+      & > * {
+        background-color: #292929 !important;
+      }
+    }
+
+    code {
+      font-size: 12px !important;
+      border-radius: 2px !important;
+      background-color: #292929 !important;
+      color: white !important;
+    }
+
+    th,
+    thead,
+    .dataview th {
+      background-color: #292929 !important;
+      color: white !important;
+      border-top-color: white !important;
+      border-left-color: white !important;
+      border-right-color: white !important;
+      border-bottom-color: white !important;
+      font-family: "Amiri" !important;
+    }
+
+    tr,
+    td {
+      border-color: black !important;
+      font-family: "Amiri" !important;
+    }
+
+    .dataview {
+      th {
+        span {
+          color: white !important;
+        }
+      }
+    }
+
+    button {
+      background-color: transparent !important;
+      border: 1px solid black !important;
+      border-radius: 2px !important;
+
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      * {
+        font-style: normal !important;
+        font-weight: 100 !important;
+        font-family: "Amiri" !important;
+      }
+    }
+
+    .mermaid {
+      g.edgePath {
+        stroke: black !important;
+        fill: black !important;
+
+        * {
+          stroke: black !important;
+          //fill: black !important;
+
+          .arrowheadPath {
+            fill: black !important;
+          }
+        }
+      }
+
+      .node rect {
+        fill: white !important;
+        stroke: black !important;
+      }
+
+      g {
+        circle,
+        polygon,
+        &.label {
+          color: black !important;
+          stroke: black !important;
+          fill: white !important;
+        }
+      }
+    }
+  }
+}

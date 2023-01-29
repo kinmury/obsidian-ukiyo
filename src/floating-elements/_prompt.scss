@@ -1,20 +1,32 @@
-// Prompt
-
-@keyframes fade_in {
-  0% {
-    opacity: 0%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}
-
 .prompt {
-  animation: 0.15s fade_in;
-  border-radius: 4px;
+  border-radius: 3px;
 
-  .suggestion-highlight {
-    color: var(--bold-color);
+  input.prompt-input {
+    padding: 10px;
+    height: fit-content;
+  }
+
+  .prompt-results {
+    padding: 0px;
+
+    .suggestion-item {
+      transition: background-color 75ms ease-in-out;
+
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+      &.is-selected {
+        border-radius: 0px;
+      }
+
+      .suggestion-hotkey {
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .prompt-instructions {
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }

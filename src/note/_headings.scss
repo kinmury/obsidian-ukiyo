@@ -1,0 +1,168 @@
+@mixin upper_code {
+  visibility: hidden;
+  //font-size: 0px !important;
+  position: absolute;
+}
+
+@mixin lower_code {
+  display: inline;
+  width: fit-content;
+  position: absolute;
+
+  visibility: visible;
+  margin-left: -23px;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  font-size: var(--font-text-size) !important;
+  color: var(--heading-counter);
+}
+
+.markdown-source-view.mod-cm6 {
+  // Heading 1
+  .cm-line .cm-formatting-header-1 {
+    @include upper_code;
+
+    &:before {
+      content: "H1 ";
+
+      @include lower_code;
+    }
+  }
+
+  // Heading 2
+  .cm-line .cm-formatting-header-2 {
+    @include upper_code;
+
+    &:before {
+      content: "H2 ";
+      @include lower_code;
+    }
+  }
+
+  // Heading 3
+  .cm-line .cm-formatting-header-3 {
+    @include upper_code;
+
+    &:before {
+      content: "H3 ";
+      @include lower_code;
+    }
+  }
+
+  // Heading 4
+  .cm-line .cm-formatting-header-4 {
+    @include upper_code;
+
+    &:before {
+      content: "H4 ";
+      @include lower_code;
+    }
+  }
+
+  // Heading 5
+  .cm-line .cm-formatting-header-5 {
+    @include upper_code;
+
+    &:before {
+      content: "H5 ";
+      @include lower_code;
+    }
+  }
+
+  // Heading 6
+  .cm-line .cm-formatting-header-6 {
+    @include upper_code;
+
+    &:before {
+      content: "H6 ";
+      @include lower_code;
+    }
+  }
+
+  // Headings Active Line
+  .cm-active.cm-line .cm-formatting-header-1,
+  .cm-active.cm-line .cm-formatting-header-2,
+  .cm-active.cm-line .cm-formatting-header-3,
+  .cm-active.cm-line .cm-formatting-header-4,
+  .cm-active.cm-line .cm-formatting-header-5,
+  .cm-active.cm-line .cm-formatting-header-6 {
+    margin-right: 0px !important;
+    visibility: visible;
+    font-size: inherit !important;
+    position: relative;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+  padding-right: 2.7rem;
+}
+
+/*< Preview view >*/
+.is-live-preview {
+  //Feature done by: Luke242#8485
+  .cm-widgetBuffer + .cm-header {
+    animation: outdent 250ms ease-out;
+    display: inline-block;
+  }
+
+  .cm-widgetBuffer + .cm-header.cm-formatting {
+    animation: opac 250ms ease-in;
+  }
+
+  .cm-active .cm-header + .cm-header {
+    animation: indent 250ms ease-out;
+    display: inline-block;
+  }
+
+  .cm-header-1 {
+    --header-offset: 1.2ch;
+  }
+  .cm-header-2 {
+    --header-offset: 2.2ch;
+  }
+  .cm-header-3 {
+    --header-offset: 3.2ch;
+  }
+  .cm-header-4 {
+    --header-offset: 4.2ch;
+  }
+  .cm-header-5 {
+    --header-offset: 5.2ch;
+  }
+  .cm-header-6 {
+    --header-offset: 6.2ch;
+  }
+}
+
+//Feature done by: Luke242#8485
+@keyframes indent {
+  from {
+    transform: translateX(calc(-1 * var(--header-offset)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes outdent {
+  from {
+    transform: translateX(var(--header-offset));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

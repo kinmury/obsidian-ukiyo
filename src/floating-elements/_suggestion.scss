@@ -1,0 +1,29 @@
+.suggestion-container {
+  border-radius: 3px;
+
+  .suggestion {
+    padding: 0px;
+    border-radius: 3px;
+
+    &-item {
+      transition: all 100ms ease-in-out;
+
+      border-radius: 0px;
+
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  }
+
+  .prompt-instructions {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  &.mod-search-suggestion {
+    .suggestion {
+      padding: 5px;
+      padding-top: 0px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.workspace-ribbon.side-dock-ribbon.mod-left,
+.workspace-ribbon.side-dock-ribbon.mod-right {
+  margin-top: var(--top-header-height);
+
+  width: 30px;
+
+  padding: 0px;
+
+  .side-dock-actions,
+  .side-dock-settings {
+    gap: 0px;
+    width: 100%;
+
+    .clickable-icon {
+      transition: background-color 175ms ease-in-out;
+
+      width: 100%;
+
+      padding-left: 0px;
+      padding-right: 0px;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      border-radius: 0px;
+    }
+  }
+
+  &:before {
+    border-right: 1px solid transparent;
+    border-bottom: none;
+
+    height: var(--top-header-height);
+    width: calc(var(--ribbon-width) - 1px);
+  }
+
+  &.is-collapsed {
+    &:before {
+      transition: border-right 300ms ease-in-out, width 150ms ease-in-out;
+      width: calc(var(--ribbon-width) - 1px);
+      border-right: 1px solid var(--tab-outline-color);
+    }
+  }
+
+  .sidebar-toggle-button.mod-left {
+    padding: 0px;
+
+    height: var(--top-header-height);
+    width: var(--ribbon-width);
+
+    .clickable-icon {
+      width: 100%;
+      border-radius: 0px;
+      padding: 0px;
+
+      border-bottom: var(--tab-outline-width) solid var(--tab-outline-color);
+    }
+  }
+}

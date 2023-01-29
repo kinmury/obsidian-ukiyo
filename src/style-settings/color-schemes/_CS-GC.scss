@@ -1,0 +1,402 @@
+.CS_GC {
+  --font-default: "Kalam";
+
+  // Horizontal Line Icon
+  .markdown-preview-view {
+    hr {
+      &:after {
+        content: "\f7b6";
+      }
+    }
+  }
+}
+
+.theme-dark {
+  &.CS_GC {
+    // DEFAULT VARIABLES
+    --color-red: #fb464c;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-yellow: #e0de71;
+    --color-cyan: #53dfdd;
+    --color-blue: #027aff;
+    --color-purple: #a882ff;
+    --color-pink: #fa99cd;
+
+    --color-base-00: #402e22; // bg-primary
+    --color-base-10: #473224; // bg-primary-alt
+    --color-base-20: #473224; // bg-secondary //title-bar //title-bar-focused
+    --color-base-25: #583f2e; // bg-modifier-form-field
+    --color-base-30: #5f4630; // bg-secondary-alt // LOW OPACITY - SS
+    --color-base-35: var(--color-base-30); // borders (?)
+    --color-base-40: #644a33;
+    --color-base-50: #b9987c; // txt-faint
+    --color-base-60: #999;
+    --color-base-70: var(--color-base-50); // txt-muted
+    --color-base-100: #dfc2a0;
+
+    --color-accent: #e69c57; // text-accent
+    --color-accent-2: #f5ae6c; //txt-accent-h
+
+    --color-accent-1: var(--color-base-30);
+
+    --background-modifier-form-field: var(--color-base-25);
+    --background-secondary-alt: var(--color-base-30);
+    --interactive-normal: var(--color-base-30);
+    --interactive-hover: var(--color-base-35);
+
+    --text-highlight-bg: rgba(160, 99, 38, 0.4);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-selection: #583f2d;
+    --text-selection-alt: #583f2d;
+
+    // CUSTOM VARIABLES
+    // Hover Elements
+    --notice-background-color: #61422e;
+    --tooltip-background-color: #724c33;
+
+    // Settings
+    --settings-button-background-color-hover: #724c33;
+
+    --modal-checkbox-disabled: #6d5948;
+    --modal-checkbox-enabled: #a3764f;
+
+    // Note
+    --activeline: #583f2d8a;
+
+    // Blockquote
+    --blockquote-border-color: #bb9871;
+    --blockquote-background-color: #473224;
+    --blockquote-mark-background-color: #88653850;
+
+    // Callouts
+    --callout-content-background-color: #442f20;
+
+    // Bold
+    --bold-color: #ce631c;
+
+    // Italic
+    --italic-color: #da9517;
+
+    // Headings
+    --heading-counter: #e04242;
+
+    // Icons
+    --tab-text-color-focused-active-current: var(--icon-color-focused);
+    --icon-color-active: #c7a384;
+    --icon-color-focused: #cfad8f;
+
+    // Indentation Guide
+    --indentation-guide-color: var(--color-base-40);
+    --indentation-guide-color-active: var(--color-base-50);
+
+    // Scrollbars
+    --scrollbar-thumb-bg: #614229;
+    --scrollbar-active-thumb-bg: #725033;
+
+    // Titlebar
+    --titlebar-text-color-focused: #cfad8f;
+
+    // Backgrounds
+    --background-modifier-hover: var(--color-base-25);
+    --background-modifier-border-focus: #5f4630;
+
+    // Codeblock
+    --code-background: #503522;
+  }
+}
+
+.theme-dark {
+  &.CS_GC {
+    &.mode-dark-coffee {
+      /* DEFAULT VARIABLES */
+      --color-red: #fb464c;
+      --color-green: #44cf6e;
+      --color-orange: #e9973f;
+      --color-yellow: #e0de71;
+      --color-cyan: #53dfdd;
+      --color-blue: #027aff;
+      --color-purple: #a882ff;
+      --color-pink: #fa99cd;
+
+      --color-base-00: #362215; // bg-primary
+      --color-base-10: #473224; // bg-primary-alt
+      --color-base-20: #332013; // bg-secondary //title-bar //title-bar-focused
+      --color-base-25: #422919; // bg-modifier-form-field
+      --color-base-30: #523827; // bg-secondary-alt // LOW OPACITY - SS
+      --color-base-35: var(--color-base-30); // borders (?)
+      --color-base-40: #583b27;
+      --color-base-50: #b38a66; // txt-faint
+      --color-base-60: #999;
+      --color-base-70: var(--color-base-50); // txt-muted
+      //--color-base-100: #dfc2a0;
+      --color-base-100: #c4a37d;
+
+      --color-accent: #ce7726; // text-accent
+      --color-accent-2: #db791e; //txt-accent-h
+
+      --color-accent-1: var(--color-base-30);
+
+      --background-modifier-form-field: var(--color-base-25);
+      --background-secondary-alt: var(--color-base-30);
+      --interactive-normal: var(--color-base-30);
+      --interactive-hover: var(--color-base-35);
+
+      --text-highlight-bg: rgba(160, 99, 38, 0.4);
+      --text-highlight-bg-active: var(--text-highlight-bg);
+      --text-selection: #583f2d;
+      --text-selection-alt: #583f2d;
+
+      /* CUSTOM VARIABLES */
+      // Hover Elements
+      --notice-background-color: #462916;
+      --tooltip-background-color: #522e16;
+
+      // Settings
+      --settings-button-background-color-hover: #634028;
+
+      --modal-checkbox-disabled: #66503d;
+      --modal-checkbox-enabled: #835d3c;
+
+      // Note
+      --activeline: #5234218e;
+
+      // Blockquote
+      --blockquote-border-color: #a38664;
+      --blockquote-background-color: #462918;
+      --blockquote-mark-background-color: #88653850;
+
+      // Callouts
+      --callout-content-background-color: #462918;
+
+      // Bold
+      --bold-color: #b95919;
+
+      // Italic
+      --italic-color: #c58714;
+
+      // Headings
+      --heading-counter: #bd3030;
+
+      // Icons
+      --tab-text-color-focused-active-current: var(--icon-color-focused);
+      --icon-color-active: #b39072;
+      --icon-color-focused: #c5a385;
+
+      // Indentation Guide
+      --indentation-guide-color: var(--color-base-40);
+      --indentation-guide-color-active: var(--color-base-50);
+
+      // Scrollbars
+      --scrollbar-thumb-bg: #553820;
+      --scrollbar-active-thumb-bg: #5a3c23;
+
+      // Titlebar
+      --titlebar-text-color-focused: #cfad8f;
+
+      // Backgrounds
+      --background-modifier-hover: var(--color-base-25);
+      --background-modifier-border-focus: #5f4630;
+
+      // Codeblock
+      --code-background: #4d2c19;
+    }
+  }
+}
+
+.theme-light {
+  &.CS_GC {
+    // DEFAULT VARIABLES
+    --color-red: #cf2035;
+    --color-green: #049e42;
+    --color-orange: #c76300;
+    --color-yellow: #c49600;
+    --color-cyan: #009b98;
+    --color-blue: #004faa;
+    --color-purple: #603ad3;
+    --color-pink: #b6296d;
+
+    --color-base-00: #fff3e7; // bg-primary
+    --color-base-05: var(--color-base-20); // titlebar (on-active)
+    --color-base-10: #f3dbc1; // bg-primary-alt
+    --color-base-20: #ffedd9; // bg-secondary //title-bar //title-bar-focused
+    --color-base-25: #f3dbc1; // bg-modifier-form-field
+    --color-base-30: #e0c1a0; // bg-secondary-alt // LOW OPACITY - SS
+    --color-base-35: var(--color-base-30); // borders (?)
+    --color-base-40: #d6b086;
+    --color-base-50: #cf8a3a; // txt-faint
+    --color-base-60: #999;
+    --color-base-70: var(--color-base-100); // txt-muted
+    --color-base-100: #97653c;
+
+    --color-accent: #d83939; // text-accent
+    --color-accent-2: #ec5555; //txt-accent-h
+
+    --color-accent-1: var(--color-base-30);
+
+    --background-modifier-form-field: var(--color-base-25);
+    --background-secondary-alt: var(--color-base-30);
+    --interactive-normal: #ffd2ad;
+    --interactive-hover: #ffdbb9;
+    --interactive-accent: var(--text-faint);
+
+    --text-highlight-bg: rgba(160, 99, 38, 0.4);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-selection: #ffdfbd;
+    --text-selection-alt: #ffdfbd;
+
+    // CUSTOM VARIABLES
+    // Hover Elements
+    --notice-background-color: #b36d3f;
+    --tooltip-background-color: #d3824d;
+
+    // Settings
+    --settings-button-background-color-hover: var(--interactive-hover);
+
+    --modal-checkbox-disabled: #f5caa1;
+    --modal-checkbox-enabled: #e4a26d;
+
+    // Note
+    --activeline: #ffead4;
+
+    // Blockquote
+    --blockquote-border-color: var(--text-faint);
+    --blockquote-background-color: #f7e4d3;
+    --blockquote-mark-background-color: #facc877e;
+
+    // Callouts
+    --callout-content-background-color: var(--blockquote-background-color);
+
+    // Bold
+    --bold-color: #b36b29;
+
+    // Italic
+    --italic-color: #d88405;
+
+    // Headings
+    --heading-counter: #da7b64;
+
+    // Icons
+    --tab-text-color-focused-active-current: var(--icon-color-focused);
+    --icon-color-active: #af5603;
+    --icon-color-focused: #af5603;
+
+    // Indentation Guide
+    --indentation-guide-color: var(--color-base-40);
+    --indentation-guide-color-active: var(--color-base-50);
+
+    // Scrollbars
+    --scrollbar-thumb-bg: #eed9c2;
+    --scrollbar-active-thumb-bg: #e2c5a6;
+
+    // Titlebar
+    --titlebar-text-color-focused: #cfad8f;
+
+    // Backgrounds
+    --background-modifier-hover: var(--color-base-25);
+    --background-modifier-border-focus: var(--color-base-30);
+
+    // Codeblock
+    --code-background: #f7dcc4;
+  }
+}
+
+// Show only the style setting to the corresponding color scheme
+.CS_default,
+.CS_GB,
+.CS_RS,
+.CS_ALCH {
+  .setting-item[data-id^="CS_GC"],
+  .setting-item[data-id^="mode-dark-coffee"] {
+    display: none;
+  }
+}
+
+.theme-dark {
+  &.CS_GC {
+    .setting-item[data-id="CS_GC_Light"] {
+      display: none;
+    }
+  }
+}
+
+.theme-light {
+  &.CS_GC {
+    .setting-item[data-id="CS_GC_Dark"],
+    .setting-item[data-id^="mode-dark-coffee"] {
+      display: none;
+    }
+  }
+}
+
+/*
+body {
+  // Dark Mode
+  --CS_GC_D_bold: #d6681f;
+  --CS_GC_D_italic: #e9a424;
+  --CS_GC_D_highlight: rgba(160, 99, 38, 0.4);
+
+  // Light Mode
+  --CS_GC_L_bold: #b36b29;
+  --CS_GC_L_italic: #d88405;
+  --CS_GC_L_highlight: rgba(255, 203, 61, 0.4);
+}
+
+
+.theme-dark {
+  &.CS_GC {
+    .setting-item[data-id="CS_GC_Light"] {
+      display: none;
+    }
+  }
+}
+
+.theme-light {
+  &.CS_GC {
+    .setting-item[data-id="CS_GC_Dark"] {
+      display: none;
+    }
+  }
+}
+
+// Font
+.theme-dark {
+  &.CS_GC {
+    &.CS_GC_D_F_Asap_Default {
+      --font-default: "Asap";
+    }
+
+    &.CS_GC_D_F_Kalam_Coffee {
+      --font-default: "Kalam";
+    }
+
+    &.CS_GC_D_F_Amiri_Fancy {
+      --font-default: "Amiri";
+    }
+
+    --bold-color: var(--CS_GC_D_bold);
+    --italic-color: var(--CS_GC_D_italic);
+    --text-highlight-bg: var(--CS_GC_D_highlight);
+  }
+}
+
+.theme-light {
+  &.CS_GC {
+    &.CS_GC_L_F_Asap_Default {
+      --font-default: "Asap";
+    }
+
+    &.CS_GC_L_F_Kalam_Coffee {
+      --font-default: "Kalam";
+    }
+
+    &.CS_GC_L_F_Amiri_Fancy {
+      --font-default: "Amiri";
+    }
+
+    --bold-color: var(--CS_GC_L_bold);
+    --italic-color: var(--CS_GC_L_italic);
+    --text-highlight-bg: var(--CS_GC_L_highlight);
+  }
+}
+*/

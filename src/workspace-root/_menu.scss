@@ -1,0 +1,15 @@
+.menu {
+  padding: 0px;
+  border-radius: 3px;
+
+  &-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 0px;
+  }
+
+  &-separator {
+    margin: 0px;
+  }
+}

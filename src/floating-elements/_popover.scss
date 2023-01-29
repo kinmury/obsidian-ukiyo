@@ -1,23 +1,15 @@
-// Popover
-
-@keyframes fade_in {
-  0% {
-    opacity: 0%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}
-
 .popover {
-  animation: 0.1s fade_in;
+  border-radius: 3px;
 
-  &.hover-popover {
-    border-radius: 4px;
+  .markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide {
+    padding-left: 10px;
+    padding-right: 10px;
 
-    .markdown-embed-link {
-      right: 14px;
-    }
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  &.hover-popover > .mod-empty {
+    background-color: var(--background-primary);
   }
 }

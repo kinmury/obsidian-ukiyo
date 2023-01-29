@@ -1,0 +1,29 @@
+.cm-gutterElement {
+  &.cm-active {
+    color: var(--text-normal);
+  }
+}
+
+.cm-active {
+  &.cm-line {
+    &::after {
+      content: "";
+      z-index: -1;
+
+      width: 100%;
+      height: 100%;
+
+      display: block;
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      background-color: var(--activeline);
+    }
+  }
+
+  &.HyperMD-codeblock.HyperMD-codeblock-bg.cm-line {
+    background-color: var(--activeline);
+  }
+}

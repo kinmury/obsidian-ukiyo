@@ -1,0 +1,62 @@
+.workspace-split.mod-horizontal.mod-left-split {
+  .nav-header {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .nav-files-container.node-insert-event {
+    padding: 5px;
+  }
+
+  .nav-file-tag {
+    border-radius: 2px;
+  }
+}
+
+.workspace-split.mod-horizontal.mod-right-split {
+  .backlink-pane.node-insert-event,
+  .outgoing-link-pane.node-insert-event,
+  .tag-container.node-insert-event,
+  .outline {
+    padding: 7px;
+  }
+}
+
+.search-result-file-match {
+  position: relative;
+
+  padding: 7px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  .search-result-file-matched-text {
+    padding-left: 2px;
+    padding-right: 2px;
+
+    padding-bottom: 2px;
+
+    border-radius: 3px;
+  }
+
+  .search-result-file-match-replace-button {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+
+    height: 20px;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    transform: translate(0, -50%);
+  }
+}
+
+.workspace-split.mod-horizontal.mod-left-split
+  .nav-folder.mod-root
+  > .nav-folder-title {
+  color: var(--text-muted);
+}

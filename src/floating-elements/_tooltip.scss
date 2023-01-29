@@ -1,10 +1,11 @@
-// Tooltip
-
 .tooltip {
+  font-style: italic;
+  border-radius: 3px;
+
+  color: var(--text-normal);
+  background-color: var(--tooltip-background-color);
+
   .tooltip-arrow {
     display: none;
   }
-
-  font-style: italic;
-  background-color: var(--tooltip-bg-c);
 }

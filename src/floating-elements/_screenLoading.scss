@@ -1,0 +1,45 @@
+/* Loading Screen */
+@keyframes easeInOut {
+  from {
+    color: var(--interactive-accent);
+  }
+
+  25% {
+    filter: brightness(75%);
+  }
+
+  50% {
+    filter: brightness(50%);
+  }
+
+  75% {
+    filter: brightness(75%);
+  }
+
+  to {
+    color: var(--interactive-accent);
+  }
+}
+
+.progress-bar {
+  background-color: var(--background-primary);
+
+  & .progress-bar-message {
+    font-size: 0;
+    margin-bottom: 30px;
+
+    &:before {
+      content: "¯\\_[ ◑.◑]_/¯";
+      font-size: 4rem;
+      font-weight: 500;
+      color: var(--text-normal);
+      animation-duration: 0.8s;
+      animation-name: easeInOut;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+.progress-bar-indicator {
+  display: none;
+}

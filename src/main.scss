@@ -1,108 +1,76 @@
-// Fonts
-@use "./fonts/F-main";
-@use "./fonts/F-code";
-@use "./fonts/F-fancy";
-@use "./fonts/F-coffee";
+// FONTS
+@use "./fonts/font_default";
+@use "./fonts/font_fancy";
+@use "./fonts/font_icons";
+@use "./fonts/font-code";
+@use "./fonts/font-coffee";
 
-// Color Schemes
-@use "./color-schemes/CS-ukiyo";
-@use "./color-schemes/CS-GC";
-@use "./color-schemes/CS-GB";
-@use "./color-schemes/CS-GB-mess";
-@use "./color-schemes/CS-ALCH";
-@use "./color-schemes/CS-RS";
+@use "./custom/callouts/DV_kanban";
+@use "./custom/callouts/figure";
+@use "./custom/callouts/centered-callout";
+@use "./custom/callouts/table_types";
+@use "./custom/cssClasses/center-headings";
+@use "./custom/cssClasses/DV_tasks";
+@use "./custom/cssClasses/full-width";
+@use "./custom/folder-icons";
 
-// Floating Elements
-@use "./floating-elements/tooltip";
-@use "./floating-elements/statusbar";
-@use "./floating-elements/popover";
 @use "./floating-elements/prompt";
-@use "./floating-elements/loading";
+@use "./floating-elements/graph";
+@use "./floating-elements/suggestion";
+@use "./floating-elements/popover";
+@use "./floating-elements/tooltip";
 @use "./floating-elements/notice";
+@use "./floating-elements/screenEmpty";
+@use "./floating-elements/screenLoading";
 
-// Settings
-@use "./settings/general-modal";
-@use "./settings/community";
+@use "./general/active-line";
+@use "./general/scrollbar";
+@use "./general/compact";
 
-// Workspace Left
-@use "./workspace-left/nav-container";
-@use "./workspace-left/ribbon";
+@use "./note/default-callouts";
+@use "./note/default-tables";
+@use "./note/centered-stuff";
+@use "./note/cleanEmbed";
+@use "./note/listItems";
+@use "./note/blockquote";
+@use "./note/code";
+@use "./note/headings";
+@use "./note/hr";
+@use "./note/mathjax";
+@use "./note/footnote";
 
-// Workspace Root
-// - Note
-@use "./workspace-root/note/img";
-@use "./workspace-root/note/mermaid";
-@use "./workspace-root/note/blockquote";
-@use "./workspace-root/note/callout";
-@use "./workspace-root/note/latex";
-@use "./workspace-root/note/table";
-@use "./workspace-root/note/code";
-@use "./workspace-root/note/embed";
-@use "./workspace-root/note/headings";
-@use "./workspace-root/note/hr";
-@use "./workspace-root/note/links-footnote";
-@use "./workspace-root/note/ol-ul";
-
-// - UI
-@use "./workspace-root/UI/tabs";
-@use "./workspace-root/UI/active-line";
-@use "./workspace-root/UI/resize-handles";
-@use "./workspace-root/UI/empty";
-@use "./workspace-root/UI/frontmatter";
-@use "./workspace-root/UI/text-selection";
-@use "./workspace-root/UI/header";
-
-// Features
-@use "./features/custom-table";
-@use "./features/clear-table";
-@use "./features/centered-callouts";
-@use "./features/figure";
-
-// CSS Classes
-@use "./css-classes/no-width";
-@use "./css-classes/force-center";
-@use "./css-classes/home-page";
-@use "./css-classes/issues_appereance";
-
-// Plugins
 @use "./plugins/dataview";
 @use "./plugins/kanban";
+@use "./plugins/calendar";
+@use "./plugins/baseSS";
 
-// PKM Specific
-@use "./pkm-specific/folder-icons";
+@use "./settings/community-modal";
+@use "./settings/settings-modal";
 
-// Style Settings
+@use "./workspace-root/header";
+@use "./workspace-root/rootTabs";
+@use "./workspace-root/titlebar";
+@use "./workspace-root/menu";
+@use "./workspace-root/statusbar";
+@use "./workspace-root/frontmatter";
+@use "./workspace-root/canvas";
+
+@use "./worspace-left/tab";
+@use "./worspace-left/nav-header";
+@use "./worspace-left/folder-files";
+@use "./worspace-left/ribbon";
+
+@use "./PDF";
 @use "./style-settings/SS-main";
-
-// PDF
-@use "./PDF.scss";
 
 body {
   --font-default: "Asap";
   --font-monospace: "JetBrains Mono";
 
-  .inline-title {
-    display: none;
-  }
+  --titlebar-background-focused: var(--background-secondary);
+  --file-line-width: 65em;
 
-  .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-    padding-left: 2px;
-
-    .cm-indent {
-      &::before {
-        transform: none;
-      }
-    }
-  }
-
-  .markdown-rendered.show-indentation-guide li > ul::before,
-  .markdown-rendered.show-indentation-guide li > ol::before {
-    left: -12px;
-  }
-
-  .mjx-i {
-    * {
-      font-family: MJXTEX;
-    }
-  }
+  --tag-radius: 3px;
+  --tag-padding-y: 0px;
+  --tag-padding-x: 5px;
 }

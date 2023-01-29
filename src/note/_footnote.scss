@@ -1,0 +1,12 @@
+a {
+  transition: color 0.15s ease-in-out;
+}
+
+sup {
+  &.footnote-ref {
+    vertical-align: baseline;
+    font-size: var(--font-text-size);
+    padding-left: 2px;
+    line-height: 0px;
+  }
+}

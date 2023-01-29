@@ -1,0 +1,327 @@
+// Show only the style setting to the corresponding color scheme
+//.CS_default,
+.CS_GC,
+.CS_GB,
+.CS_RS,
+.CS_ALCH {
+  .setting-item[data-id^="CS_U"],
+  .setting-item[data-id^="mode-deep-dive"] {
+    display: none;
+  }
+}
+
+.theme-dark {
+  &.CS_default {
+    .setting-item[data-id="CS_Ukiyo_Light"] {
+      display: none;
+    }
+  }
+}
+
+.theme-light {
+  &.CS_default {
+    .setting-item[data-id="CS_Ukiyo_Dark"],
+    .setting-item[data-id^="mode-deep-dive"] {
+      display: none;
+    }
+  }
+}
+
+body {
+  /* DEFAULT VARIABLES */
+  // Popovers - file previews
+  --popover-width: 40vw;
+  --popover-height: 45vh;
+  --popover-max-height: 45vh;
+
+  // Ribbon
+  --ribbon-width: 30px;
+
+  //Blockquotes
+  --blockquote-border-thickness: 3px;
+  --blockquote-color: var(--text-muted);
+
+  // Callouts
+  --callout-blend-mode: normal;
+}
+
+.theme-dark {
+  /* DEFAULT VARIABLES */
+  --color-red: #fb464c;
+  --color-green: #44cf6e;
+  --color-orange: #e9973f;
+  --color-yellow: #e0de71;
+  --color-cyan: #53dfdd;
+  --color-blue: #027aff;
+  --color-purple: #a882ff;
+  --color-pink: #fa99cd;
+
+  --color-base-00: #253847; // bg-primary
+  --color-base-10: #25333f; // bg-primary-alt
+  --color-base-20: #233241; // bg-secondary //title-bar //title-bar-focused
+  --color-base-25: #284052; // bg-modifier-form-field
+  --color-base-30: #2e505a; // bg-secondary-alt // LOW OPACITY - SS
+  --color-base-35: var(--color-base-30); // borders (?)
+  --color-base-40: #335a5a;
+  --color-base-50: #65a79e; // txt-faint
+  --color-base-60: #999;
+  --color-base-70: var(--color-base-50); // txt-muted
+  --color-base-100: #d0d0d0;
+
+  --color-accent: #20c4cf; // text-accent
+  --color-accent-2: #0edeec; //txt-accent-h
+
+  --color-accent-1: var(--color-base-30);
+
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+
+  --text-highlight-bg: rgba(160, 99, 38, 0.4);
+  --text-highlight-bg-active: var(--text-highlight-bg);
+  --text-selection: #2e4253;
+  --text-selection-alt: #2e4253;
+
+  /* CUSTOM VARIABLES */
+  // Hover Elements
+  --notice-background-color: #10595c;
+  --tooltip-background-color: #1c4b4d;
+
+  // Settings
+  --settings-button-background-color-hover: #45797e;
+
+  --modal-checkbox-disabled: #2b5558;
+  --modal-checkbox-enabled: #3e7f85;
+
+  // Note
+  --activeline: #2a3f528f;
+
+  // Blockquote
+  --blockquote-border-color: #336d4d;
+  --blockquote-background-color: #21303d;
+  --blockquote-mark-background-color: rgba(73, 129, 155, 0.4);
+
+  // Callouts
+  --callout-content-background-color: #21303d;
+
+  // Bold
+  --bold-color: #3ec28b;
+
+  // Italic
+  --italic-color: #74ccff;
+
+  // Headings
+  --heading-counter: #e04242;
+
+  // Icons
+  --tab-text-color-focused-active-current: var(--icon-color-focused);
+  --icon-color-active: #53b698;
+  --icon-color-focused: #5bbda4;
+
+  // Indentation Guide
+  --indentation-guide-color: var(--color-base-40);
+  --indentation-guide-color-active: var(--color-base-50);
+
+  // Scrollbars
+  --scrollbar-thumb-bg: #2c4d50;
+  --scrollbar-active-thumb-bg: #2e5357;
+
+  // Titlebar
+  --titlebar-text-color-focused: #53b688;
+
+  // Backgrounds
+  --background-modifier-hover: var(--color-base-25);
+  --background-modifier-border-focus: #2f5769;
+
+  // Codeblock
+  --code-background: #1d2b38;
+}
+
+.theme-dark {
+  &.mode-deep-dive {
+    /* DEFAULT VARIABLES */
+    --color-red: #fb464c;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-yellow: #e0de71;
+    --color-cyan: #53dfdd;
+    --color-blue: #027aff;
+    --color-purple: #a882ff;
+    --color-pink: #fa99cd;
+
+    --color-base-00: #212c3d; // bg-primary
+    --color-base-10: #252c3f; // bg-primary-alt
+    --color-base-20: #222e3f; // bg-secondary //title-bar //title-bar-focused
+    --color-base-25: #2a3a53; // bg-modifier-form-field
+    --color-base-30: #3454668a; // bg-secondary-alt // LOW OPACITY - SS
+    --color-base-35: var(--color-base-30); // borders (?)
+    --color-base-40: #396479;
+    --color-base-50: #50a3ad; // txt-faint
+    --color-base-60: #999;
+    --color-base-70: var(--color-base-50); // txt-muted
+    --color-base-100: #d0d0d0;
+
+    --color-accent: #2b9cb8; // text-accent
+    --color-accent-2: #30b4d4; //txt-accent-h
+
+    --color-accent-1: var(--color-base-30);
+
+    --background-modifier-form-field: var(--color-base-25);
+    --background-secondary-alt: var(--color-base-30);
+    --interactive-normal: var(--color-base-30);
+    --interactive-hover: var(--color-base-35);
+
+    --text-highlight-bg: rgba(160, 99, 38, 0.4);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-selection: #2e3f53;
+    --text-selection-alt: #40546b;
+
+    /* CUSTOM VARIABLES */
+    // Hover Elements
+    --notice-background-color: #2f435e;
+    --tooltip-background-color: #2d3f58;
+
+    // Settings
+    --settings-button-background-color-hover: #344a66;
+
+    --modal-checkbox-disabled: #344a66;
+    --modal-checkbox-enabled: #3b5b85;
+
+    // Note
+    --activeline: #26385388;
+
+    // Blockquote
+    --blockquote-border-color: #1f6c99;
+    --blockquote-background-color: #27354e;
+    --blockquote-mark-background-color: rgba(73, 129, 155, 0.4);
+
+    // Callouts
+    --callout-content-background-color: #1e2b3f;
+
+    // Bold
+    --bold-color: #15aa9e;
+
+    // Italic
+    --italic-color: #4dabe0;
+
+    // Headings
+    --heading-counter: #e04242;
+
+    // Icons
+    --tab-text-color-focused-active-current: var(--icon-color-focused);
+    --icon-color-active: #53b3b6;
+    --icon-color-focused: #34a5a5;
+
+    // Indentation Guide
+    --indentation-guide-color: var(--color-base-40);
+    --indentation-guide-color-active: var(--color-base-50);
+
+    // Scrollbars
+    --scrollbar-thumb-bg: #2b4058;
+    --scrollbar-active-thumb-bg: #37516e;
+
+    // Titlebar
+    --titlebar-text-color-focused: #209b76;
+
+    // Backgrounds
+    --background-modifier-hover: var(--color-base-25);
+    --background-modifier-border-focus: #2d5372;
+
+    // Codeblock
+    --code-background: #26385388;
+  }
+}
+.theme-light {
+  /* DEFAULT VARIABLES */
+  --color-red: #cf2035;
+  --color-green: #049e42;
+  --color-orange: #c76300;
+  --color-yellow: #c49600;
+  --color-cyan: #009b98;
+  --color-blue: #004faa;
+  --color-purple: #603ad3;
+  --color-pink: #b6296d;
+
+  --color-base-00: #e6f0ff; // bg-primary
+  --color-base-10: #c3dbff; // bg-primary-alt
+  --color-base-20: #e1edff; // bg-secondary //title-bar //title-bar-focused
+  --color-base-25: #cde1ff; // bg-modifier-form-field
+  --color-base-30: #c9d9f1; // bg-secondary-alt // LOW OPACITY - SS
+  --color-base-35: var(--color-base-30); // borders (?)
+  --color-base-40: #c9d9f1;
+  --color-base-50: #5079d1; // txt-faint
+  --color-base-60: #999;
+  --color-base-70: var(--color-base-50); // txt-muted
+  --color-base-100: #254da1;
+
+  --color-accent: #2b9cb8; // text-accent
+  --color-accent-2: #30b4d4; //txt-accent-h
+
+  --color-accent-1: var(--color-base-30);
+
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+
+  --text-highlight-bg: rgba(160, 99, 38, 0.4);
+  --text-highlight-bg-active: var(--text-highlight-bg);
+  --text-selection: #d0e3ff;
+  --text-selection-alt: #d0e3ff;
+  --text-on-accent: var(--color-base-50);
+
+  /* CUSTOM VARIABLES */
+  // Hover Elements
+  --notice-background-color: #c1daff;
+  --tooltip-background-color: #adceff;
+
+  // Settings
+  --settings-button-background-color-hover: #c7dcfd;
+
+  --modal-checkbox-disabled: #c4dcff;
+  --modal-checkbox-enabled: #84b1eb;
+
+  // Note
+  --activeline: #d0e3ff57;
+
+  // Blockquote
+  --blockquote-border-color: #5079d1;
+  --blockquote-background-color: #cee2ff;
+  --blockquote-mark-background-color: rgba(153, 199, 221, 0.4);
+
+  // Callouts
+  --callout-content-background-color: #d9e8ff;
+
+  // Bold
+  --bold-color: #42b3a9;
+
+  // Italic
+  --italic-color: #379eda;
+
+  // Headings
+  --heading-counter: #e67979;
+
+  // Icons
+  --tab-text-color-focused-active-current: var(--icon-color-focused);
+  --icon-color-active: #3892fa;
+  --icon-color-focused: #3892fa;
+
+  // Indentation Guide
+  --indentation-guide-color: var(--color-base-40);
+  --indentation-guide-color-active: var(--color-base-50);
+
+  // Scrollbars
+  --scrollbar-thumb-bg: #ccdffa;
+  --scrollbar-active-thumb-bg: #b7d0f3;
+
+  // Titlebar
+  --titlebar-text-color-focused: #3892fa;
+
+  // Backgrounds
+  --background-modifier-hover: var(--color-base-25);
+  --background-modifier-border-focus: #adceff;
+
+  // Codeblock
+  //--code-background: #26385388;
+}
