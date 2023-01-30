@@ -1,6 +1,6 @@
 .workspace-split.mod-vertical.mod-root {
   .view-content {
-    :not(li *) {
+    :not(li *, .math *) {
       line-height: 1.3;
     }
   }
@@ -39,7 +39,8 @@ h5,
 h6,
 table,
 img,
-.callout {
+.callout,
+mjx-container {
   margin-top: 8.5px !important;
   margin-bottom: 8.5px !important;
 }

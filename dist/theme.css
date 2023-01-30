@@ -614,7 +614,7 @@ body:not(.native-scrollbars) * {
   scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
 }
 
-.workspace-split.mod-vertical.mod-root .view-content :not(li *) {
+.workspace-split.mod-vertical.mod-root .view-content :not(li *, .math *) {
   line-height: 1.3;
 }
 
@@ -650,7 +650,8 @@ h5,
 h6,
 table,
 img,
-.callout {
+.callout,
+mjx-container {
   margin-top: 8.5px !important;
   margin-bottom: 8.5px !important;
 }
@@ -1254,6 +1255,9 @@ body {
 }
 .workspace-leaf-content[data-type=calendar] .container.svelte-pcimu8 {
   padding: 5px;
+}
+.workspace-leaf-content[data-type=calendar] .container.svelte-pcimu8 thead {
+  border-color: var(--color-base-40);
 }
 .workspace-leaf-content[data-type=calendar] .container.svelte-pcimu8 .nav.svelte-1vwr9dd {
   margin-top: 5px;
