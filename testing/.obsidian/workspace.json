@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b4805be88827c10f",
@@ -141,7 +140,7 @@
   },
   "active": "4fc8c7ba4f454ee8",
   "lastOpenFiles": [
-    "Untitled 1.md",
-    "Untitled.md"
+    "Untitled.md",
+    "Untitled 1.md"
   ]
 }

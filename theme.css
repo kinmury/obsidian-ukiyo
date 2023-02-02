@@ -2522,15 +2522,15 @@ body {
   --color-accent-1: var(--color-base-30);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
-  --interactive-normal: #ffd2ad;
-  --interactive-hover: #ffdbb9;
-  --interactive-accent: var(--text-faint);
+  --interactive-normal: #ffdbb9;
+  --interactive-hover: #ffdfc1;
+  --interactive-accent: var(--interactive-normal);
   --text-highlight-bg: rgba(160, 99, 38, 0.4);
   --text-highlight-bg-active: var(--text-highlight-bg);
   --text-selection: #ffdfbd;
   --text-selection-alt: #ffdfbd;
-  --notice-background-color: #b36d3f;
-  --tooltip-background-color: #d3824d;
+  --notice-background-color: #ffd6a8;
+  --tooltip-background-color: #f8ce9e;
   --settings-button-background-color-hover: var(--interactive-hover);
   --modal-checkbox-disabled: #f5caa1;
   --modal-checkbox-enabled: #e4a26d;
@@ -3719,17 +3719,23 @@ settings:
   transform: translateY(-50%);
   margin-top: 0px;
   margin-left: -24px;
+  opacity: 0;
   background-color: transparent;
   border-color: transparent;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  transition: margin-left 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: margin-left 0.2s ease-in-out, background-color 0.2s ease-in-out, opacity 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.HL-sidedock-PH .workspace-ribbon.side-dock-ribbon.mod-left .side-dock-actions {
+  padding-bottom: 0px;
 }
 .HL-sidedock-PH .workspace-ribbon.side-dock-ribbon.mod-left .side-dock-settings {
   border-top: 2px solid var(--tab-outline-color);
 }
 .HL-sidedock-PH .workspace-ribbon.side-dock-ribbon.mod-left:hover {
-  transition: margin-left 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  opacity: 1;
   margin-left: 0px;
   background-color: var(--background-secondary);
   border-top: 1px solid var(--tab-outline-color);

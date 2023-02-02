@@ -236,9 +236,9 @@
 
     --background-modifier-form-field: var(--color-base-25);
     --background-secondary-alt: var(--color-base-30);
-    --interactive-normal: #ffd2ad;
-    --interactive-hover: #ffdbb9;
-    --interactive-accent: var(--text-faint);
+    --interactive-normal: #ffdbb9;
+    --interactive-hover: #ffdfc1;
+    --interactive-accent: var(--interactive-normal);
 
     --text-highlight-bg: rgba(160, 99, 38, 0.4);
     --text-highlight-bg-active: var(--text-highlight-bg);
@@ -247,8 +247,8 @@
 
     // CUSTOM VARIABLES
     // Hover Elements
-    --notice-background-color: #b36d3f;
-    --tooltip-background-color: #d3824d;
+    --notice-background-color: #ffd6a8;
+    --tooltip-background-color: #f8ce9e;
 
     // Settings
     --settings-button-background-color-hover: var(--interactive-hover);
