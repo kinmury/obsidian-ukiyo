@@ -2,18 +2,6 @@ body {
   --list-indent: 1.4em;
 }
 
-.markdown-source-view ol > li,
-.markdown-source-view ul > li,
-.markdown-preview-view ol > li,
-.markdown-preview-view ul > li,
-.markdown-rendered ul > li,
-.mod-cm6 .HyperMD-list-line.cm-line {
-  /*line-height: 0px !important;
-  * {
-    line-height: 0px !important;
-  }*/
-}
-
 ol,
 ol ol ol ol ol ol,
 ol ol ol ol ol ol ol ol ol ol ol {

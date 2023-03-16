@@ -1,5 +1,28 @@
+@mixin td_width($num_tds) {
+  &:has(
+      td:nth-last-child(n + #{$num_tds}):nth-last-child(
+          -n + #{$num_tds}
+        ):first-child
+    ) {
+    td {
+      width: calc(100% / #{$num_tds});
+    }
+  }
+}
+
 table {
+  table-layout: fixed;
+
   thead {
-    border-bottom: 2px solid #4A4A4A;
+    border-bottom: 2px solid var(--color-base-40);
+  }
+
+  th,
+  td {
+    display: table-cell;
+  }
+
+  @for $i from 1 through 25 {
+    @include td_width($i);
   }
 }

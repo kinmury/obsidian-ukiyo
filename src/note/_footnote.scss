@@ -5,8 +5,9 @@ a {
 sup {
   &.footnote-ref {
     vertical-align: baseline;
-    font-size: var(--font-text-size);
     padding-left: 2px;
+
     line-height: 0px;
+    font-size: var(--font-text-size);
   }
 }

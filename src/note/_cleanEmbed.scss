@@ -1,15 +1,15 @@
 .internal-embed {
   &.markdown-embed {
-    border: none;
     padding: 0px;
+    border: none;
 
     .embed-title {
       display: none;
     }
 
     .markdown-embed-link {
-      display: absolute;
       transition: all 75ms ease-in-out;
+      display: absolute;
 
       width: 25px;
 

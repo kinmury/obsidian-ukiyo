@@ -1,11 +1,10 @@
 .callout {
   padding: 0px;
-  border-radius: 0px;
 
+  border-radius: 2px;
   border-left: 3px solid rgb(var(--callout-color));
-  mix-blend-mode: normal;
 
-  border-radius: 4px;
+  mix-blend-mode: normal;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
   .callout-title {
@@ -31,7 +30,7 @@
     padding-left: 10px;
     padding-right: 10px;
 
-    background-color: var(--callout-content-background-color);
+    background-color: var(--background-secondary);
 
     h1 {
       margin-top: 5px;

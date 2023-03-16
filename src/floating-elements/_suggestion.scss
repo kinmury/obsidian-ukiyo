@@ -1,4 +1,22 @@
+// Author of the animation: Akifyss - obsidian-border theme
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.suggestion-container[data-popper-placement] {
+  animation: none;
+}
+
 .suggestion-container {
+  animation: scale-up 50ms cubic-bezier(0.175, 0.9, 0.3, 1.1);
   border-radius: 3px;
 
   .suggestion {

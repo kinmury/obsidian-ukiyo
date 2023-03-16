@@ -1,0 +1,22 @@
+{
+  "GS@@AT": "CS_CR",
+  "M@@mode-smooth": false,
+  "HL@@HL-sidedock": "HL-sidedock-PH",
+  "CS_GC_Light@@CS_GC_L_font": "CS_GC_L_F_Asap_Default",
+  "CS_RS_Dark@@CS_RS_D_font": "CS_RS_D_F_Asap_Default",
+  "FCS@@fixed-dark-mode": "none",
+  "M@@mode-deep-dive": true,
+  "FCS@@fixed-light-mode": "none",
+  "CS_GC_Dark@@CS_GC_D_font": "CS_GC_D_F_Asap_Default",
+  "o-theme-settings@@o-color-accent": "o-cyan",
+  "o-theme-settings@@o-theme-dark": "o-arch-d",
+  "o-theme-settings@@o-bar": false,
+  "o-theme-settings@@o-float-tabs": false,
+  "o-theme-settings@@o-float-tabs-hover": false,
+  "o-theme-settings@@o-scrollbars": false,
+  "o-theme-settings@@o-notitle": false,
+  "o-theme-settings@@o-folders": "none",
+  "o-theme-settings@@o-folder-underline": "none",
+  "o-theme-settings@@o-collapse": false,
+  "o-theme-settings@@o-osxcode": false
+}

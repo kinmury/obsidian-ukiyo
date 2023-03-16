@@ -1,5 +1,10 @@
 .graph-controls {
+  transition: opacity 125ms ease-in-out;
   border-radius: 3px;
+
+  &:not(:hover) {
+    opacity: 0.5;
+  }
 
   &.is-close {
     border: var(--modal-border-width) solid var(--modal-border-color);
@@ -9,7 +14,9 @@
     .clickable-icon {
       height: 30px;
       width: 30px;
+
       margin: 0px;
+
       border-radius: 0px;
     }
   }

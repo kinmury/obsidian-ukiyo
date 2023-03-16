@@ -1,20 +1,22 @@
-.callout[data-callout="figure"],
-.callout[data-callout="fig"] {
-  box-shadow: none;
-  background-color: transparent;
-  border: none;
-
-  .callout-title {
-    display: none;
-  }
-
-  .callout-content {
+.callout {
+  &[data-callout="figure"],
+  &[data-callout="fig"] {
+    border: none;
     background-color: transparent;
-    text-align: center;
+    box-shadow: none;
 
-    img {
-      margin-top: 0px !important;
-      margin-bottom: 0px !important;
+    .callout-title {
+      display: none;
+    }
+
+    .callout-content {
+      text-align: center;
+      background-color: transparent;
+
+      img {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
     }
   }
 }

@@ -1,0 +1,176 @@
+.theme-light {
+  &.CS_CR {
+    .markdown-preview-view {
+      hr {
+        &:after {
+          content: "\f52d";
+        }
+      }
+    }
+
+    /*.workspace {
+      gap: 10px;
+      background-color: #d8b7a3;
+    }
+
+    .workspace-tabs.mod-top {
+      gap: 10px;
+      background-color: #d8b7a3;
+    }*/
+
+    --color-red: #cf2035;
+    --color-green: #049e42;
+    --color-orange: #c76300;
+    --color-yellow: #c49600;
+    --color-cyan: #009b98;
+    --color-blue: #004faa;
+    --color-purple: #603ad3;
+    --color-pink: #b6296d;
+
+    --color-base-00: #dcbdaa; // bg-primary
+    --color-base-10: #d2ae97; // bg-primary-alt
+    --color-base-20: #dfc2b0; // bg-secondary //title-bar //title-bar-focused
+    --color-base-25: #e4c7b5; // bg-modifier-form-field
+    --color-base-30: #d1b09a; // bg-secondary-alt // LOW OPACITY - SS
+    --color-base-35: var(--color-base-30); // borders (?)
+    --color-base-40: #c19f94;
+    --color-base-50: #965e4d; // txt-faint
+    --color-base-60: #999;
+    --color-base-70: var(--color-base-50); // txt-muted
+    --color-base-100: #794f42;
+
+    --color-accent: #c74c26; // text-accent
+    --color-accent-2: #aa2d07; //txt-accent-h
+
+    --color-accent-1: #dbb9a6;
+
+    --background-modifier-cover: #e3c5b38c;
+    --background-modifier-form-field: var(--color-base-25);
+    --background-secondary-alt: var(--color-base-30);
+    --interactive-normal: var(--color-base-30);
+    --interactive-hover: var(--color-base-35);
+
+    --text-highlight-bg: rgba(201, 157, 112, 0.349);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-selection: #cfad9a;
+    --text-selection-alt: #cfad9a;
+    --text-on-accent: var(--color-base-50);
+
+    /* CUSTOM VARIABLES */
+    // Hover Elements
+    --notice-background-color: #cfa994;
+    --tooltip-background-color: #cfa994;
+
+    // Settings
+    --settings-button-background-color-hover: #cba78f;
+
+    --modal-checkbox-disabled: #cd9888;
+    --modal-checkbox-enabled: #b27866;
+
+    // Note
+    --activeline: #d7b5a184;
+
+    // Blockquote
+    --blockquote-border-color: #e46658;
+    --blockquote-background-color: #d9b59f;
+    --blockquote-mark-background-color: #ddab9966;
+    --blockquote-color: #6d3929;
+
+    // Callouts
+    --callout-content-background-color: #d9b59f;
+
+    .callout {
+      .callout-content {
+        color: var(--blockquote-color);
+      }
+    }
+
+    // Bold
+    --bold-color: #b8701d;
+
+    // Italic
+    --italic-color: #b95e28;
+
+    // Headings
+    --heading-counter: #d26363;
+
+    // Icons
+    --tab-text-color-focused-active-current: var(--icon-color-focused);
+    --icon-color-active: #b75b3c;
+    --icon-color-focused: #b75b3c;
+
+    // Indentation Guide
+    --indentation-guide-color: var(--color-base-40);
+    --indentation-guide-color-active: var(--color-base-50);
+
+    // Scrollbars
+    --scrollbar-thumb-bg: #d8b49e;
+    --scrollbar-active-thumb-bg: #ceab95;
+
+    // Titlebar
+    --titlebar-text-color-focused: #774e41;
+
+    // Backgrounds
+    --background-modifier-hover: var(--color-accent-1);
+    --background-modifier-border-focus: #c19d87;
+    --background-modifier-active-hover: #dbb9a6;
+
+    // Tag
+    --tag-background: #d2ae97;
+    --tag-background-hover: #cea890;
+    --tag-color: #964f25;
+    --tag-color-hover: #8a4218;
+
+    // Codeblock
+    //--code-background: #26385388;
+
+    .suggestion-item {
+      &.is-selected {
+        background-color: #d0ac97;
+      }
+    }
+
+    .modal {
+      .setting-hotkey {
+        background-color: #d0ac97;
+      }
+    }
+
+    .graph-view {
+      &.color-line {
+        color: #c0957b;
+
+        &-highlight {
+          color: #986647;
+        }
+      }
+    }
+
+    .graph-controls {
+      background-color: var(--background-secondary);
+    }
+
+    .mod-warning {
+      color: var(--background-secondary);
+    }
+  }
+}
+
+// Show only the style setting to the corresponding color scheme
+.CS_default,
+.CS_GC,
+.CS_RS,
+.CS_ALCH,
+.CS_GB {
+  .setting-item[data-id^="CS_CR"] {
+    display: none;
+  }
+}
+
+.theme-dark {
+  &.CS_CR {
+    .setting-item[data-id="CS_CR_Light"] {
+      display: none;
+    }
+  }
+}

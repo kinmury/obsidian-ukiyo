@@ -35,14 +35,6 @@ body {
           border-left: var(--tab-outline-width) solid var(--tab-outline-color);
         }
 
-        &:hover {
-          //background-color: #303030;
-        }
-
-        &.is-active {
-          //background-color: #2b2b2b;
-        }
-
         .workspace-tab-header-inner {
           border-radius: 0px;
         }

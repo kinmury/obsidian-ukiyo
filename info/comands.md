@@ -1,10 +1,18 @@
 # Useful Comands
 
+> [!warning] 
+> The following syntax needs to be followed in order to not crash the compilation/compression but still keeping the SS-settings
+
+```scss
+/*!
+/* @settings
+*/
+```
+
 ## src/
 
 ```bash
-sass --no-source-map --watch "./src/main.scss" "./testing/.obsidian/themes/testing.css"
-sass --no-source-map "./src/main.scss" "./dist/theme.css"
+sass --no-source-map --watch --style compressed "./src/main.scss" "./testbench/.obsidian/themes/clean.css"
 
-css-minify -f "../aux-vault/.obsidian/themes/Ukiyo/theme.css" -o "../dist"
+sass --no-source-map --style compressed "./src/main.scss" "./clean.css"
 ```

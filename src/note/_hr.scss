@@ -1,24 +1,24 @@
 .markdown-preview-view {
   hr {
     overflow: visible;
-    font-family: "FA5FS";
+    //font-family: "FA5FS";
     position: relative;
 
     margin-top: 12px;
     margin-bottom: 12px;
 
-    &:after {
+    /*&:after {
       content: "\f6fc";
       display: block;
       position: absolute;
 
       left: 50%;
-      transform: translate(0, -50%);
+      transform: translate(-50%, -50%);
 
       padding: 0 0.3em;
 
       background-color: var(--background-primary);
       color: var(--text-muted);
-    }
+    }*/
   }
 }

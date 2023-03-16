@@ -1,14 +1,10 @@
-body {
-  --dataview-cell-line-color: #4a4a4a80;
-}
-
 .dataview {
   .table-view-thead {
     th {
-      border-bottom: 3px solid var(--dataview-cell-line-color);
+      border-bottom: 3px solid var(--indentation-guide-color);
 
       &:not(:last-of-type) {
-        border-right: 1px solid var(--dataview-cell-line-color);
+        border-right: 1px solid var(--indentation-guide-color);
       }
     }
   }
@@ -18,14 +14,24 @@ body {
       transition: all 75ms ease-in-out;
 
       &:not(:last-of-type) {
-        border-bottom: 1px solid var(--dataview-cell-line-color);
+        border-bottom: 1px solid var(--indentation-guide-color);
       }
     }
 
     td {
       &:not(:last-of-type) {
-        border-right: 1px solid var(--dataview-cell-line-color);
+        border-right: 1px solid var(--indentation-guide-color);
       }
+    }
+  }
+
+  &.dataview-error-box {
+    min-height: fit-content;
+    height: fit-content;
+
+    .dataview-error-message {
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
     }
   }
 }

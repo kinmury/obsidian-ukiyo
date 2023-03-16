@@ -1,0 +1,70 @@
+/*!
+/* @settings
+
+name: Color Scheme Specifics
+id: CS_CR_Light
+settings:
+  -
+    id: CS_CR_D_font
+    title: Custom Theme Font
+    type: class-select
+    allowEmpty: false
+    default: CS_CR_L_F_Asap_Default
+    options:
+      -
+        label: Asap
+        value: CS_CR_L_F_Asap_Default
+      - 
+        label: Kalam
+        value: CS_CR_L_F_Kalam_Coffee
+      -
+        label: Amiri
+        value: CS_CR_L_F_Amiri_Fancy
+  - 
+    id: CS_CR_L_bold
+    title: Bold Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#ca8940"
+  -
+    id: CS_CR_L_italic
+    title: Italic Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#ca7340"
+  -
+    id: CS_CR_L_highlight
+    title: Highlight Color
+    type: variable-color
+    opacity: true
+    format: hex
+    default: #c6a18b8c
+*/
+
+body {
+  --CS_CR_L_bold: #bd7625;
+  --CS_CR_L_italic: #c06531;
+  --CS_CR_L_highlight: #c6a18b8c;
+}
+
+.theme-light {
+  &:not(.FCS_L_default).CS_CR {
+    &.CS_CR_L_F_Asap_Default {
+      --font-default: "Asap-Regular";
+    }
+
+    &.CS_CR_L_F_Kalam_Coffee {
+      --font-default: "Kalam";
+    }
+
+    &.CS_CR_L_F_Amiri_Fancy {
+      --font-default: "Amiri";
+    }
+
+    --bold-color: var(--CS_CR_L_bold);
+    --italic-color: var(--CS_CR_L_italic);
+    --text-highlight-bg: var(--CS_CR_L_highlight);
+  }
+}

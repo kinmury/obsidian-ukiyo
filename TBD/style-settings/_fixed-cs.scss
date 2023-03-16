@@ -1,0 +1,57 @@
+/*!
+/* @settings
+
+name: Fixed Color Schemes
+id: FCS
+settings:
+    - 
+      id: fixed-dark-mode
+      title: Dark Mode
+      description: 
+          "Set the dark mode to be a certain color scheme permanently"
+      description.es:
+          "TODO"
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        -
+            label: Ukiyo
+            value: FCS_D_default
+        -
+            label: Ukiyo - Deep Dive
+            value: FCS_D_default_deep_dive
+        -
+            label: Golden Coffee
+            value: FCS_D_GC
+        -
+            label: Golden Dark Coffee
+            value: FCS_D_GCD
+        -
+            label: Alchemy
+            value: FCS_D_ALCH
+        -
+            label: Rose Shadow
+            value: FCS_D_RS  
+    - 
+      id: fixed-light-mode
+      title: Light Mode
+      description: 
+          "Set the light mode to be a certain color scheme permanently"
+      description.es:
+          "TODO"
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        -
+            label: Ukiyo
+            value: FCS_L_default
+        -
+            label: Golden Coffee
+            value: FCS_L_GC
+        -
+            label: Alchemy
+            value: FCS_L_ALCH
+    -
+*/

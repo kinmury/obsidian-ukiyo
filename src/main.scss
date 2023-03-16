@@ -1,10 +1,4 @@
 // FONTS
-@use "./fonts/font_default";
-@use "./fonts/font_fancy";
-@use "./fonts/font_icons";
-@use "./fonts/font-code";
-@use "./fonts/font-coffee";
-
 @use "./custom/callouts/DV_kanban";
 @use "./custom/callouts/figure";
 @use "./custom/callouts/centered-callout";
@@ -12,7 +6,6 @@
 @use "./custom/cssClasses/center-headings";
 @use "./custom/cssClasses/DV_tasks";
 @use "./custom/cssClasses/full-width";
-@use "./custom/folder-icons";
 
 @use "./floating-elements/prompt";
 @use "./floating-elements/graph";
@@ -60,17 +53,21 @@
 @use "./worspace-left/folder-files";
 @use "./worspace-left/ribbon";
 
-@use "./PDF";
-@use "./style-settings/SS-main";
-
 body {
-  --font-default: "Asap";
-  --font-monospace: "JetBrains Mono";
-
   --titlebar-background-focused: var(--background-secondary);
   --file-line-width: 65em;
 
   --tag-radius: 3px;
   --tag-padding-y: 0px;
   --tag-padding-x: 5px;
+
+  --blockquote-color: var(--text-muted);
+}
+
+.theme-dark {
+  --activeline: #4444444f;
+}
+
+.theme-light {
+  --activeline: #e9e9e95d;
 }

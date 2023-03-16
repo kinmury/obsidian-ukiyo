@@ -22,6 +22,10 @@
 
       gap: 5px;
 
+      .kanban-plugin__lane-action-add {
+        color: var(--text-accent);
+      }
+
       * {
         padding: 0px;
         width: 100%;
@@ -135,17 +139,3 @@
     }
   }
 }
-
-/*
-.kanban-plugin__board.kanban-plugin__horizontal.kanban-plugin__scroll-container {
-  & > div {
-    width: 100%;
-
-    .kanban-plugin__lane-wrapper {
-      flex-grow: 5000;
-      min-width: 20em;
-      //max-width: 30em;
-    }
-  }
-}
-*/

@@ -1,0 +1,170 @@
+:not(
+    .FCS_D_default,
+    .FCS_D_default_deep_dive,
+    .FCS_D_ALCH,
+    .FCS_D_GC,
+    .FCS_D_GCD
+  ).CS_RS,
+.FCS_D_RS {
+  --font-default: "Amiri";
+}
+
+.theme-dark {
+  &:not(
+      .FCS_D_default,
+      .FCS_D_default_deep_dive,
+      .FCS_D_ALCH,
+      .FCS_D_GC,
+      .FCS_D_GCD
+    ).CS_RS,
+  &.FCS_D_RS {
+    // Horizontal Line Icon
+    .markdown-preview-view {
+      hr {
+        &:after {
+          content: "\f3a5";
+        }
+      }
+    }
+
+    /* DEFAULT VARIABLES */
+    --color-red: #fb464c;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-yellow: #e0de71;
+    --color-cyan: #53dfdd;
+    --color-blue: #027aff;
+    --color-purple: #a882ff;
+    --color-pink: #fa99cd;
+
+    --color-base-00: #3b252d; // bg-primary
+    --color-base-10: #35242a; // bg-primary-alt
+    --color-base-20: #412730; // bg-secondary //title-bar //title-bar-focused
+    --color-base-25: #4d2d38; // bg-modifier-form-field
+    --color-base-30: #773d477e; // bg-secondary-alt // LOW OPACITY - SS
+    --color-base-35: var(--color-base-30); // borders (?)
+    --color-base-40: #c2937b;
+    --color-base-50: #c2937b; // txt-faint
+    --color-base-60: #999;
+    --color-base-70: var(--color-base-50); // txt-muted
+    --color-base-100: #d3a590;
+
+    --color-accent: #b884c4; // text-accent
+    --color-accent-2: #c693d1; //txt-accent-h
+
+    --color-accent-1: var(--color-base-30);
+
+    --background-modifier-form-field: var(--color-base-25);
+    --background-secondary-alt: var(--color-base-30);
+    --interactive-normal: var(--color-base-30);
+    --interactive-hover: var(--color-base-35);
+
+    --text-highlight-bg: rgba(139, 33, 153, 0.329);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-selection: #5a3f49;
+    --text-selection-alt: #5a3f49;
+
+    /* CUSTOM VARIABLES */
+    // Hover Elements
+    --notice-background-color: #29161c;
+    --tooltip-background-color: #301f25;
+
+    // Settings
+    --settings-button-background-color-hover: #c57886;
+
+    --modal-checkbox-disabled: #774350;
+    --modal-checkbox-enabled: #9e6574;
+
+    // Note
+    --activeline: #462f37;
+
+    // Blockquote
+    --blockquote-border-color: #a35e6b;
+    --blockquote-background-color: #35242a;
+    --blockquote-mark-background-color: #6d117954;
+
+    // Callouts
+    --callout-content-background-color: var(--blockquote-background-color);
+
+    // Bold
+    --bold-color: #fccab1;
+
+    // Italic
+    --italic-color: #eccfe8;
+
+    // Headings
+    --heading-counter: #d12e6d;
+
+    // Icons
+    --tab-text-color-focused-active-current: var(--icon-color-focused);
+    --icon-color-active: #e4ac91;
+    --icon-color-focused: #e4ac91;
+
+    // Indentation Guide
+    --indentation-guide-color: var(--color-base-40);
+    --indentation-guide-color-active: var(--color-base-50);
+
+    // Scrollbars
+    --scrollbar-thumb-bg: #4e363f;
+    --scrollbar-active-thumb-bg: #724757;
+
+    // Titlebar
+    --titlebar-text-color-focused: #fccab1;
+
+    // Backgrounds
+    --background-modifier-hover: var(--color-base-25);
+    --background-modifier-border-focus: #a35e6b;
+
+    // Codeblock
+    --code-background: #2e1e23;
+  }
+}
+
+// Show only the style setting to the corresponding color scheme
+.CS_default,
+.CS_GC,
+.CS_GB,
+.CS_ALCH,
+.CS_CR {
+  .setting-item[data-id^="CS_RS"] {
+    display: none;
+  }
+}
+
+/*
+body {
+    --CS_RS_D_bold: #fccab1;
+    --CS_RS_D_italic: #eccfe8;
+    --CS_RS_D_highlight: rgba(139, 33, 153, 0.329);
+  }
+  
+
+  .theme-dark {
+    &.CS_RS {
+      .setting-item[data-id="CS_RS_Light"] {
+        display: none;
+      }
+    }
+  }
+  
+  // Font
+  .theme-dark {
+    &.CS_RS {
+      &.CS_RS_D_F_Asap_Default {
+        --font-default: "Asap";
+      }
+  
+      &.CS_RS_D_F_Kalam_Coffee {
+        --font-default: "Kalam";
+      }
+  
+      &.CS_RS_D_F_Amiri_Fancy {
+        --font-default: "Amiri";
+      }
+  
+      --bold-color: var(--CS_RS_D_bold);
+      --italic-color: var(--CS_RS_D_italic);
+      --text-highlight-bg: var(--CS_RS_D_highlight);
+    }
+  }
+*/

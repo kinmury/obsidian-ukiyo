@@ -1,34 +1,42 @@
-body:not(.native-scrollbars) ::-webkit-scrollbar {
-  background-color: var(--scrollbar-bg);
-  width: 11px;
-  height: 11px;
-  -webkit-border-radius: var(--radius-l);
-  background-color: transparent;
-}
+body:not(.native-scrollbars) {
+  & ::-webkit-scrollbar {
+    background-color: var(--scrollbar-bg);
+    width: 11px;
+    height: 11px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
 
-body:not(.native-scrollbars) ::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb-bg);
-  -webkit-border-radius: 5px;
-  background-clip: padding-box;
-  border: 2px solid transparent;
-  border-width: 3px 3px 3px 2px;
-  min-height: 45px;
-  width: 30px;
-}
-body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
-  -webkit-border-radius: var(--radius-l);
-}
-body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover,
-body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
-  background-color: var(--scrollbar-active-thumb-bg);
-}
-body:not(.native-scrollbars) ::-webkit-scrollbar-corner {
-  background: transparent;
-}
-body:not(.native-scrollbars) * {
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+  & ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  & ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: 5px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+    width: 30px;
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+    }
+
+    &:hover,
+    &:active {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    & ::-webkit-scrollbar-thumb,
+    & ::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+  }
 }

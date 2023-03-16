@@ -1,0 +1,156 @@
+/*!
+/* @settings
+
+name: Color Scheme Specifics
+id: CS_ALCH_Dark
+settings:
+  -
+    id: CS_ALCH_D_font
+    title: Custom Theme Font
+    type: class-select
+    allowEmpty: false
+    default: CS_ALCH_D_F_Asap_Default
+    options:
+      -
+        label: Asap
+        value: CS_ALCH_D_F_Asap_Default
+      - 
+        label: Kalam
+        value: CS_ALCH_D_F_Kalam_Coffee
+      -
+        label: Amiri
+        value: CS_ALCH_D_F_Amiri_Fancy
+  - 
+    id: CS_ALCH_D_bold
+    title: Bold Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#1da376"
+  -
+    id: CS_ALCH_D_italic
+    title: Italic Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#1fafb4"
+  -
+    id: CS_ALCH_D_highlight
+    title: Highlight Color
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: rgba(64, 99, 214, 0.4)
+*/
+
+/*!
+/* @settings
+
+name: Color Scheme Specifics
+id: CS_ALCH_Light
+settings:
+  -
+    id: CS_ALCH_L_font
+    title: Custom Theme Font
+    type: class-select
+    allowEmpty: false
+    default: CS_ALCH_L_F_Asap_Default
+    options:
+      -
+        label: Asap
+        value: CS_ALCH_L_F_Asap_Default
+      - 
+        label: Kalam
+        value: CS_ALCH_L_F_Kalam_Coffee
+      -
+        label: Amiri
+        value: CS_ALCH_L_F_Amiri_Fancy
+  - 
+    id: CS_ALCH_L_bold
+    title: Bold Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#1da376"
+  -
+    id: CS_ALCH_L_italic
+    title: Italic Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#1fafb4"
+  -
+    id: CS_ALCH_L_highlight
+    title: Highlight Color
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: rgba(64, 99, 214, 0.4)
+*/
+
+body {
+  // Dark Mode
+  --CS_ALCH_D_bold: #7b9cac;
+  --CS_ALCH_D_italic: #a07f6c;
+  --CS_ALCH_D_highlight: rgba(160, 99, 38, 0.4);
+
+  // Light Mode
+  --CS_ALCH_L_bold: #359e87;
+  --CS_ALCH_L_italic: #1cacb4;
+  --CS_ALCH_L_highlight: rgba(160, 99, 38, 0.4);
+}
+
+.theme-dark {
+  &:not(
+      .FCS_D_default,
+      .FCS_D_default_deep_dive,
+      .FCS_D_ALCH,
+      .FCS_D_RS,
+      .FCS_D_GC,
+      .FCS_D_GCD
+    ).CS_ALCH,
+  &:not(
+      .FCS_D_default,
+      .FCS_D_default_deep_dive,
+      .FCS_D_RS,
+      .FCS_D_GC,
+      .FCS_D_GCD
+    ).FCS_D_ALCH {
+    &.CS_ALCH_D_F_Asap_Default {
+      --font-default: "Asap-Regular";
+    }
+
+    &.CS_ALCH_D_F_Kalam_Coffee {
+      --font-default: "Kalam";
+    }
+
+    &.CS_ALCH_D_F_Amiri_Fancy {
+      --font-default: "Amiri";
+    }
+
+    --bold-color: var(--CS_ALCH_D_bold);
+    --italic-color: var(--CS_ALCH_D_italic);
+    --text-highlight-bg: var(--CS_ALCH_D_highlight);
+  }
+}
+
+.theme-light {
+  &:not(.FCS_L_default, .FCS_L_GC).CS_ALCH,
+  &:not(.FCS_L_default, .FCS_L_GC).FCS_L_ALCH {
+    &.CS_ALCH_L_F_Asap_Default {
+      --font-default: "Asap-Regular";
+    }
+
+    &.CS_ALCH_L_F_Kalam_Coffee {
+      --font-default: "Kalam";
+    }
+
+    &.CS_ALCH_L_F_Amiri_Fancy {
+      --font-default: "Amiri";
+    }
+
+    --bold-color: var(--CS_ALCH_L_bold);
+    --italic-color: var(--CS_ALCH_L_italic);
+    --text-highlight-bg: var(--CS_ALCH_L_highlight);
+  }
+}

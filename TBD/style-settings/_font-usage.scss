@@ -1,0 +1,244 @@
+// ASAP
+.CS_U_D_F_Asap_Default,
+.CS_U_L_F_Asap_Default,
+.CS_ALCH_D_F_Asap_Default,
+.CS_ALCH_L_F_Asap_Default,
+.CS_GB_D_F_Asap_Default,
+.CS_GC_D_F_Asap_Default,
+.CS_GC_L_F_Asap_Default,
+.CS_RS_D_F_Asap_Default {
+  blockquote,
+  .callout,
+  .HyperMD-quote {
+    font-weight: 300;
+    font-family: "Asap-Light";
+
+    strong {
+      font-weight: 500;
+      font-family: "Asap-Medium";
+
+      em {
+        font-weight: 500;
+        font-family: "Asap-Medium-Italic";
+
+        code {
+          font-weight: 500;
+          font-family: "JetBrains-Mono-SemiBold-Italic";
+        }
+      }
+
+      code {
+        font-weight: 500;
+        font-family: "JetBrains-Mono-SemiBold";
+      }
+    }
+
+    em {
+      font-weight: 300;
+      font-family: "Asap-Light-Italic";
+
+      code {
+        font-weight: 300;
+        font-family: "JetBrains-Mono-SemiBold-Italic";
+      }
+    }
+
+    code {
+      font-weight: 300;
+      font-family: "JetBrains-Mono-Regular";
+    }
+  }
+
+  .vertical-tab-header-group-title {
+    font-weight: 700 !important;
+    font-family: "Asap-Bold";
+  }
+
+  strong {
+    font-weight: 600;
+    font-family: "Asap-SemiBold";
+
+    em {
+      font-weight: 600;
+      font-family: "Asap-SemiBold-Italic";
+
+      code {
+        font-weight: 600;
+        font-family: "JetBrains-Mono-Bold-Italic";
+      }
+    }
+
+    code {
+      font-weight: 700;
+      font-family: "JetBrains-Mono-Bold";
+    }
+  }
+
+  em,
+  .setting-item-description,
+  .community-modal-search-summary.u-muted,
+  .community-item-desc,
+  .community-modal-info-desc {
+    font-weight: 400;
+    font-family: "Asap-Regular-Italic";
+
+    code {
+      font-weight: 400;
+      font-family: "JetBrains-Mono-Italic";
+    }
+  }
+
+  code {
+    font-weight: 400;
+    font-family: "JetBrains-Mono-Regular";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    strong {
+      font-weight: 800;
+      font-family: "Asap-ExtraBold";
+
+      em {
+        font-weight: 800;
+        font-family: "Asap-ExtraBold-Italic";
+
+        code {
+          font-weight: 800;
+          font-family: "JetBrains-Mono-ExtraBold-Italic";
+        }
+      }
+
+      code {
+        font-weight: 800;
+        font-family: "JetBrains-Mono-ExtraBold";
+      }
+    }
+
+    em {
+      font-weight: 500;
+      font-family: "Asap-Medium-Italic";
+
+      code {
+        font-weight: 500;
+        font-family: "JetBrains-Mono-Medium-Italic";
+      }
+    }
+
+    code {
+      font-weight: 500;
+      font-family: "JetBrains-Mono-Medium";
+    }
+  }
+
+  // ---
+  // CM Default
+  .cm-strong {
+    font-weight: 600;
+    font-family: "Asap-SemiBold";
+  }
+
+  .cm-em {
+    font-weight: 400;
+    font-family: "Asap-Regular-Italic";
+
+    &.cm-strong {
+      font-weight: 600;
+      font-family: "Asap-SemiBold-Italic";
+    }
+
+    &.cm-inline-code {
+      font-weight: 500;
+      font-family: "JetBrains-Mono-Medium-Italic";
+
+      &.cm-strong {
+        font-weight: 600;
+        font-family: "JetBrains-Mono-Bold-Italic";
+      }
+    }
+  }
+
+  .cm-inline-code {
+    font-weight: 400;
+    font-family: "JetBrains-Mono-Regular";
+
+    &.cm-strong {
+      font-weight: 600;
+      font-family: "JetBrains-Mono-Bold-Italic";
+    }
+  }
+
+  // CM Quote
+  .HyperMD-quote {
+    font-weight: 300;
+    font-family: "Asap-Light";
+
+    .cm-strong {
+      font-weight: 500;
+      font-family: "Asap-Medium";
+    }
+
+    .cm-em {
+      font-weight: 300;
+      font-family: "Asap-Light-Italic";
+
+      &.cm-strong {
+        font-weight: 500;
+        font-family: "Asap-Medium-Italic";
+      }
+
+      &.cm-inline-code {
+        &.cm-strong {
+          font-weight: 500;
+          font-family: "JetBrains-Mono-SemiBold-Italic";
+        }
+      }
+    }
+
+    .cm-inline-code {
+      &.cm-strong {
+        font-weight: 500;
+        font-family: "JetBrains-Mono-SemiBold";
+      }
+    }
+  }
+
+  // CM Headings
+  .cm-header {
+    &.cm-strong {
+      font-weight: 800;
+      font-family: "Asap-ExtraBold";
+    }
+
+    &.cm-em {
+      font-weight: 500;
+      font-family: "Asap-Medium-Italic";
+
+      &.cm-strong {
+        font-weight: 800;
+        font-family: "Asap-ExtraBold-Italic";
+      }
+
+      &.cm-inline-code {
+        font-weight: 500;
+        font-family: "JetBrains-Mono-Medium-Italic";
+
+        &.cm-strong {
+          font-weight: 800;
+          font-family: "JetBrains-Mono-ExtraBold-Italic";
+        }
+      }
+    }
+
+    &.cm-inline-code {
+      &.cm-strong {
+        font-weight: 800;
+        font-family: "JetBrains-Mono-ExtraBold";
+      }
+    }
+  }
+}

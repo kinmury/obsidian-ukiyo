@@ -12,7 +12,8 @@
     width: 100%;
 
     .clickable-icon {
-      transition: background-color 175ms ease-in-out;
+      transition: background-color 175ms ease-in-out,
+        border-color 175ms ease-in-out;
 
       width: 100%;
 
@@ -35,6 +36,22 @@
   }
 
   &.is-collapsed {
+    .side-dock-actions,
+    .side-dock-settings {
+      .clickable-icon {
+        transition: opacity 125ms ease-in-out;
+      }
+    }
+
+    &:not(:hover) {
+      .side-dock-actions,
+      .side-dock-settings {
+        .clickable-icon {
+          opacity: 0.25;
+        }
+      }
+    }
+
     &:before {
       transition: border-right 300ms ease-in-out, width 150ms ease-in-out;
       width: calc(var(--ribbon-width) - 1px);
@@ -56,4 +73,13 @@
       border-bottom: var(--tab-outline-width) solid var(--tab-outline-color);
     }
   }
+}
+
+.workspace-ribbon.side-dock-ribbon.mod-left {
+  border-right: none;
+}
+
+.workspace-split.mod-horizontal.mod-left-split:not(.is-sidedock-collapsed)
+  .workspace-tab-container {
+  border-left: none;
 }

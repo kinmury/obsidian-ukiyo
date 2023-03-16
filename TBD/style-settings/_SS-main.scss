@@ -1,0 +1,24 @@
+@use "./color-schemes/choose-cs";
+@use "./fixed-cs";
+
+@use "./color-schemes/CS-ukiyo";
+@use "./color-schemes/specifics/CS-S-ukiyo";
+
+@use "./color-schemes/CS-GC";
+@use "./color-schemes/specifics/CS-S-GC";
+
+@use "./color-schemes/CS-GB";
+@use "./color-schemes/specifics/CS-S-GB";
+
+@use "./color-schemes/CS-ALCH";
+@use "./color-schemes/specifics/CS-S-ALCH";
+
+@use "./color-schemes/CS-RS";
+@use "./color-schemes/specifics/CS-S-RS";
+
+@use "./color-schemes/CS-CR";
+@use "./color-schemes/specifics/CS-S-CR";
+
+@use "./hidden/hide";
+@use "./modes";
+@use "./font-usage";

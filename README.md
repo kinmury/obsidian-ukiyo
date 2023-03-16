@@ -1,65 +1,28 @@
-<h1 align=center>Ukiyo</h1>
+Hello once again 😁
 
-<p align=center>Welcome to <b>Ukiyo</b>, an Obsidian theme which main focus is to ease your eyes while using this amazin app, reducing the unnecessary empty spaces from UI elements so that you can have more room for the important stuff: <i>your notes</i>.</p>
+I know I haven't been very active on the development of the theme, but I got a lot of work on my plate and didn't really have time to work properly on the theme to implement all the things that needed to be added or to fix and add the new features that where asked about.
 
-## Galery
+Quick summary of what happened this past months: I've been customizing all the details that were left undone and adding new stuff as I was developing it in my not-quite-a-lot spare time. I have added a few fonts, added a new color scheme, fixed a few issues, added some animations here and there, and tried out some stuff regarding the UI appearance/"functionality". At the end... not only I had "kinda a big mess" of theme (cause all the stuff that I've been implementing) but also because of the fonts... The CSS file got big... 7 MB kind of big... so yeah... there's that...
 
-![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/Showcase.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Default.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Deep.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_Light.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_GC.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_GCD.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_GC-Light.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_GB.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_ALCH.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_ALCH-T.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_ALCH-L.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo-ALCH-L-T.png)
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/imgs/Ukiyo_RS.png)
+This past weeks I got fed up with this aspect of the theme, since my main goal is to try to keep it as simple and elegant as possible, but also that you can add up whatever you want on top of it.... and there it hit me: _Style Settings_ and _Snippets_.
 
+This isn't something new, and quite a few theme already relays on said functionalities in order to provide a better theme for themselves and all the users that like/want to use said theme. In my case, I really didn't think a lot of it, cause all the stuff that I use is quite simple... or at least that's what I've thought.
 
-# Utils
+Ending the backstory I'll be talking about what I'll be doing (or at least trying... since my studies/work tend to get harder to finish/work on):
+- [ ] **Clean Version** - On this branch (`dev`) you should find a `clean.css` version of the `soon-2-be-ukiyo` theme, were there is no color schemes or any fancy things (fonts and icons mostly) what so ever. This will be the base for everything that's coming forward.
+- [ ] **Mobile Compatibility** - I've been procrastinating long enough the Mobile compatibility. It's time for me to also try and adapt my theme for the mobile users (I don't really use it on mobile, but I know that there are quite a few people that do, and I don't want to limit the theme for only _PC_ users).
+- [ ] **Style Setting** - Instead of adding all the color schemes, I'll try to create all the settings necessary for me to implement said color schemes using these settings. So, instead of "hard-coding" all the color schemes, I'll create all the *Style Settings - Settings* witch all the configuration needed to get said color schemes on your local vault.
+	- By doing this, not only I'll be reducing the size of the CSS file by not including all the Color Schemes that, more often than not, you'll end up not using, but also I'll be giving you the change to create your own color scheme (and share it with others if you want 😉)
+	- Also, there will be two separate set of SS-settings:
+		- [ ] *Dark Mode*
+		- [ ] *Light Mode*
+	- This way, you can customize each view to be exactly as you want it to be
+- [ ] **Color Schemes Pres-sets** - Once the *Style-Settings Settings* are implemented and working correctly, I'll re-create all the Color Schemes that where present during the last Ukiyo version, the ones that where being developed during this month and, if I find the inspiration/time, a new one, but that's still in the air.
+- [ ] **Snippets Gallery** - One of the things that tend to take quite a lot of space are the *text and icon-related fonts*. This past month I took it personally to configure the theme in order to show the fonts the way I want them, and with the font-weight that I wanted... but the CSS-file-size took **the** hit.
+	- So, instead of loading the CSS file unnecessary, since not all users would like the font that I've chosen, I'll just create a bunch of snippets that you can add to the theme or any other, since it will act as a *separate and independent module*. This also goes for the icon icons.
 
-> Here is the list of all the utils that the theme provides, and by "utils" I mean all the Style Settings (`SS` for short) that the theme provide, along with all the CSS-Classes, Callouts, Tasks Icons, and all the CSS tools that I find useful.
-> 
-> There isn't a lot of utils for now, since I'm done with the update, not talking about all the new implementation that I want to add, but over time it will grow
+I'll be publishing a `alpha/beta-version.css` file that you can get and try out the development of the theme. I don't want to forward it to the main branch since there is the official theme. Once it's finished I'll push it there so that everyone can enjoy it.
 
-- **Style Settings**
-	- *General Settings*
-		- <ins>Color Scheme</ins> - Lets you choose between the available color schemes that come with the theme: Golden Coffee, Golden Book, Alchemy and Rose Shadow.
-	- *Color Schemes Specifics* - `in-progress` - Lets you change the properties of some of the elements like bold, italics, highlight and the font family. Said changes are applied to that color-scheme **and** used mode (dark and light) independently.
-	- *UI - Visibility* - Choose which elements to hide and how to hide them
-		- <ins>Side Dock Ribbon</ins>
-	- *Modes* - Depending on the Color scheme, you can apply a mode to it:
-		- <ins>Ukiyo Default</ins>
-			- `Deep Dive` - Changes the default dark color scheme into one a little more darker one
-		- <ins>Golden Coffee</ins>
-			- `Dark Coffee` - For those who like dark coffee ;P
-		- <ins>Alchemy</ins> 
-			- `Enable texture` - By default, both dark and light mode won't have the "textures" the original Alchemy theme had, but you can bring it back by enabling this setting
-		- <ins>Common Modes</ins> - These modes are common for all color schemes. For now there is just one:
-			- `Smooth UI` - Make the UI smoother (yup, *shockingly unexpected*, I know XD)
-- **Callouts** - There are a couple of custom callouts that you can use with this theme:
-	- *`![<type>|center-title]`* - Using said "modifier" you can center the title
-	- *`![<type>|center-cont]`* - Using said "modifier" you can center the content of the callout. You can stack modifiers by using a space in between the modifiers.
-	- *`![cont]/![container]`* && *`![col]/![column]`* - Inside the `![cont]` callout, you can but as much `![col]` callouts as you want. This will let you create a custom kanban with any content that you may see fit. An good example would be using these "kanban-like-callouts" and the Dataview plugin to create a dynamic kanban query with notes that represent tasks.
-	- *`![fig]/![figure]`* - Just like the LaTeX figures, all the content will be centered, so that you can put captions more easily below your images.
-	- *`![clear-table]`* - The only content that should be inside this callout is a unique table. Said table won't have **any** CSS applied to it, so its just a clean table.
-	- *`![index-table]`* - Same as the previous callout, but the thing is that the first row and the first column have the same distinctive background, so that you can create schedules, for example.
-- **CSS Classes**
-	- *full-width* - The note will expand as much as it can, as if the `readable line lenght` settings was disabled
-	- *center-headings* - All headings will be centered
-	- *DV_tasks* - Changes you Dataview tables into small blocks
-- **Tasks/Checkboxes** - `TBD`
+And, just to wrap this up, I just wanted to thank every single one of the users that have used/are using/will be using my theme (and for letting me know if something is broken or that could be improved 😉). I really hope that you like the direction the development of the theme is taking and, if by any chance, you feel like adding X feature would be great, I'll be glad to hear it on the issues sections 😁
 
-# Plugins
-
-> Here are all the plugins that this theme has change to a large extends, not all plugins will be listed, since some of them aren't change to a degree that is worth mentioning.
-> 
-> The isn't a lot of plugins here, and I'm not sure if it will grow, since I'm comfortable with only a few plugins, but if there is a Feature Request about some plugin, I'll try my best to adapt it to the theme and add it here.
-
-- **Kanban**
-- **Editor Syntax Highlight** - `TBD`
-- **Dataview**
-- **Calendar**
+Once again, thank you and have a beautiful day 😊
