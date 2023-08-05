@@ -6,9 +6,9 @@
 
 # Style Settings
 
-- **[Modes](https://github.com/kinmury/obsidian-ukiyo/blob/main/docs/modes.md)** - Change the way the UI is displayed.
+- **[Modes](https://github.com/kinmury/obsidian-ukiyo/blob/main/docs/modes.md)** - Change the way the UI is displayed. Note that you can't use both modes, you have to disable one in order to use the other.
 	- _Smooth mode_ - Creates space between the different elements.
- 	- _Minimal mode_ - Compacts the interface and hides most elements.
+ 	- _Minimal mode_ - Compacts the interface and hides most elements. 
 - **[Color Scheme](https://github.com/kinmury/obsidian-ukiyo/blob/main/docs/color-scheme.md)** - Change the color palette used.
 	- _Selector_ - Choose between the already existing color schemes.
  	- _Custom_ - If you choose the custom option from the selector, a list of options will appear that lets you create your own color scheme for the theme.
