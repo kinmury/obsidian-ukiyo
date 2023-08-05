@@ -1,0 +1,26 @@
+.suggestion-container {
+  border-radius: var(--default-border-radius);
+  width: fit-content;
+  max-width: 45vw;
+
+  .suggestion {
+    padding: 0px;
+
+    &-item {
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  .prompt-instructions {
+    padding: 0px;
+    flex-wrap: nowrap;
+
+    .prompt-instruction {
+      white-space: pre-wrap;
+    }
+  }
+}

@@ -1,12 +1,32 @@
 .markdown-rendered {
   blockquote {
+    border-left-width: 3px;
     padding-left: 10px;
-    background-color: var(--blockquote-background-color);
+    background-color: var(--background-secondary);
   }
 }
 
 .HyperMD-quote {
-  .cm-highlight.cm-quote {
-    background-color: var(--blockquote-mark-background-color);
+  color: var(--text-muted);
+
+  .cm-quote {
+    &.cm-strong {
+      color: var(--color-bold);
+      opacity: 0.8;
+    }
+
+    &.cm-em {
+      color: var(--color-italic);
+      opacity: 0.8;
+    }
+
+    &.cm-highlight {
+      background-color: var(--text-highlight-bg);
+      opacity: 0.85;
+    }
+
+    &.cm-inline-code {
+      opacity: 0.85;
+    }
   }
 }

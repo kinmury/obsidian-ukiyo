@@ -1,0 +1,245 @@
+.callout {
+  &[data-callout-metadata*="!bg"] {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+
+    .callout-title,
+    .callout-content {
+      background-color: transparent;
+    }
+  }
+
+  &[data-callout-metadata*="!icon"] {
+    .callout-icon {
+      display: none;
+    }
+  }
+
+  &[data-callout-metadata*="!bold"] {
+    .callout-title-inner {
+      font-weight: normal;
+    }
+  }
+
+  &[data-callout-metadata*="!color"] {
+    .callout-title {
+      color: var(--text-normal);
+    }
+  }
+
+  &[data-callout-metadata*="!title"] {
+    .callout-title {
+      display: none;
+    }
+  }
+
+  &[data-callout-metadata*="!content"] {
+    .callout-content {
+      display: none;
+    }
+  }
+
+  &[data-callout-metadata*="title-center"] {
+    .callout-title-inner {
+      margin: auto;
+    }
+  }
+
+  &[data-callout-metadata*="content-center"] {
+    .callout-content {
+      text-align: center;
+    }
+  }
+
+  &[data-callout-metadata*="block-links"] {
+    .dataview {
+      &.list-view-ul {
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        margin-left: 0px;
+        margin-right: 0px;
+
+        li {
+          width: 100%;
+          height: 100%;
+
+          border: 2px solid var(--divider-color);
+          border-radius: var(--default-border-radius);
+
+          transition: transform var(--default-animation-duration),
+            box-shadow var(--default-animation-duration);
+          text-align: center;
+          color: var(--link-color);
+
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+          }
+
+          &:not(:last-of-type) {
+            margin-bottom: 5px;
+          }
+
+          &::marker {
+            color: transparent;
+          }
+
+          &:hover {
+            transform: translate(0px, -2px);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 7px;
+          }
+        }
+      }
+    }
+  }
+
+  &[data-callout-metadata*="table-clear"] {
+    table {
+      thead {
+        background-color: transparent;
+        border-bottom: 1px;
+      }
+    }
+  }
+
+  &[data-callout-metadata*="table-index"] {
+    table {
+      thead {
+        background-color: transparent;
+        border-bottom: 0px;
+
+        th {
+          &:first-of-type {
+            border: none;
+          }
+
+          &:not(:first-of-type) {
+            background-color: var(--background-secondary);
+            border-bottom: 2px solid var(--color-base-40);
+          }
+        }
+      }
+
+      tbody {
+        td {
+          &:first-of-type {
+            background-color: var(--background-secondary);
+            border-right: 2px solid var(--color-base-40);
+          }
+        }
+      }
+    }
+  }
+
+  &[data-callout-metadata*="\$pop"] {
+    display: block;
+    position: absolute;
+    margin-left: -30px;
+
+    animation: pop-slide-to-right-reverse var(--pop-callout-slide-out-duration);
+    z-index: 10;
+
+    width: calc(var(--file-line-width) / 2);
+
+    .callout-title {
+      background-color: var(--in-between-background);
+    }
+
+    &:not(:hover) {
+      visibility: hidden;
+    }
+
+    &:hover {
+      animation: pop-slide-to-right var(--default-animation-duration);
+
+      &::before {
+        display: block;
+      }
+    }
+
+    &::before {
+      visibility: visible;
+
+      content: ">";
+      display: block;
+      position: absolute;
+
+      height: 22px;
+      width: var(--pop-callout-width);
+      text-align: center;
+
+      border: 1px solid var(--text-faint);
+      border-radius: var(--default-border-radius);
+      background-color: var(--in-between-background);
+    }
+  }
+}
+
+div:has(.callout[data-callout-metadata*="\$pop"])
+  + div:has(.callout[data-callout-metadata*="\$pop"]) {
+  margin-left: calc(-1 * var(--pop-callout-width) * 1.25);
+}
+
+div:has(.callout[data-callout-metadata*="\$pop"])
+  + div:has(.callout[data-callout-metadata*="\$pop"])
+  + div:has(.callout[data-callout-metadata*="\$pop"]) {
+  margin-left: calc(-2 * var(--pop-callout-width) * 1.25);
+}
+
+// ---
+
+@mixin clear-callout {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+
+  & > .callout-title {
+    padding: 0px;
+
+    .callout-icon {
+      display: none;
+    }
+
+    .callout-title-inner {
+      color: var(--text-normal);
+      font-weight: normal;
+    }
+  }
+
+  & > .callout-content {
+    background-color: transparent;
+    padding: 0px;
+  }
+}
+
+.callout {
+  &[data-callout="cont"],
+  &[data-callout="container"] {
+    @include clear-callout;
+
+    & > .callout-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      .callout {
+        &[data-callout="col"],
+        &[data-callout="col"] {
+          width: 100%;
+          margin: 0px;
+
+          @include clear-callout;
+        }
+      }
+    }
+  }
+}

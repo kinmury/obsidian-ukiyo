@@ -1,0 +1,34 @@
+.modal.mod-settings {
+  .vertical-tab-header {
+    padding: 0px;
+
+    &-group {
+      padding: 0px;
+
+      &-title {
+        color: var(--color-accent);
+        font-size: var(--font-ui-medium);
+        text-align: center;
+      }
+
+      &-items {
+        .vertical-tab-nav-item {
+          border-radius: 0px;
+          margin: 0px;
+
+          &.is-active {
+            background-color: var(--background-secondary-alt);
+            color: var(--backgorund-modifier-border);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .vertical-tab-content {
+    .setting-item-description {
+      font-style: italic;
+    }
+  }
+}

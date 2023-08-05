@@ -1,0 +1,35 @@
+.workspace-split.mod-vertical.mod-root {
+  .metadata-container {
+    --input-height: 1.25rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+    .metadata-properties-title {
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+
+    .metadata-properties {
+      .metadata-property {
+        &-key {
+          height: fit-content;
+          margin-top: auto;
+          margin-bottom: auto;
+
+          * {
+            padding-top: 0px;
+            padding-bottom: 0px;
+          }
+        }
+
+        &-value {
+          * {
+            padding-top: 0px;
+            padding-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

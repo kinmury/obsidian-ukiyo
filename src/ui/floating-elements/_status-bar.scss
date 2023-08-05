@@ -1,0 +1,14 @@
+.status-bar {
+  transition: opacity var(--default-animation-duration) ease-in-out;
+  opacity: 0.5;
+  border-radius: var(--default-border-radius);
+  padding: 0px;
+
+  &-item {
+    border-radius: 0px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

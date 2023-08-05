@@ -1,0 +1,13 @@
+.workspace-split.mod-vertical.mod-root {
+  .document-search-container {
+    margin: 0px;
+
+    &.mod-replace-mode {
+      .document-search {
+        .document-search-buttons {
+          gap: 6.5px;
+        }
+      }
+    }
+  }
+}

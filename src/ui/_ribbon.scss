@@ -1,0 +1,49 @@
+body {
+  --ribbon-width: 40px;
+  --ribbon-padding: 0px;
+
+  --clickable-icon-radius: 0px;
+}
+
+.workspace-ribbon.side-dock-ribbon.mod-left {
+  * {
+    transition: background-color var(--hover-animation-duration) ease-in-out;
+  }
+
+  border-right: 0px;
+
+  .side-dock-settings .side-dock-ribbon-action,
+  .side-dock-actions .side-dock-ribbon-action {
+    margin: 0px;
+  }
+
+  .sidebar-toggle-button {
+    padding: 0px;
+
+    .clickable-icon {
+      width: 100%;
+    }
+  }
+
+  &.is-collapsed {
+    border-right-color: transparent;
+
+    --side-dock-opacity: 0.5;
+
+    .side-dock {
+      &-actions,
+      &-settings {
+        transition: opacity var(--default-animation-duration) ease-in-out;
+        opacity: var(--side-dock-opacity);
+      }
+    }
+
+    &:hover {
+      --side-dock-opacity: 1;
+    }
+  }
+
+  &:before {
+    border-right: 1px solid var(--tab-outline-color);
+  }
+}

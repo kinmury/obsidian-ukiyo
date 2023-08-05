@@ -1,0 +1,19 @@
+.popover {
+  animation: scale-up var(--hover-faster-animation-duration)
+    var(--cubic-animation);
+
+  &.hover-popover {
+    width: 45vw;
+    height: 45vh;
+    border-radius: var(--default-border-radius);
+
+    .markdown-embed.is-loaded {
+      width: 100%;
+      height: 100%;
+
+      .markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide.allow-fold-headings.allow-fold-lists {
+        padding: 5px;
+      }
+    }
+  }
+}

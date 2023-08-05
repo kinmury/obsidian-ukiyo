@@ -2,14 +2,14 @@
 .theme-light {
   @media print {
     strong {
-      font-family: "Amiri" !important;
+      font-family: "CMU Typewriter Text" !important;
       color: black !important;
     }
 
     p,
     ol,
     ul {
-      font-family: "Amiri" !important;
+      font-family: "CMU Typewriter Text" !important;
     }
 
     li {
@@ -52,12 +52,12 @@
 
     i,
     em {
-      font-family: "Amiri" !important;
+      font-family: "CMU Typewriter Text" !important;
       color: black !important;
     }
 
     a {
-      font-family: "Amiri" !important;
+      font-family: "CMU Typewriter Text" !important;
       color: black !important;
     }
 
@@ -86,7 +86,7 @@
     }
 
     .callout {
-      font-family: "Amiri" !important;
+      font-family: "CMU Typewriter Text" !important;
       background-color: white !important;
       color: black !important;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
@@ -114,7 +114,7 @@
     .markdonw-rendered h5,
     .markdonw-rendered h6 {
       color: black !important;
-      font-family: "Amiri" !important;
+      font-family: "CMU Typewriter Text" !important;
       font-weight: normal !important;
     }
 
@@ -125,6 +125,7 @@
     }
 
     pre[class*="language-"] {
+      font-family: "JetBrains Mono" !important;
       font-size: 12px !important;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
       border-radius: 3px !important;
@@ -137,6 +138,7 @@
     }
 
     code {
+      font-family: "JetBrains Mono" !important;
       font-size: 12px !important;
       border-radius: 2px !important;
       background-color: #292929 !important;
@@ -152,13 +154,13 @@
       border-left-color: white !important;
       border-right-color: white !important;
       border-bottom-color: white !important;
-      font-family: "Amiri" !important;
+      font-family: "CMU Typewriter Text" !important;
     }
 
     tr,
     td {
       border-color: black !important;
-      font-family: "Amiri" !important;
+      font-family: "CMU Typewriter Text" !important;
     }
 
     .dataview {
@@ -182,11 +184,15 @@
       * {
         font-style: normal !important;
         font-weight: 100 !important;
-        font-family: "Amiri" !important;
+        font-family: "CMU Typewriter Text" !important;
       }
     }
 
     .mermaid {
+      * {
+        font-family: "CMU Typewriter Text" !important;
+      }
+
       g.edgePath {
         stroke: black !important;
         fill: black !important;

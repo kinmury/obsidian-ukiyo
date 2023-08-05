@@ -1,0 +1,7 @@
+.checkbox-container {
+  border-radius: var(--default-border-radius);
+
+  &::after {
+    border-radius: var(--default-border-radius);
+  }
+}

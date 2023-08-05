@@ -1,0 +1,28 @@
+button {
+  transition: filter var(--hover-animation-duration) ease-in-out !important;
+
+  &:not(.mod-cta) {
+    border-radius: var(--default-border-radius);
+    background-color: var(--background-secondary-alt);
+
+    &:hover {
+      background-color: var(--background-secondary-alt);
+    }
+  }
+}
+
+.theme-dark {
+  button {
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
+
+.theme-light {
+  button {
+    &:hover {
+      filter: brightness(105%);
+    }
+  }
+}

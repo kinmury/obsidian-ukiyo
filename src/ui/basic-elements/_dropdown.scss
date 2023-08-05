@@ -1,0 +1,25 @@
+select.dropdown {
+  transition: filter var(--hover-animation-duration) ease-in-out;
+  border-radius: var(--default-border-radius);
+  background-color: var(--background-secondary-alt);
+
+  &:hover {
+    background-color: var(--background-secondary-alt);
+  }
+}
+
+.theme-dark {
+  select.dropdown {
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
+
+.theme-light {
+  select.dropdown {
+    &:hover {
+      filter: brightness(105%);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.cm-s-obsidian span.cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder {
+  font-size: var(--code-size);
+  font-style: normal;
+}
+
+.cm-math {
+  &.cm-error {
+    border: none !important;
+  }
+}

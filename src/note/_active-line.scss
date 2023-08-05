@@ -1,0 +1,16 @@
+.cm-gutterElement {
+  &.cm-active {
+    color: var(--text-normal);
+  }
+}
+
+body {
+  .cm-line {
+    transition: background-color var(--hover-faster-animation-duration)
+      ease-in-out;
+
+    &:is(.cm-active) {
+      background-color: var(--activeline);
+    }
+  }
+}

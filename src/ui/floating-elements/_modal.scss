@@ -1,0 +1,23 @@
+.modal {
+  animation: scale-up var(--default-animation-duration) var(--cubic-animation);
+  border-radius: var(--default-border-radius);
+  padding: 10px;
+
+  .setting-item {
+    padding: 5px;
+  }
+}
+
+.modal-container.mod-confirmation {
+  p {
+    margin: 0px;
+  }
+
+  .modal-title {
+    margin-bottom: 0.225em;
+  }
+
+  .modal-button-container {
+    margin-top: 0.5rem;
+  }
+}

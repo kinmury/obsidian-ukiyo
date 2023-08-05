@@ -1,0 +1,33 @@
+.prompt {
+  animation: scale-up-downwards var(--default-animation-duration)
+    var(--cubic-animation);
+  border-radius: var(--default-border-radius);
+
+  &-input-container {
+    input {
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &-results {
+    padding: 0px;
+
+    .suggestion-item {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-radius: 0px;
+
+      .suggestion-highlight {
+        color: var(--color-bold);
+      }
+    }
+  }
+
+  &-instructions {
+    padding: 4px;
+  }
+}

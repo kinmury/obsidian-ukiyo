@@ -1,0 +1,31 @@
+.canvas-wrapper {
+  .canvas-controls {
+    .canvas-control-item {
+      padding: 5px;
+    }
+  }
+
+  .canvas-card-menu {
+    &-button {
+      padding: 4px;
+    }
+  }
+
+  .canvas-placeholder-message {
+    padding: 10px;
+    border-radius: var(--default-border-radius);
+  }
+
+  .canvas-node-container {
+    border-radius: var(--default-border-radius);
+  }
+
+  .canvas-menu {
+    padding: 0px;
+    border-radius: var(--default-border-radius);
+
+    .clickable-icon {
+      padding: 5px;
+    }
+  }
+}

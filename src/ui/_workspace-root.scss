@@ -1,0 +1,113 @@
+// Fixed wanky padding transition on workspace-right.active/.opened
+.is-hidden-frameless:not(.is-fullscreen)
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container {
+  transition: padding 90ms ease-in-out;
+  padding-right: var(--frame-right-space);
+}
+
+.workspace-split.mod-vertical.mod-root {
+  .workspace-tab-header-container {
+    border-bottom: 0px;
+    padding-right: 0px;
+
+    &-inner {
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+
+      .workspace-tab-header {
+        transition: background-color var(--hover-animation-duration) ease-in-out;
+        border-radius: 0px;
+        padding: 0px;
+
+        --border-bottom-color: transparent;
+        border-bottom: 1px solid var(--border-bottom-color);
+
+        &-inner {
+          border-radius: 0px;
+          height: 100%;
+
+          &-title {
+            height: 15px;
+          }
+
+          &-close-button {
+            transition: opacity var(--hover-animation-duration) ease-in-out;
+            opacity: 0;
+          }
+        }
+
+        &:not(.is-active) .workspace-tab-header-inner {
+          transition: background-color opacity var(--hover-animation-duration)
+            ease-in-out;
+
+          .workspace-tab-header-inner-close-button {
+            opacity: 0;
+          }
+
+          &:hover {
+            .workspace-tab-header-inner-close-button {
+              opacity: 1;
+            }
+          }
+        }
+
+        &.is-active {
+          --border-bottom-color: var(--color-accent);
+        }
+
+        &:before,
+        &:after {
+          display: none;
+        }
+
+        &:hover {
+          transition: background-color var(--hover-animation-duration)
+            ease-in-out;
+
+          .workspace-tab-header-inner {
+            &-close-button {
+              transition: opacity var(--hover-animation-duration) ease-in-out;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .workspace-tab-header-new-tab,
+    .workspace-tab-header-tab-list,
+    .sidebar-toggle-button.mod-right {
+      margin: 0px;
+      padding: 0px;
+
+      .clickable-icon {
+        height: 100%;
+      }
+    }
+  }
+
+  .workspace-tab-container {
+    .workspace-leaf-content {
+      .view-header {
+        --view-header-opacity: 0.5;
+        transition: opacity var(--hover-animation-duration) ease-in-out;
+        opacity: var(--view-header-opacity);
+        padding: 0px;
+
+        &-nav-buttons,
+        .view-actions {
+          .clickable-icon {
+            height: 100%;
+          }
+        }
+
+        &:hover,
+        &:focus-within {
+          --view-header-opacity: 1;
+        }
+      }
+    }
+  }
+}

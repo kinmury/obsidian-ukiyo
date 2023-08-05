@@ -1,0 +1,45 @@
+.dataview {
+  .table-view-thead {
+    th {
+      border-bottom: 4px solid var(--indentation-guide-color);
+
+      &:not(:last-of-type) {
+        border-right: 1px solid var(--indentation-guide-color);
+      }
+    }
+  }
+
+  .table-view-tbody {
+    tr {
+      transition: all var(--hover-faster-animation-duration) ease-in-out;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid var(--indentation-guide-color);
+      }
+    }
+
+    td {
+      &:not(:last-of-type) {
+        border-right: 1px solid var(--indentation-guide-color);
+      }
+    }
+  }
+}
+
+.block-language-dataview {
+  &:has(.dataview-error-box) {
+    table {
+      display: none;
+    }
+
+    .dataview-error-box {
+      min-height: fit-content;
+      height: fit-content;
+
+      .dataview-error-message {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+      }
+    }
+  }
+}

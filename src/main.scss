@@ -1,76 +1,72 @@
-// FONTS
-@use "./fonts/font_default";
-@use "./fonts/font_fancy";
-@use "./fonts/font_icons";
-@use "./fonts/font-code";
-@use "./fonts/font-coffee";
+@use "./custom/style-settings";
+@use "./global-variables";
+@use "./pdf";
 
-@use "./custom/callouts/DV_kanban";
-@use "./custom/callouts/figure";
-@use "./custom/callouts/centered-callout";
-@use "./custom/callouts/table_types";
-@use "./custom/cssClasses/center-headings";
-@use "./custom/cssClasses/DV_tasks";
-@use "./custom/cssClasses/full-width";
-@use "./custom/folder-icons";
+// Fonts
+@use "./fonts/typewriter";
+@use "./fonts/jetbrains";
 
-@use "./floating-elements/prompt";
-@use "./floating-elements/graph";
-@use "./floating-elements/suggestion";
-@use "./floating-elements/popover";
-@use "./floating-elements/tooltip";
-@use "./floating-elements/notice";
-@use "./floating-elements/screenEmpty";
-@use "./floating-elements/screenLoading";
+// UI
+@use "./ui/ribbon";
 
-@use "./general/active-line";
-@use "./general/scrollbar";
-@use "./general/compact";
+@use "./ui/workspace-left";
+@use "./ui/workspace-root";
 
-@use "./note/default-callouts";
-@use "./note/default-tables";
-@use "./note/centered-stuff";
-@use "./note/cleanEmbed";
-@use "./note/listItems";
-@use "./note/blockquote";
+@use "./ui/default-panes/backlinks";
+@use "./ui/default-panes/outgoing-links";
+@use "./ui/default-panes/graph";
+@use "./ui/default-panes/settings";
+@use "./ui/default-panes/plugins";
+@use "./ui/default-panes/themes";
+@use "./ui/default-panes/canvas";
+@use "./ui/default-panes/empty-state";
+
+@use "./ui/floating-elements/menu";
+@use "./ui/floating-elements/notice";
+@use "./ui/floating-elements/prompt";
+@use "./ui/floating-elements/modal";
+@use "./ui/floating-elements/status-bar";
+@use "./ui/floating-elements/suggestions";
+@use "./ui/floating-elements/popover";
+@use "./ui/floating-elements/tooltip";
+
+@use "./ui/basic-elements/button";
+@use "./ui/basic-elements/checkbox-container";
+@use "./ui/basic-elements/dropdown";
+@use "./ui/basic-elements/search";
+
+// Note
+@use "./note/find-search";
+@use "./note/frontmatter";
+@use "./note/images";
+@use "./note/mermaid";
 @use "./note/code";
+@use "./note/callout";
+@use "./note/blockquote";
+@use "./note/table";
+@use "./note/latex";
+@use "./note/footnotes";
 @use "./note/headings";
-@use "./note/hr";
-@use "./note/mathjax";
-@use "./note/footnote";
+@use "./note/lists";
+@use "./note/embed";
+@use "./note/active-line";
+@use "./note/text-elements";
 
-@use "./plugins/dataview";
-@use "./plugins/kanban";
-@use "./plugins/calendar";
-@use "./plugins/baseSS";
+// Customizations
+@use "./custom/callouts";
+@use "./custom/css-classes";
+@use "./custom/floating-sides";
+@use "./custom/zen-writting";
 
-@use "./settings/community-modal";
-@use "./settings/settings-modal";
+@use "./custom/modes/smooth";
+@use "./custom/modes/minimal";
 
-@use "./workspace-root/header";
-@use "./workspace-root/rootTabs";
-@use "./workspace-root/titlebar";
-@use "./workspace-root/menu";
-@use "./workspace-root/statusbar";
-@use "./workspace-root/frontmatter";
-@use "./workspace-root/canvas";
+@use "./custom/plugins/dataview";
 
-@use "./worspace-left/tab";
-@use "./worspace-left/nav-header";
-@use "./worspace-left/folder-files";
-@use "./worspace-left/ribbon";
-
-@use "./PDF";
-@use "./style-settings/SS-main";
-
-body {
-  --font-default: "Asap";
-  --font-monospace: "JetBrains Mono";
-
-  --titlebar-background-focused: var(--background-secondary);
-  --file-line-width: 65em;
-
-  --tag-radius: 3px;
-  --tag-padding-y: 0px;
-  --tag-padding-x: 5px;
-}
+@use "./custom/color-schemes/default";
+@use "./custom/color-schemes/ukiyo";
+@use "./custom/color-schemes/golden-coffee";
+@use "./custom/color-schemes/golden-book";
+@use "./custom/color-schemes/alchemy";
+@use "./custom/color-schemes/rose-shadow";
+@use "./custom/color-schemes/custom";

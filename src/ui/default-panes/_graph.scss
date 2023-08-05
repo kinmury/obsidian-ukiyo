@@ -1,0 +1,39 @@
+.graph-controls {
+  transition: opacity var(--default-animation-duration) ease-in-out;
+  opacity: 0.5;
+
+  .graph-control-section {
+    padding: 4px;
+    border-bottom: 0px;
+
+    .setting-item {
+      padding: 4px;
+    }
+  }
+
+  &-button {
+    &.mod-close {
+      top: 4px;
+      right: 4px;
+    }
+
+    &.mod-reset {
+      top: 4px;
+      right: 30px;
+    }
+  }
+
+  &.is-close {
+    padding: 0px;
+    border-radius: var(--default-border-radius);
+    border-color: var(--divider-color);
+
+    .clickable-icon {
+      margin: 0px;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

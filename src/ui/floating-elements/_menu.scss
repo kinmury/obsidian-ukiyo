@@ -1,0 +1,16 @@
+.menu {
+  animation: scale-up var(--hover-animation-duration) var(--cubic-animation);
+  border-radius: var(--default-border-radius);
+  padding: 0px;
+
+  &-item {
+    transition: background-color var(--hover-faster-animation-duration)
+      ease-in-out;
+    padding: 3.5px;
+    border-radius: 0px;
+  }
+
+  &-separator {
+    margin: 0px;
+  }
+}

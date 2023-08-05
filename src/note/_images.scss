@@ -1,0 +1,35 @@
+img {
+  display: block;
+  margin: auto;
+
+  &:hover {
+    cursor: zoom-in;
+  }
+
+  &:active {
+    display: block;
+    -o-object-fit: contain;
+    object-fit: contain;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-height: calc(75% + 1px);
+    max-width: 75%;
+    height: calc(75% + 1px);
+    width: 75%;
+
+    text-align: center;
+
+    cursor: crosshair;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+
+    z-index: 777;
+  }
+}

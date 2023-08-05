@@ -1,0 +1,47 @@
+.zen-writting {
+  .cm-line {
+    &:has(+ .cm-line + .cm-line + .cm-line + .cm-line + .cm-line.cm-active),
+    &:has(+ .cm-line + .cm-line + .cm-line + .cm-line.cm-active),
+    &:has(+ .cm-line + .cm-line + .cm-line.cm-active),
+    &:has(+ .cm-line + .cm-line.cm-active),
+    &:has(+ .cm-line.cm-active),
+    &.cm-active + .cm-line,
+    &.cm-active + .cm-line + .cm-line,
+    &.cm-active + .cm-line + .cm-line + .cm-line,
+    &.cm-active + .cm-line + .cm-line + .cm-line + .cm-line,
+    &.cm-active + .cm-line + .cm-line + .cm-line + .cm-line + .cm-line,
+    &.cm-active {
+      //   background-color: blue;
+      //   opacity: 1;
+    }
+
+    &:not(
+        :is(
+            .cm-line:has(
+                + .cm-line + .cm-line + .cm-line + .cm-line + .cm-line.cm-active
+              ),
+            .cm-line:has(+ .cm-line + .cm-line + .cm-line + .cm-line.cm-active),
+            .cm-line:has(+ .cm-line + .cm-line + .cm-line.cm-active),
+            .cm-line:has(+ .cm-line + .cm-line.cm-active),
+            .cm-line:has(+ .cm-line.cm-active),
+            .cm-line.cm-active + .cm-line,
+            .cm-line.cm-active + .cm-line + .cm-line,
+            .cm-line.cm-active + .cm-line + .cm-line + .cm-line,
+            .cm-line.cm-active + .cm-line + .cm-line + .cm-line + .cm-line,
+            .cm-line.cm-active
+              + .cm-line
+              + .cm-line
+              + .cm-line
+              + .cm-line
+              + .cm-line,
+            .cm-line.cm-active
+          )
+      ) {
+      //   background-color: green;
+      //   opacity: 0.7;
+      //   filter: brightness(50%);
+      filter: brightness(0.7);
+      //   background-color: #00000020;
+    }
+  }
+}

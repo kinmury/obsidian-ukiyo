@@ -1,0 +1,51 @@
+.internal-embed.markdown-embed.inline-embed {
+  border: 0px;
+  padding: 0px;
+
+  --embed-link-opacity: 0.5;
+
+  &:hover {
+    --embed-link-opacity: 1;
+  }
+
+  .embed-title {
+    display: none;
+  }
+
+  .markdown-embed-link {
+    left: -30px;
+    top: 0px;
+
+    width: fit-content;
+
+    transition: opacity var(--default-animation-duration) ease-in-out;
+    opacity: var(--embed-link-opacity);
+
+    &:hover {
+      --embed-link-opacity: 1;
+    }
+  }
+
+  .markdown-embed-content {
+    height: fit-content;
+    max-height: fit-content;
+    overflow: auto;
+
+    div:has(.frontmatter) + div:has(h1, h2, h3, h4, h5, h6) {
+      h1,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+.internal-embed.is-loaded.file-embed.mod-empty {
+  transition: all var(--default-animation-duration) ease-in-out;
+  padding: 4px;
+}
