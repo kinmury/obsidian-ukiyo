@@ -1,6 +1,6 @@
 <h1 align=center>Ukiyo</h1>
 
-<p align=center>Welcome to <b>Ukiyo</b>, an Obsidian theme which main focus is to ease your eyes while using this amazin app, reducing the unnecessary empty spaces from UI elements so that you can have more room for the important stuff: <i>your notes</i>.</p>
+<p align=center>Welcome to <b>Ukiyo</b>, an Obsidian theme which main focus is to ease your eyes while using this amazing app, reducing the unnecessary empty spaces from UI elements so that you can have more room for the important stuff: <i>your notes</i>.</p>
 
 ![](https://raw.githubusercontent.com/kinmury/obsidian-ukiyo/main/Showcase.png)
 
