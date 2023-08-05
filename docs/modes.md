@@ -2,8 +2,8 @@
 
 ## Smooth mode
 
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/attachment/imgs/default_dark_smooth.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/attachment/gifs/obsidian-smooth.gif)
 
 ## Minimal mode
 
-![](https://github.com/kinmury/obsidian-ukiyo/blob/main/attachment/imgs/default_dark_minimal.png)
+![](https://github.com/kinmury/obsidian-ukiyo/blob/main/attachment/gifs/obsidian-minimal.gif)
