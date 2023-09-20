@@ -1,80 +1,103 @@
-.color-scheme-ukiyo {
+@mixin ukiyo-dark-mode {
+  --color-base-00: #253847;
+  --color-base-05: var(--color-base-30);
+  --code-background: #1d2d3a;
+  --color-base-10: #25333f;
+  --color-base-20: #233241;
+  --color-base-25: #284052;
+  --color-base-30: #2e505a;
+  --color-base-35: var(--color-base-30);
+  --color-base-40: #335a5a;
+  --color-base-50: #48867d;
+  --color-base-70: #5fa096;
+  --color-base-100: #d0d0d0;
+
+  --background-modifier-message: #082237;
+
+  --color-accent: #2babb5;
+  --color-accent-1: #2babb5;
+  --color-accent-2: #35bbc4;
+
+  --activeline: #2a3f528f;
+  --text-selection: #2e4253;
+
+  --color-bold: #3ec28b;
+  --color-italic: #74ccff;
+
+  --text-highlight-bg: #a0632666;
+
+  --heading-formatting-color: #e04242;
+
+  --in-between-background: #192a35;
+
+  // Theme Extras
+  --background-modifier-form-field: var(--color-base-25);
+
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+
+  --text-highlight-bg-active: var(--text-highlight-bg);
+}
+
+@mixin ukiyo-light-mode {
+  --color-base-00: #e6f0ff;
+  --color-base-05: #d2e1f9;
+  --color-base-10: #d1e3ff;
+  --color-base-20: #e1edff;
+  --color-base-25: #cde1ff;
+  --color-base-30: #c9d9f1;
+  --color-base-35: var(--color-base-30);
+  --color-base-40: #c9d9f1;
+  --color-base-50: #4069bf;
+  --color-base-70: #5079d1;
+  --color-base-100: #254da1;
+
+  --background-modifier-message: #adceff;
+
+  --color-accent: #2b9cb8;
+  --color-accent-1: #2b9cb8;
+  --color-accent-2: #30b4d4;
+
+  --activeline: #d0e3ff68;
+  --text-selection: #bdd8ff7d;
+
+  --color-bold: #42b3a9;
+  --color-italic: #379eda;
+
+  --text-highlight-bg: #ffdec6;
+
+  --heading-formatting-color: #e67979;
+  --in-between-background: #d6e6fd;
+
+  // Theme Extras
+  --background-modifier-form-field: var(--color-base-25);
+
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+
+  --text-highlight-bg-active: var(--text-highlight-bg);
+}
+
+.color-scheme-ukiyo:not(.separate-color-scheme) {
   &.theme-dark {
-    --color-base-00: #253847;
-    --color-base-05: var(--color-base-30);
-    --color-base-10: #25333f;
-    --color-base-20: #233241;
-    --color-base-25: #284052;
-    --color-base-30: #2e505a;
-    --color-base-35: var(--color-base-30);
-    --color-base-40: #335a5a;
-    --color-base-50: #48867d;
-    --color-base-70: #5fa096;
-    --color-base-100: #d0d0d0;
-
-    --background-modifier-message: #082237;
-
-    --color-accent: #2babb5;
-    --color-accent-1: #2babb5;
-    --color-accent-2: #35bbc4;
-
-    --activeline: #2a3f528f;
-    --text-selection: #2e4253;
-
-    --color-bold: #3ec28b;
-    --color-italic: #74ccff;
-
-    --text-highlight-bg: #a0632666;
-
-    --heading-formatting-color: #e04242;
-
-    --in-between-background: #192a35;
-
-    // Theme Extras
-    --background-modifier-form-field: var(--color-base-25);
-
-    --interactive-normal: var(--color-base-30);
-    --interactive-hover: var(--color-base-35);
-
-    --text-highlight-bg-active: var(--text-highlight-bg);
+    @include ukiyo-dark-mode;
   }
 
   &.theme-light {
-    --color-base-00: #e6f0ff;
-    --color-base-05: var(--color-base-30);
-    --color-base-10: #d1e3ff;
-    --color-base-20: #e1edff;
-    --color-base-25: #cde1ff;
-    --color-base-30: #c9d9f1;
-    --color-base-35: var(--color-base-30);
-    --color-base-40: #c9d9f1;
-    --color-base-50: #4069bf;
-    --color-base-70: #5079d1;
-    --color-base-100: #254da1;
+    @include ukiyo-light-mode;
+  }
+}
 
-    --background-modifier-message: #adceff;
+.separate-color-scheme {
+  &.dm-color-scheme-ukiyo {
+    &.theme-dark {
+      @include ukiyo-dark-mode;
+    }
+  }
 
-    --color-accent: #2b9cb8;
-    --color-accent-1: #2b9cb8;
-    --color-accent-2: #30b4d4;
-
-    --activeline: #d0e3ff68;
-    --text-selection: #bdd8ff7d;
-
-    --color-bold: #42b3a9;
-    --color-italic: #379eda;
-
-    --text-highlight-bg: #ffdec6;
-
-    --heading-formatting-color: #e67979;
-    --in-between-background: #d6e6fd;
-
-    // Theme Extras
-    --background-modifier-form-field: var(--color-base-25);
-
-    --interactive-normal: var(--color-base-30);
-    --interactive-hover: var(--color-base-35);
-
-    --text-highlight-bg-active: var(--text-highlight-bg);
+  &.lm-color-scheme-ukiyo {
+    &.theme-light {
+      @include ukiyo-light-mode;
+    }
   }
 }

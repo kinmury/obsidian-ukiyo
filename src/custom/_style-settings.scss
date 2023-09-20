@@ -136,6 +136,62 @@ settings:
                 label: Custom
                 value: color-scheme-custom
     -
+        id: separate-color-scheme
+        title: Customize each mode
+        description: Select a color scheme for each mode
+        type: class-toggle
+        default: false
+    -
+        id: dark-mode-color-scheme-selector
+        title: Dark mode
+        type: class-select
+        allowEmpty: false
+        default: dm-color-scheme-default
+        options:
+            -
+                label: Cozy typewritter
+                value: dm-color-scheme-default
+            -
+                label: Ukiyo
+                value: dm-color-scheme-ukiyo
+            -
+                label: Golden Coffee
+                value: dm-color-scheme-golden-coffee
+            -
+                label: Golden Book
+                value: dm-color-scheme-golden-book
+            -
+                label: Alchemy
+                value: dm-color-scheme-alchemy
+            -
+                label: Rose Shadow
+                value: dm-color-scheme-rose-shadow
+            -
+                label: Custom
+                value: dm-color-scheme-custom
+    -
+        id: light-mode-color-scheme-selector
+        title: Light mode
+        type: class-select
+        allowEmpty: false
+        default: lm-color-scheme-default
+        options:
+            -
+                label: Cozy typewritter
+                value: lm-color-scheme-default
+            -
+                label: Ukiyo
+                value: lm-color-scheme-ukiyo
+            -
+                label: Golden Coffee
+                value: lm-color-scheme-golden-coffee
+            -
+                label: Alchemy
+                value: lm-color-scheme-alchemy
+            -
+                label: Custom
+                value: lm-color-scheme-custom
+    -
         id: color-scheme-custom-container
         title: Custom Color Scheme
         type: heading
@@ -368,6 +424,22 @@ settings:
 
 body:not(.color-scheme-custom) {
   .setting-item[data-id*="color-scheme-custom"] {
+    display: none;
+  }
+}
+
+body:not(.separate-color-scheme) {
+  .setting-item[data-id*="dark-mode-color-scheme-selector"],
+  .setting-item[data-id*="light-mode-color-scheme-selector"] {
+    display: none;
+  }
+}
+
+.separate-color-scheme {
+  .setting-item[data-id="separate-color-scheme"] {
+    border-top: none;
+  }
+  .setting-item[data-id="color-scheme-selector"] {
     display: none;
   }
 }

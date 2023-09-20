@@ -39,10 +39,11 @@ body {
   }
 }
 
+// BUG - Templater suggester-containers don't show up if you use this
 // Blur while floating-elements present
-.app-container:has(~ .modal-container) {
-  filter: blur(1.25px);
-}
+// .app-container:has(~ .modal-container) {
+//   filter: blur(0.5px);
+// }
 
 // Animation
 // Author of the original animation: [Akifyss](obsidian-bordertheme)

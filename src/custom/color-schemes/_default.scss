@@ -36,6 +36,7 @@
 .theme-light {
   --color-base-00: #e1c4a6; // background-primary
   --color-base-05: #cbaa87; // background-secondary-alt
+  --code-background: var(--color-base-05);
   --color-base-10: #daba97; // background-primary-alt
   --color-base-20: #dabb9a; // background-secondary
   --color-base-25: #4c4743; // background-modifier-form-field

@@ -12,5 +12,5 @@ csso ../dev.css --output ../theme.css
 ```bash
 sass --no-source-map "./src/main.scss" "./prod.css"
 csso ./prod.css --output ./theme.css
-DEL ./prod.css
+DEL prod.css
 ```
